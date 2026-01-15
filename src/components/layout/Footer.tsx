@@ -164,7 +164,11 @@ export function Footer() {
                 <li>
                   <span className="flex items-start text-neutral-400 text-sm">
                     <MapPin className="w-4 h-4 mr-2 mt-0.5 shrink-0" />
-                    <span>İstanbul, Türkiye</span>
+                    <span>
+                      Zaim Teknopark
+                      <br />
+                      Halkalı, İstanbul
+                    </span>
                   </span>
                 </li>
               </ul>

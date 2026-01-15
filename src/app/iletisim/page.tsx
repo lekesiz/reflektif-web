@@ -189,9 +189,11 @@ export default function IletisimPage() {
                         Adres
                       </h3>
                       <p className="text-neutral-600">
-                        Levent, Istanbul
+                        Zaim Teknopark
                         <br />
-                        Turkiye
+                        Halkalı Cad. No: 2
+                        <br />
+                        Küçükçekmece, İstanbul
                       </p>
                     </div>
                   </div>
@@ -361,11 +363,17 @@ export default function IletisimPage() {
       {/* Map */}
       <section className="py-16">
         <Container>
-          <div className="bg-neutral-100 rounded-2xl h-80 flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="w-12 h-12 text-neutral-400 mx-auto mb-4" />
-              <p className="text-neutral-500">Harita yakinda eklenecek</p>
-            </div>
+          <div className="rounded-2xl overflow-hidden h-80">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.5088977307584!2d28.79547731574676!3d41.01982097929859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa5a0c8e5a5a1%3A0x1c0f5e5e5e5e5e5e!2sZaim%20Teknopark!5e0!3m2!1str!2str!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Zaim Teknopark Konum"
+            />
           </div>
         </Container>
       </section>
