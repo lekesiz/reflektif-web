@@ -2,53 +2,58 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header, Footer } from "@/components/layout";
+import { LeadPopup, FloatingCTA, StickyBar } from "@/components/ui";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Reflektif - Kendini Kesfet, Gelecegini Sec",
+    default: "Reflektif - Kendini Keşfet, Geleceğini Seç",
     template: "%s | Reflektif",
   },
   description:
-    "Turkiye'nin ilk AI destekli yetkinlik degerlendirme ve meslek eslestirme platformu. Kisiligini kesfet, yeteneklerini anla, dogru kariyer kararini al.",
+    "Türkiye'nin ilk AI destekli yetkinlik değerlendirme ve meslek eşleştirme platformu. Kişiliğini keşfet, yeteneklerini anla, doğru kariyer kararını al.",
   keywords: [
     "kariyer testi",
-    "meslek secimi",
-    "yetkinlik degerlendirme",
-    "kisilik testi",
-    "AI kariyer danismanligi",
+    "meslek seçimi",
+    "yetkinlik değerlendirme",
+    "kişilik testi",
+    "AI kariyer danışmanlığı",
     "Holland testi",
     "RIASEC",
-    "meslek eslestirme",
-    "universite secimi",
-    "IK degerlendirme",
+    "meslek eşleştirme",
+    "üniversite seçimi",
+    "İK değerlendirme",
+    "video mülakat",
+    "ATS",
+    "işe alım",
   ],
   authors: [{ name: "Reflektif", url: "https://reflektif.net" }],
   creator: "Reflektif",
   publisher: "NETZ Informatique",
+  metadataBase: new URL("https://reflektif.net"),
   openGraph: {
     type: "website",
     locale: "tr_TR",
     url: "https://reflektif.net",
     siteName: "Reflektif",
-    title: "Reflektif - Kendini Kesfet, Gelecegini Sec",
+    title: "Reflektif - Kendini Keşfet, Geleceğini Seç",
     description:
-      "Turkiye'nin ilk AI destekli yetkinlik degerlendirme ve meslek eslestirme platformu.",
+      "Türkiye'nin ilk AI destekli yetkinlik değerlendirme ve meslek eşleştirme platformu.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Reflektif - Yetkinlik Degerlendirme Platformu",
+        alt: "Reflektif - Yetkinlik Değerlendirme Platformu",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Reflektif - Kendini Kesfet, Gelecegini Sec",
+    title: "Reflektif - Kendini Keşfet, Geleceğini Seç",
     description:
-      "Turkiye'nin ilk AI destekli yetkinlik degerlendirme ve meslek eslestirme platformu.",
+      "Türkiye'nin ilk AI destekli yetkinlik değerlendirme ve meslek eşleştirme platformu.",
     images: ["/og-image.jpg"],
     creator: "@reflektif",
   },
@@ -76,6 +81,15 @@ export default function RootLayout({
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
+
+        {/* Lead Capture Components */}
+        <LeadPopup
+          delay={8000}
+          exitIntent={true}
+          scrollTrigger={60}
+        />
+        <FloatingCTA />
+        <StickyBar position="bottom" delay={5000} />
       </body>
     </html>
   );
