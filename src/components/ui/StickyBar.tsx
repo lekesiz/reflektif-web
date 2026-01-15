@@ -54,10 +54,27 @@ export function StickyBar({
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setTimeout(() => dismiss(), 2000);
+
+    try {
+      const response = await fetch("/api/send-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: email,
+          source: "sticky",
+        }),
+      });
+
+      if (!response.ok) throw new Error("Failed to send");
+
+      setIsSubmitted(true);
+      setTimeout(() => dismiss(), 2000);
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Bir hata oluştu. Lütfen tekrar deneyin.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (!isVisible) return null;

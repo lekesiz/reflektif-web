@@ -29,14 +29,34 @@ export function FloatingCTA() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsOpen(false);
-      setIsSubmitted(false);
-      setFormData({ name: "", email: "", phone: "", message: "" });
-    }, 2000);
+
+    try {
+      const response = await fetch("/api/send-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          source: "floating",
+        }),
+      });
+
+      if (!response.ok) throw new Error("Failed to send");
+
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsOpen(false);
+        setIsSubmitted(false);
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      }, 2000);
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Bir hata oluştu. Lütfen tekrar deneyin.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (!isVisible) return null;

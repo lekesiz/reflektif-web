@@ -102,16 +102,28 @@ export function LeadPopup({
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call - replace with actual API endpoint
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch("/api/send-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          source: "popup",
+        }),
+      });
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+      if (!response.ok) throw new Error("Failed to send");
 
-    // Close popup after success message
-    setTimeout(() => {
-      dismissPopup();
-    }, 3000);
+      setIsSubmitted(true);
+      setTimeout(() => dismissPopup(), 3000);
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Bir hata oluştu. Lütfen tekrar deneyin.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (!isOpen) return null;
