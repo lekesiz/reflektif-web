@@ -22,9 +22,9 @@ export function Footer() {
       {/* Main Footer */}
       <div className="py-16">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 lg:gap-6">
             {/* Brand Column */}
-            <div className="lg:col-span-2">
+            <div className="col-span-2 md:col-span-3 lg:col-span-2">
               <Link href="/" className="flex items-center space-x-2 mb-6">
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 via-secondary-500 to-accent-500 flex items-center justify-center">
                   <span className="text-white font-bold text-xl">R</span>
@@ -32,8 +32,8 @@ export function Footer() {
                 <span className="font-bold text-xl text-white">Reflektif</span>
               </Link>
               <p className="text-neutral-400 mb-6 max-w-sm">
-                Kendini kesfet, gelecegini sec. Turkiye&apos;nin ilk AI destekli
-                yetkinlik degerlendirme ve meslek eslestirme platformu.
+                Kendini keşfet, geleceğini seç. Türkiye&apos;nin ilk AI destekli
+                yetkinlik değerlendirme ve meslek eşleştirme platformu.
               </p>
               <div className="flex space-x-4">
                 <a
@@ -71,15 +71,15 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Moduller */}
+            {/* Modüller */}
             <div>
-              <h4 className="font-semibold text-white mb-4">Moduller</h4>
+              <h4 className="font-semibold text-white mb-4">Modüller</h4>
               <ul className="space-y-3">
                 {footerNavigation.moduller.map((item) => (
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className="text-neutral-400 hover:text-white transition-colors"
+                      className="text-neutral-400 hover:text-white transition-colors text-sm"
                     >
                       {item.label}
                     </Link>
@@ -88,15 +88,49 @@ export function Footer() {
               </ul>
             </div>
 
-            {/* Sirket */}
+            {/* Testler */}
             <div>
-              <h4 className="font-semibold text-white mb-4">Sirket</h4>
+              <h4 className="font-semibold text-white mb-4">Testler</h4>
+              <ul className="space-y-3">
+                {footerNavigation.testler.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className="text-neutral-400 hover:text-white transition-colors text-sm"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Özellikler */}
+            <div>
+              <h4 className="font-semibold text-white mb-4">Özellikler</h4>
+              <ul className="space-y-3">
+                {footerNavigation.ozellikler.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className="text-neutral-400 hover:text-white transition-colors text-sm"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Şirket */}
+            <div>
+              <h4 className="font-semibold text-white mb-4">Şirket</h4>
               <ul className="space-y-3">
                 {footerNavigation.sirket.map((item) => (
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className="text-neutral-400 hover:text-white transition-colors"
+                      className="text-neutral-400 hover:text-white transition-colors text-sm"
                     >
                       {item.label}
                     </Link>
@@ -105,49 +139,32 @@ export function Footer() {
               </ul>
             </div>
 
-            {/* Destek */}
+            {/* İletişim */}
             <div>
-              <h4 className="font-semibold text-white mb-4">Destek</h4>
-              <ul className="space-y-3">
-                {footerNavigation.destek.map((item) => (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      className="text-neutral-400 hover:text-white transition-colors"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Iletisim */}
-            <div>
-              <h4 className="font-semibold text-white mb-4">Iletisim</h4>
+              <h4 className="font-semibold text-white mb-4">İletişim</h4>
               <ul className="space-y-3">
                 <li>
                   <a
                     href="mailto:info@reflektif.net"
-                    className="flex items-center text-neutral-400 hover:text-white transition-colors"
+                    className="flex items-center text-neutral-400 hover:text-white transition-colors text-sm"
                   >
-                    <Mail className="w-4 h-4 mr-2" />
+                    <Mail className="w-4 h-4 mr-2 shrink-0" />
                     info@reflektif.net
                   </a>
                 </li>
                 <li>
                   <a
                     href="tel:+908501234567"
-                    className="flex items-center text-neutral-400 hover:text-white transition-colors"
+                    className="flex items-center text-neutral-400 hover:text-white transition-colors text-sm"
                   >
-                    <Phone className="w-4 h-4 mr-2" />
+                    <Phone className="w-4 h-4 mr-2 shrink-0" />
                     0850 123 45 67
                   </a>
                 </li>
                 <li>
-                  <span className="flex items-start text-neutral-400">
-                    <MapPin className="w-4 h-4 mr-2 mt-1 flex-shrink-0" />
-                    <span>Istanbul, Turkiye</span>
+                  <span className="flex items-start text-neutral-400 text-sm">
+                    <MapPin className="w-4 h-4 mr-2 mt-0.5 shrink-0" />
+                    <span>İstanbul, Türkiye</span>
                   </span>
                 </li>
               </ul>
@@ -161,7 +178,7 @@ export function Footer() {
         <Container>
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-neutral-400 text-sm">
-              &copy; {currentYear} Reflektif. Tum haklari saklidir.
+              © {currentYear} Reflektif. Tüm hakları saklıdır.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
               {footerNavigation.yasal.map((item) => (

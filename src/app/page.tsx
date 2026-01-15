@@ -3,6 +3,8 @@ import {
   Features,
   Modules,
   Stats,
+  Tests,
+  Customers,
   Testimonials,
   FAQ,
   CTA,
@@ -12,9 +14,11 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Customers />
       <Stats />
       <Features />
       <Modules />
+      <Tests />
       <Testimonials />
       <FAQ />
       <CTA />

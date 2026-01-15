@@ -5,3 +5,5 @@ export { Stats } from "./Stats";
 export { Testimonials } from "./Testimonials";
 export { FAQ } from "./FAQ";
 export { CTA } from "./CTA";
+export { Tests } from "./Tests";
+export { Customers } from "./Customers";
