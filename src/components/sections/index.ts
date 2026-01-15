@@ -1,0 +1,7 @@
+export { Hero } from "./Hero";
+export { Features } from "./Features";
+export { Modules } from "./Modules";
+export { Stats } from "./Stats";
+export { Testimonials } from "./Testimonials";
+export { FAQ } from "./FAQ";
+export { CTA } from "./CTA";
