@@ -23,6 +23,7 @@ export const navigation: NavItem[] = [
       { label: "Teknik Testler", href: "/testler/teknik-testler" },
       { label: "Oyun Tabanlı Değerlendirme", href: "/testler/oyun-tabanli" },
       { label: "Dijital Simülasyon", href: "/testler/dijital-simulasyon" },
+      { label: "Kariyer Risk Analizi", href: "/testler/kariyer-risk-analizi" },
     ],
   },
   {
@@ -57,6 +58,7 @@ export const footerNavigation = {
     { label: "Dil Yeterlilik Testleri", href: "/testler/dil-testleri" },
     { label: "Teknik Testler", href: "/testler/teknik-testler" },
     { label: "Oyun Tabanlı", href: "/testler/oyun-tabanli" },
+    { label: "Kariyer Risk Analizi", href: "/testler/kariyer-risk-analizi" },
   ],
   ozellikler: [
     { label: "Video Mülakat", href: "/ozellikler/video-mulakat" },
