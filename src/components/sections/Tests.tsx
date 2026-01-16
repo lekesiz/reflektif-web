@@ -8,6 +8,7 @@ import {
   Code,
   Gamepad2,
   Theater,
+  Shield,
   ArrowRight,
 } from "lucide-react";
 import { Container, Card, Badge, Button } from "@/components/ui";
@@ -20,6 +21,7 @@ const iconMap: Record<string, React.ReactNode> = {
   Code: <Code className="w-6 h-6" />,
   Gamepad2: <Gamepad2 className="w-6 h-6" />,
   Theater: <Theater className="w-6 h-6" />,
+  Shield: <Shield className="w-6 h-6" />,
 };
 
 const colorClasses: Record<string, { bg: string; text: string }> = {

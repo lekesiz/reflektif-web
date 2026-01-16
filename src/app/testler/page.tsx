@@ -7,6 +7,7 @@ import {
   Code,
   Gamepad2,
   Theater,
+  Shield,
   ArrowRight,
   Clock,
   FileQuestion,
@@ -28,6 +29,7 @@ const iconMap: Record<string, React.ReactNode> = {
   Code: <Code className="w-8 h-8" />,
   Gamepad2: <Gamepad2 className="w-8 h-8" />,
   Theater: <Theater className="w-8 h-8" />,
+  Shield: <Shield className="w-8 h-8" />,
 };
 
 const colorClasses: Record<string, { bg: string; text: string; border: string }> = {

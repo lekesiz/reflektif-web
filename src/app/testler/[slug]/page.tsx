@@ -8,6 +8,7 @@ import {
   Code,
   Gamepad2,
   Theater,
+  Shield,
   ArrowLeft,
   Clock,
   FileQuestion,
@@ -15,6 +16,8 @@ import {
   Target,
   Users,
   ArrowRight,
+  Sparkles,
+  Gift,
 } from "lucide-react";
 import { Container, Card, Badge, Button } from "@/components/ui";
 import { testCategories, getTestCategoryBySlug } from "@/data/tests";
@@ -52,6 +55,7 @@ const iconMap: Record<string, React.ReactNode> = {
   Code: <Code className="w-12 h-12" />,
   Gamepad2: <Gamepad2 className="w-12 h-12" />,
   Theater: <Theater className="w-12 h-12" />,
+  Shield: <Shield className="w-12 h-12" />,
 };
 
 const colorClasses: Record<string, { bg: string; text: string; gradient: string }> = {
@@ -165,6 +169,42 @@ export default async function TestDetailPage({ params }: PageProps) {
           </div>
         </Container>
       </section>
+
+      {/* Free Test CTA - Only for Kariyer Risk Analizi */}
+      {slug === "kariyer-risk-analizi" && (
+        <section className="py-8">
+          <Container>
+            <Card className="p-8 bg-gradient-to-r from-accent-500 to-primary-500 text-white overflow-hidden relative">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2" />
+              <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
+                    <Gift className="w-8 h-8" />
+                  </div>
+                  <div>
+                    <Badge className="bg-white/20 text-white mb-2">
+                      <Sparkles className="w-3 h-3 mr-1" />
+                      Ücretsiz
+                    </Badge>
+                    <h3 className="text-2xl font-bold">Mini Kariyer Risk Testi</h3>
+                    <p className="opacity-90">7 soruda kariyer risk profilinizi keşfedin!</p>
+                  </div>
+                </div>
+                <Link href="/testler/kariyer-risk-analizi/ucretsiz-test">
+                  <Button
+                    size="lg"
+                    className="bg-white text-neutral-900 hover:bg-neutral-100 whitespace-nowrap"
+                  >
+                    Hemen Başla
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+            </Card>
+          </Container>
+        </section>
+      )}
 
       {/* Sub Tests Section */}
       <section className="py-16">

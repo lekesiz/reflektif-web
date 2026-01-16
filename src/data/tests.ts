@@ -351,6 +351,59 @@ export const testCategories: TestCategory[] = [
       "Liderlik değerlendirme",
     ],
   },
+  {
+    id: "kariyer-risk",
+    slug: "kariyer-risk-analizi",
+    name: "Kariyer Risk Analizi",
+    description: "Kariyer kararlarınızdaki risk faktörlerini keşfedin",
+    longDescription:
+      "Kariyer Risk Analizi, bireylerin kariyer yolculuklarında karşılaşabilecekleri potansiyel riskleri ve fırsatları değerlendirir. İş değiştirme, sektör geçişi, yöneticilik rolü üstlenme gibi kritik kariyer kararlarında bilinçli tercihler yapmanıza yardımcı olur. Risk toleransı, değişime uyum, finansal güvenlik algısı ve kariyer tatmini boyutlarında kapsamlı bir değerlendirme sunar.",
+    icon: "Shield",
+    color: "accent",
+    duration: "10-15 dakika",
+    questionCount: "40+ soru",
+    tests: [
+      {
+        name: "Risk Toleransı Analizi",
+        description: "Kariyer risklerine karşı tutumunuz",
+        duration: "5 dk",
+        questions: 12,
+      },
+      {
+        name: "Değişim Uyumu",
+        description: "Yeni ortamlara adaptasyon kapasiteniz",
+        duration: "4 dk",
+        questions: 10,
+      },
+      {
+        name: "Finansal Güvenlik Algısı",
+        description: "Ekonomik risk değerlendirmesi",
+        duration: "3 dk",
+        questions: 8,
+      },
+      {
+        name: "Kariyer Tatmini",
+        description: "Mevcut kariyer memnuniyeti analizi",
+        duration: "4 dk",
+        questions: 10,
+      },
+    ],
+    benefits: [
+      "Kişiselleştirilmiş risk profili",
+      "Kariyer karar destek sistemi",
+      "Güçlü ve zayıf yönler analizi",
+      "Sektör bazlı karşılaştırma",
+      "Aksiyon önerileri",
+      "Ücretsiz mini test imkanı",
+    ],
+    useCases: [
+      "İş değiştirme kararı alanlar",
+      "Sektör değişikliği düşünenler",
+      "Yöneticilik rolüne geçiş yapacaklar",
+      "Kendi işini kurmak isteyenler",
+      "Kariyer planlaması yapanlar",
+    ],
+  },
 ];
 
 export const getTestCategoryBySlug = (slug: string): TestCategory | undefined => {
