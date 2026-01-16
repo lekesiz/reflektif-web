@@ -7,6 +7,7 @@ import {
   Users,
   School,
   ArrowRight,
+  Accessibility,
 } from "lucide-react";
 import { Container, Card, CardContent, Button, Badge } from "@/components/ui";
 import { modules } from "@/data/modules";
@@ -23,6 +24,7 @@ const moduleIcons: Record<string, React.ElementType> = {
   TrendingUp,
   Users,
   School,
+  Accessibility,
 };
 
 export default function ModullerPage() {
@@ -31,7 +33,7 @@ export default function ModullerPage() {
       <Container>
         <div className="text-center mb-16">
           <Badge variant="primary" size="lg" className="mb-4">
-            5 Farkli Modul
+            6 Farkli Modul
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
             Her Ihtiyaca Uygun{" "}

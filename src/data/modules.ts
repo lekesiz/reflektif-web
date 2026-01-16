@@ -480,6 +480,124 @@ export const modules: Module[] = [
   },
 ];
 
+// Engelli Mesleki Eslestirme Modulu
+const engelliModule: Module = {
+  id: "engelli-mesleki-eslestirme",
+  slug: "engelli-mesleki-eslestirme",
+  name: "Reflektif Engelsiz",
+  title: "Engelli Bireyler Icin",
+  description: "Engelli bireylerin yeteneklerine uygun meslek secimi ve is yerlestirme destegi",
+  longDescription:
+    "Engelli bireylerin is gucune katilimini desteklemek icin ozel tasarlanmis AI destekli mesleki degerlendirme ve eslestirme platformu. ISKUR mesleki rehabilitasyon standartlarinda, 4857 sayili Is Kanunu'nun 30. maddesi kapsaminda isverenlerin engelli istihdam yukumluluklerini karsilayacak sekilde aday-pozisyon eslestirmesi saglariz.",
+  targetAudience: [
+    "Is arayan engelli bireyler",
+    "Engelli istihdam yukumlulugu olan sirketler",
+    "ISKUR ve istihdam ajanslari",
+    "Belediyeler ve sosyal hizmet kuruluslari",
+    "Ozel egitim ve rehabilitasyon merkezleri",
+    "Engelli kooperatifleri ve dernekleri",
+  ],
+  icon: "Accessibility",
+  color: "accent",
+  features: [
+    {
+      title: "Yetenek ve Beceri Haritalama",
+      description: "Fiziksel, bilissel ve sosyal becerilerin engel durumuna gore degerlendirilmesi ve meslek eslestirmesi",
+      icon: "Map",
+    },
+    {
+      title: "Erisebilir Isyeri Eslestirme",
+      description: "Fiziksel erisilebilirlik, uzaktan calisma ve esnek calisma imkanlarina gore is yeri onerisi",
+      icon: "Building2",
+    },
+    {
+      title: "Mesleki Rehabilitasyon Plani",
+      description: "ISKUR standartlarinda kisisellestirilmis mesleki egitim ve rehabilitasyon yol haritasi",
+      icon: "Route",
+    },
+    {
+      title: "Isveren Eslestirme Sistemi",
+      description: "Engelli istihdam kotasi olan sirketlerle otomatik eslestirme ve basvuru yonetimi",
+      icon: "Briefcase",
+    },
+    {
+      title: "Hibe ve Destek Rehberi",
+      description: "ISKUR hibe destekleri, tesvikler ve sosyal haklar konusunda bilgilendirme",
+      icon: "Gift",
+    },
+  ],
+  pricing: [
+    {
+      name: "Bireysel Ucretsiz",
+      price: 0,
+      description: "Engelli bireyler icin tamamen ucretsiz",
+      features: [
+        "Yetenek ve ilgi analizi",
+        "Meslek onerileri",
+        "Erisebilir is ilanlari",
+        "Hibe ve destek bilgileri",
+        "ISKUR basvuru rehberi",
+      ],
+      cta: "Ucretsiz Basla",
+    },
+    {
+      name: "Kurum Baslangic",
+      price: 4999,
+      period: "yil",
+      description: "Kucuk isletmeler icin",
+      features: [
+        "25 aday degerlendirme/yil",
+        "Kota takip paneli",
+        "Engelli aday havuzu erisimi",
+        "Temel raporlama",
+        "Email destek",
+      ],
+      cta: "Kurumsal Basla",
+    },
+    {
+      name: "Kurum Profesyonel",
+      price: 14999,
+      period: "yil",
+      description: "Orta olcekli sirketler icin",
+      features: [
+        "100 aday degerlendirme/yil",
+        "AI destekli eslestirme",
+        "Erisilebilirlik danismanligi",
+        "Detayli uyum raporlari",
+        "Oncelikli destek",
+        "ISKUR entegrasyonu",
+      ],
+      highlighted: true,
+      cta: "En Populer",
+    },
+    {
+      name: "Kurum Enterprise",
+      price: 39999,
+      period: "yil",
+      description: "Buyuk kurumlar icin",
+      features: [
+        "Sinirsiz degerlendirme",
+        "Ozel entegrasyon",
+        "Yerinde egitim",
+        "Dedicated hesap yoneticisi",
+        "SLA garantisi",
+        "Sosyal sorumluluk raporlama",
+      ],
+      cta: "Bize Ulasin",
+    },
+  ],
+  benefits: [
+    "Engelli istihdam kotasinin yasal uyum ile karsilanmasi",
+    "Aday-pozisyon uyumunda %85 basari orani",
+    "ISKUR tesvik ve hibelerinden faydalanma",
+    "Sosyal sorumluluk ve kurumsal itibar artisi",
+  ],
+  cta: "Engelsiz Kariyere Basla",
+};
+
+// Add engelli module to modules array
+modules.push(engelliModule);
+
 export const getModuleBySlug = (slug: string): Module | undefined => {
   return modules.find((m) => m.slug === slug);
 };

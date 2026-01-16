@@ -10,6 +10,7 @@ export const navigation: NavItem[] = [
       { label: "Reflektif Kariyer", href: "/moduller/kariyer" },
       { label: "Reflektif İK", href: "/moduller/ik" },
       { label: "Reflektif Kurum", href: "/moduller/kurum" },
+      { label: "Reflektif Engelsiz", href: "/moduller/engelli-mesleki-eslestirme" },
     ],
   },
   {
@@ -47,6 +48,7 @@ export const footerNavigation = {
     { label: "Reflektif Kariyer", href: "/moduller/kariyer" },
     { label: "Reflektif İK", href: "/moduller/ik" },
     { label: "Reflektif Kurum", href: "/moduller/kurum" },
+    { label: "Reflektif Engelsiz", href: "/moduller/engelli-mesleki-eslestirme" },
   ],
   testler: [
     { label: "Kişilik Envanteri - RiT", href: "/testler/kisilik-envanteri" },

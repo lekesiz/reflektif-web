@@ -10,6 +10,7 @@ import {
   CheckCircle,
   ArrowRight,
   Star,
+  Accessibility,
 } from "lucide-react";
 import { Container, Card, CardContent, Button, Badge } from "@/components/ui";
 import { modules, getModuleBySlug } from "@/data/modules";
@@ -21,6 +22,7 @@ const moduleIcons: Record<string, React.ElementType> = {
   TrendingUp,
   Users,
   School,
+  Accessibility,
 };
 
 export async function generateStaticParams() {

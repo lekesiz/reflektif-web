@@ -10,6 +10,7 @@ import {
   Users,
   School,
   ArrowRight,
+  Accessibility,
 } from "lucide-react";
 import { Container, Card, CardContent, Button, Badge } from "@/components/ui";
 import { modules } from "@/data/modules";
@@ -20,6 +21,7 @@ const moduleIcons: Record<string, React.ElementType> = {
   TrendingUp,
   Users,
   School,
+  Accessibility,
 };
 
 const colorClasses: Record<string, { bg: string; badge: string; button: string }> = {

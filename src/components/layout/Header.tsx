@@ -13,6 +13,7 @@ import {
   TrendingUp,
   Users,
   School,
+  Accessibility,
 } from "lucide-react";
 import { Container, Button } from "@/components/ui";
 import { cn } from "@/lib/utils";
@@ -24,6 +25,7 @@ const moduleIcons: Record<string, React.ReactNode> = {
   "/moduller/kariyer": <TrendingUp className="w-5 h-5" />,
   "/moduller/ik": <Users className="w-5 h-5" />,
   "/moduller/kurum": <School className="w-5 h-5" />,
+  "/moduller/engelli-mesleki-eslestirme": <Accessibility className="w-5 h-5" />,
 };
 
 export function Header() {
