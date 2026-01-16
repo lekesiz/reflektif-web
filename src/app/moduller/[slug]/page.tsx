@@ -15,6 +15,10 @@ import {
   Award,
   FileCheck,
   AlertCircle,
+  Sparkles,
+  CircleDot,
+  Briefcase,
+  Shield,
 } from "lucide-react";
 import { Container, Card, CardContent, Button, Badge } from "@/components/ui";
 import { modules, getModuleBySlug } from "@/data/modules";
@@ -136,9 +140,154 @@ export default async function ModulePage({
         </Container>
       </section>
 
+      {/* Highlights Section */}
+      {module.highlights && module.highlights.length > 0 && (
+        <section className="py-12 bg-gradient-to-r from-primary-600 to-secondary-600">
+          <Container>
+            <div className="text-center mb-8">
+              <h2 className="text-2xl font-bold text-white mb-2">
+                Program Avantajlari
+              </h2>
+            </div>
+            <div className="flex flex-wrap justify-center gap-4">
+              {module.highlights.map((highlight, index) => (
+                <div
+                  key={index}
+                  className="flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3"
+                >
+                  <Sparkles className="w-5 h-5 text-accent-300 mr-2" />
+                  <span className="text-white font-medium">{highlight}</span>
+                </div>
+              ))}
+            </div>
+          </Container>
+        </section>
+      )}
+
+      {/* Program Phases Section */}
+      {module.programPhases && module.programPhases.length > 0 && (
+        <section className="py-16 bg-neutral-50">
+          <Container>
+            <div className="text-center mb-12">
+              <Badge variant="accent" size="lg" className="mb-4">
+                1 Yillik Program
+              </Badge>
+              <h2 className="text-3xl font-bold text-neutral-900 mb-4">
+                Program Asamalari
+              </h2>
+              <p className="text-neutral-600 max-w-2xl mx-auto">
+                Kariyer gecisinizin her asamasinda yaninizdayiz
+              </p>
+            </div>
+
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary-500 via-secondary-500 to-accent-500" />
+
+              <div className="space-y-12">
+                {module.programPhases.map((phase, index) => {
+                  const isEven = index % 2 === 0;
+                  const phaseColors = [
+                    "bg-primary-500",
+                    "bg-secondary-500",
+                    "bg-accent-500",
+                    "bg-green-500",
+                  ];
+
+                  return (
+                    <div
+                      key={phase.phase}
+                      className={`relative flex flex-col lg:flex-row items-center ${
+                        isEven ? "lg:flex-row" : "lg:flex-row-reverse"
+                      }`}
+                    >
+                      {/* Phase Card */}
+                      <div className={`w-full lg:w-5/12 ${isEven ? "lg:pr-12 lg:text-right" : "lg:pl-12"}`}>
+                        <Card variant="elevated" className="relative overflow-hidden">
+                          <div className={`absolute top-0 left-0 right-0 h-1 ${phaseColors[index % 4]}`} />
+                          <CardContent>
+                            <div className={`flex items-center gap-3 mb-4 ${isEven ? "lg:justify-end" : ""}`}>
+                              <Badge variant="primary" size="sm">
+                                Asama {phase.phase}
+                              </Badge>
+                              <Badge variant="secondary" size="sm">
+                                {phase.duration}
+                              </Badge>
+                            </div>
+                            <h3 className="text-xl font-bold text-neutral-900 mb-2">
+                              {phase.title}
+                            </h3>
+                            <p className="text-neutral-600 mb-4">
+                              {phase.description}
+                            </p>
+                            <ul className={`space-y-2 ${isEven ? "lg:text-right" : ""}`}>
+                              {phase.activities.map((activity, actIndex) => (
+                                <li
+                                  key={actIndex}
+                                  className={`flex items-start text-sm text-neutral-700 ${
+                                    isEven ? "lg:flex-row-reverse" : ""
+                                  }`}
+                                >
+                                  <CircleDot className={`w-4 h-4 text-primary-500 mt-0.5 flex-shrink-0 ${
+                                    isEven ? "lg:ml-2" : "mr-2"
+                                  }`} />
+                                  <span>{activity}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </CardContent>
+                        </Card>
+                      </div>
+
+                      {/* Timeline Node */}
+                      <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-white border-4 border-primary-500 items-center justify-center z-10">
+                        <span className="text-lg font-bold text-primary-600">{phase.phase}</span>
+                      </div>
+
+                      {/* Mobile Phase Number */}
+                      <div className="lg:hidden flex w-10 h-10 rounded-full bg-primary-500 items-center justify-center mb-4">
+                        <span className="text-lg font-bold text-white">{phase.phase}</span>
+                      </div>
+
+                      {/* Spacer for opposite side */}
+                      <div className="hidden lg:block w-5/12" />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* ISKUR Info Box */}
+            <div className="mt-12 bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8">
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                <div className="w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
+                  <Shield className="w-8 h-8 text-primary-600" />
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-xl font-bold text-neutral-900 mb-2">
+                    ISKUR Issizlik Sigortasi Entegrasyonu
+                  </h3>
+                  <p className="text-neutral-700">
+                    Program suresince ISKUR issizlik maasiniz kesilmeden devam eder.
+                    4447 sayili Issizlik Sigortasi Kanunu kapsaminda, aktif isgucu
+                    programlarina katilan bireyler issizlik odeneklerini almaya devam eder.
+                    Boylece gelir kaygisi olmadan kariyer gecisinize odaklanabilirsiniz.
+                  </p>
+                </div>
+                <Link href="/iletisim" className="flex-shrink-0">
+                  <Button variant="primary">
+                    ISKUR Uygunluk Kontrolu
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </Container>
+        </section>
+      )}
+
       {/* Prerequisites & Quality Info Section */}
       {(module.prerequisites || module.evaluationMethods || module.duration || module.certifications) && (
-        <section className="py-16 bg-neutral-50">
+        <section className="py-16 bg-white">
           <Container>
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-neutral-900 mb-4">

@@ -1,3 +1,11 @@
+export interface ProgramPhase {
+  phase: number;
+  title: string;
+  duration: string;
+  description: string;
+  activities: string[];
+}
+
 export interface Module {
   id: string;
   slug: string;
@@ -16,6 +24,8 @@ export interface Module {
   evaluationMethods?: string[];
   duration?: string;
   certifications?: string[];
+  programPhases?: ProgramPhase[];
+  highlights?: string[];
 }
 
 export interface Feature {
