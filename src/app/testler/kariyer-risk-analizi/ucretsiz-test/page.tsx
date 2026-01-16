@@ -193,7 +193,50 @@ export default function UcretsizTestPage() {
     setSelectedOption(optionIndex);
   };
 
-  const handleNextQuestion = () => {
+  const sendTestResult = async (finalAnswers: number[]) => {
+    const totalScore = finalAnswers.reduce((sum, score) => sum + score, 0);
+    const maxScore = questions.length * 3;
+    const percentage = (totalScore / maxScore) * 100;
+
+    let resultType: "risk-taker" | "balanced" | "cautious";
+    let resultTitle: string;
+
+    if (percentage >= 70) {
+      resultType = "risk-taker";
+      resultTitle = "Cesur Karar Verici";
+    } else if (percentage >= 40) {
+      resultType = "balanced";
+      resultTitle = "Dengeli Stratejist";
+    } else {
+      resultType = "cautious";
+      resultTitle = "Temkinli Planlayici";
+    }
+
+    try {
+      await fetch("/api/free-test-result", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstName: userInfo.firstName,
+          lastName: userInfo.lastName,
+          email: userInfo.email,
+          phone: userInfo.phone,
+          resultType,
+          resultTitle,
+          totalScore,
+          maxScore,
+          percentage,
+          answers: finalAnswers,
+        }),
+      });
+    } catch (error) {
+      console.error("Failed to send test result:", error);
+    }
+  };
+
+  const handleNextQuestion = async () => {
     if (selectedOption === null) return;
 
     const newAnswers = [...answers, questions[currentQuestion].options[selectedOption].score];
@@ -204,11 +247,10 @@ export default function UcretsizTestPage() {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       setIsSubmitting(true);
-      // Simulate API call
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setStep("result");
-      }, 1500);
+      // Send email notification with test results
+      await sendTestResult(newAnswers);
+      setIsSubmitting(false);
+      setStep("result");
     }
   };
 

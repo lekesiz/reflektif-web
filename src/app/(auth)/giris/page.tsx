@@ -105,7 +105,7 @@ export default function GirisPage() {
                     </span>
                   </label>
                   <Link
-                    href="/sifremi-unuttum"
+                    href="/iletisim"
                     className="text-sm text-primary-600 hover:text-primary-700"
                   >
                     Şifremi unuttum

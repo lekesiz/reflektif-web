@@ -148,14 +148,12 @@ export default function KaynaklarPage() {
           <h2 className="text-2xl font-bold text-neutral-900 mb-8">Kategoriler</h2>
           <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
             {blogCategories.map((category) => (
-              <Link key={category.id} href={`/kaynaklar/kategori/${category.slug}`}>
-                <Card hover className="p-6 text-center h-full group">
-                  <h3 className="font-semibold text-neutral-900 mb-2 group-hover:text-primary-600 transition-colors">
-                    {category.name}
-                  </h3>
-                  <p className="text-sm text-neutral-500">{category.description}</p>
-                </Card>
-              </Link>
+              <Card key={category.id} hover className="p-6 text-center h-full group cursor-pointer">
+                <h3 className="font-semibold text-neutral-900 mb-2 group-hover:text-primary-600 transition-colors">
+                  {category.name}
+                </h3>
+                <p className="text-sm text-neutral-500">{category.description}</p>
+              </Card>
             ))}
           </div>
         </Container>
@@ -166,11 +164,6 @@ export default function KaynaklarPage() {
         <Container>
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-bold text-neutral-900">Son Yazılar</h2>
-            <Link href="/kaynaklar/blog">
-              <Button variant="ghost" rightIcon={<ArrowRight className="w-4 h-4" />}>
-                Tümünü Gör
-              </Button>
-            </Link>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {recentPosts.map((post) => (
