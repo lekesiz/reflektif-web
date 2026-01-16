@@ -24,3 +24,4 @@ export { Container } from "./Container";
 export { LeadPopup } from "./LeadPopup";
 export { FloatingCTA } from "./FloatingCTA";
 export { StickyBar } from "./StickyBar";
+export { NewsletterForm } from "./NewsletterForm";

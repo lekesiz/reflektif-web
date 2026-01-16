@@ -4,7 +4,7 @@ export interface LeadFormData {
   company?: string;
   phone?: string;
   message?: string;
-  source: "popup" | "floating" | "sticky" | "contact" | "demo";
+  source: "popup" | "floating" | "sticky" | "contact" | "demo" | "newsletter";
   interests?: string[];
   companySize?: string;
   industry?: string;
@@ -18,6 +18,7 @@ export function getEmailSubject(source: LeadFormData["source"]): string {
     sticky: "📧 Yeni Abone - Sticky Bar",
     contact: "📩 Yeni İletişim Formu",
     demo: "🚀 Yeni Demo Talebi",
+    newsletter: "📰 Yeni Bülten Abonesi",
   };
   return subjects[source];
 }
@@ -29,6 +30,7 @@ export function getEmailTemplate(data: LeadFormData): string {
     sticky: "Sticky Bar",
     contact: "İletişim Formu",
     demo: "Demo Talep Formu",
+    newsletter: "Bülten Aboneliği",
   };
 
   const interestLabels: Record<string, string> = {

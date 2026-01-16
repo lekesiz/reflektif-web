@@ -10,7 +10,7 @@ import {
   Video,
   Download,
 } from "lucide-react";
-import { Container, Card, Badge, Button } from "@/components/ui";
+import { Container, Card, Badge, NewsletterForm } from "@/components/ui";
 import { blogPosts, blogCategories, getFeaturedPosts } from "@/data/blog";
 
 export const metadata: Metadata = {
@@ -198,7 +198,7 @@ export default function KaynaklarPage() {
       {/* Newsletter CTA */}
       <section className="py-16 bg-neutral-50">
         <Container>
-          <div className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-3xl p-12 text-white text-center">
+          <div className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-3xl p-12 text-white text-center relative">
             <h2 className="text-3xl font-bold mb-4">
               İK Bültenine Abone Olun
             </h2>
@@ -206,16 +206,7 @@ export default function KaynaklarPage() {
               En son içerikler, sektör trendleri ve Reflektif güncellemelerini
               doğrudan e-posta kutunuza alın.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="E-posta adresiniz"
-                className="flex-1 px-4 py-3 rounded-lg text-neutral-900 focus:outline-none focus:ring-2 focus:ring-white"
-              />
-              <Button className="bg-white text-neutral-900 hover:bg-neutral-100">
-                Abone Ol
-              </Button>
-            </div>
+            <NewsletterForm />
           </div>
         </Container>
       </section>
