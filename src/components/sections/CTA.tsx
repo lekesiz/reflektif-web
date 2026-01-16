@@ -25,16 +25,16 @@ export function CTA() {
         >
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 text-white text-sm font-medium mb-8">
             <Sparkles className="w-4 h-4 mr-2" />
-            Hemen Baslayabilirsiniz
+            Hemen Başlayabilirsiniz
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 max-w-3xl mx-auto leading-tight">
-            Kariyer Yolculugunuza Bugunden Baslayin
+            Kariyer Yolculuğunuza Bugünden Başlayın
           </h2>
 
           <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-            Ucretsiz temel degerlendirme ile baslayin, kendinizi kesfetmeye
-            bugunden adim atin.
+            Ücretsiz temel değerlendirme ile başlayın, kendinizi keşfetmeye
+            bugünden adım atın.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -44,7 +44,7 @@ export function CTA() {
                 size="lg"
                 rightIcon={<ArrowRight className="w-5 h-5" />}
               >
-                Ucretsiz Basla
+                Ücretsiz Başla
               </Button>
             </Link>
             <Link href="/iletisim">
@@ -59,7 +59,7 @@ export function CTA() {
           </div>
 
           <p className="mt-8 text-white/60 text-sm">
-            Kredi karti gerekmez • 15 dakikada sonuc • Kalici uyelik zorunlulugu yok
+            Kredi kartı gerekmez • 15 dakikada sonuç • Kalıcı üyelik zorunluluğu yok
           </p>
         </motion.div>
       </Container>

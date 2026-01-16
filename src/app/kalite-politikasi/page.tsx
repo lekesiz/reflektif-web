@@ -21,63 +21,63 @@ import {
 import { Container, Card, CardContent, Badge, Button } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Kalite Politikasi ve Taahhutlerimiz",
+  title: "Kalite Politikası ve Taahhütlerimiz",
   description:
-    "Reflektif kalite politikasi, egitim standartlari, sertifikasyonlar ve surekli iyilestirme taahhutlerimiz. MYK, ISKUR ve uluslararasi standartlara uyum.",
+    "Reflektif kalite politikası, eğitim standartları, sertifikasyonlar ve sürekli iyileştirme taahhütlerimiz. MYK, İŞKUR ve uluslararası standartlara uyum.",
 };
 
 const qualityIndicators = [
   {
-    title: "Memnuniyet Orani",
+    title: "Memnuniyet Oranı",
     value: "%94",
-    description: "Kullanici memnuniyet anketleri sonucu",
+    description: "Kullanıcı memnuniyet anketleri sonucu",
   },
   {
-    title: "Tamamlama Orani",
+    title: "Tamamlama Oranı",
     value: "%87",
-    description: "Test ve degerlendirme tamamlama orani",
+    description: "Test ve değerlendirme tamamlama oranı",
   },
   {
-    title: "Eslestirme Basarisi",
+    title: "Eşleştirme Başarısı",
     value: "%91",
-    description: "Meslek onerisi-tercih uyum orani",
+    description: "Meslek önerisi-tercih uyum oranı",
   },
   {
-    title: "Destek Cevap Suresi",
+    title: "Destek Cevap Süresi",
     value: "<2 saat",
-    description: "Ortalama musteri destek yanit suresi",
+    description: "Ortalama müşteri destek yanıt süresi",
   },
 ];
 
 const certifications = [
   {
     name: "KVKK Uyumlu",
-    description: "6698 sayili Kisisel Verilerin Korunmasi Kanunu uyumu",
+    description: "6698 sayılı Kişisel Verilerin Korunması Kanunu uyumu",
     icon: Shield,
   },
   {
-    name: "MYK Standartlari",
-    description: "Mesleki Yeterlilik Kurumu meslek standartlariyla uyumlu",
+    name: "MYK Standartları",
+    description: "Mesleki Yeterlilik Kurumu meslek standartlarıyla uyumlu",
     icon: Award,
   },
   {
-    name: "ISKUR Onayli",
-    description: "Is ve Isci Bulma Kurumu mesleki rehabilitasyon standartlari",
+    name: "İŞKUR Onaylı",
+    description: "İş ve İşçi Bulma Kurumu mesleki rehabilitasyon standartları",
     icon: Building2,
   },
   {
-    name: "TYC Uyumlu",
-    description: "Turkiye Yeterlilikler Cercevesi seviye tanimlamalari",
+    name: "TYÇ Uyumlu",
+    description: "Türkiye Yeterlilikler Çerçevesi seviye tanımlamaları",
     icon: GraduationCap,
   },
   {
     name: "ISO 27001",
-    description: "Bilgi guvenligi yonetim sistemi standartlari (hedeflenen)",
+    description: "Bilgi güvenliği yönetim sistemi standartları (hedeflenen)",
     icon: FileCheck,
   },
   {
-    name: "Erisilebilirlik",
-    description: "WCAG 2.1 AA seviyesi web erisilebilirlik standartlari",
+    name: "Erişilebilirlik",
+    description: "WCAG 2.1 AA seviyesi web erişilebilirlik standartları",
     icon: Accessibility,
   },
 ];
@@ -85,95 +85,95 @@ const certifications = [
 const commitments = [
   {
     icon: Target,
-    title: "Seffaf Bilgilendirme",
+    title: "Şeffaf Bilgilendirme",
     description:
-      "Tum hizmetlerimiz, fiyatlarimiz, on kosullarimiz ve degerlendirme yontemlerimiz hakkinda acik ve anlasilir bilgi sagliyoruz.",
+      "Tüm hizmetlerimiz, fiyatlarımız, ön koşullarımız ve değerlendirme yöntemlerimiz hakkında açık ve anlaşılır bilgi sağlıyoruz.",
   },
   {
     icon: Users,
-    title: "Bireysel Ihtiyaclara Uyum",
+    title: "Bireysel İhtiyaçlara Uyum",
     description:
-      "Her bireyin farkli oldugunu kabul ediyor, engelli bireyler dahil herkes icin erisilebilir ve uyarlanabilir hizmetler sunuyoruz.",
+      "Her bireyin farklı olduğunu kabul ediyor, engelli bireyler dahil herkes için erişilebilir ve uyarlanabilir hizmetler sunuyoruz.",
   },
   {
     icon: BookOpen,
     title: "Bilimsel Metodoloji",
     description:
-      "Uluslararasi gecerliligi kanitlanmis psikometrik yontemler (Holland RIASEC, Big Five, MBTI) kullaniyoruz.",
+      "Uluslararası geçerliliği kanıtlanmış psikometrik yöntemler (Holland RIASEC, Big Five, MBTI) kullanıyoruz.",
   },
   {
     icon: TrendingUp,
-    title: "Surekli Iyilestirme",
+    title: "Sürekli İyileştirme",
     description:
-      "Kullanici geri bildirimleri, sikayet analizleri ve performans verileriyle hizmetlerimizi surekli gelistiriyoruz.",
+      "Kullanıcı geri bildirimleri, şikayet analizleri ve performans verileriyle hizmetlerimizi sürekli geliştiriyoruz.",
   },
   {
     icon: HeartHandshake,
-    title: "Etik ve Adil Degerlendirme",
+    title: "Etik ve Adil Değerlendirme",
     description:
-      "Irk, cinsiyet, yas, engellilik durumu ayrimciligi yapmadan objektif ve etik degerlendirme yapiyoruz.",
+      "Irk, cinsiyet, yaş, engellilik durumu ayrımcılığı yapmadan objektif ve etik değerlendirme yapıyoruz.",
   },
   {
     icon: Clock,
-    title: "Zamaninda Hizmet",
+    title: "Zamanında Hizmet",
     description:
-      "Test sonuclari 24 saat icinde, detayli raporlar 48 saat icinde iletiliyor. Musteri destek taleplerine 2 saat icinde yanit veriyoruz.",
+      "Test sonuçları 24 saat içinde, detaylı raporlar 48 saat içinde iletiliyor. Müşteri destek taleplerine 2 saat içinde yanıt veriyoruz.",
   },
 ];
 
 const prerequisites = [
   {
-    module: "Ogrenci Modulu",
+    module: "Öğrenci Modülü",
     requirements: [
-      "14-18 yas arasi olmak",
-      "Turkce okuma yazma becerisi",
-      "Internet erisimi ve temel bilgisayar kullanimi",
-      "Veli/vasi izni (18 yas alti icin)",
+      "14-18 yaş arası olmak",
+      "Türkçe okuma yazma becerisi",
+      "İnternet erişimi ve temel bilgisayar kullanımı",
+      "Veli/vasi izni (18 yaş altı için)",
     ],
   },
   {
-    module: "Universite Modulu",
+    module: "Üniversite Modülü",
     requirements: [
-      "Aktif universite ogrencisi olmak",
-      "Turkce veya Ingilizce yeterlilik",
-      "E-posta adresi ve telefon numarasi",
-      "Internet erisimi",
+      "Aktif üniversite öğrencisi olmak",
+      "Türkçe veya İngilizce yeterlilik",
+      "E-posta adresi ve telefon numarası",
+      "İnternet erişimi",
     ],
   },
   {
-    module: "Kariyer Modulu",
+    module: "Kariyer Modülü",
     requirements: [
-      "18 yas ve uzeri olmak",
+      "18 yaş ve üzeri olmak",
       "En az lise mezunu olmak",
-      "Is deneyimi (tercih edilen)",
-      "Kariyer degisikligi motivasyonu",
+      "İş deneyimi (tercih edilen)",
+      "Kariyer değişikliği motivasyonu",
     ],
   },
   {
-    module: "IK Modulu",
+    module: "İK Modülü",
     requirements: [
       "Kurumsal e-posta adresi",
-      "Yetkili kisi onayi",
-      "Minimum 5 calisan",
-      "Sozlesme imzalama yetkisi",
+      "Yetkili kişi onayı",
+      "Minimum 5 çalışan",
+      "Sözleşme imzalama yetkisi",
     ],
   },
   {
-    module: "Kurum Modulu",
+    module: "Kurum Modülü",
     requirements: [
-      "Egitim kurumu yetkili belgesi",
-      "MEB veya YOK onayli kurum olmak",
-      "IT altyapisi (LMS entegrasyonu icin)",
-      "Veri isleme sozlesmesi",
+      "Eğitim kurumu yetkili belgesi",
+      "MEB veya YÖK onaylı kurum olmak",
+      "IT altyapısı (LMS entegrasyonu için)",
+      "Veri işleme sözleşmesi",
     ],
   },
   {
-    module: "Engelsiz Modulu",
+    module: "Engelsiz Modülü",
     requirements: [
-      "Engelli saglik kurulu raporu (bireysel ucretsiz erisim icin)",
-      "18 yas ve uzeri (veya veli izni)",
-      "Erisilebilir cihaz (ekran okuyucu destegi mevcut)",
-      "ISKUR kaydı (is eslestirme icin tercih edilen)",
+      "Engelli sağlık kurulu raporu (bireysel ücretsiz erişim için)",
+      "18 yaş ve üzeri (veya veli izni)",
+      "Erişilebilir cihaz (ekran okuyucu desteği mevcut)",
+      "İŞKUR kaydı (iş eşleştirme için tercih edilen)",
     ],
   },
 ];
@@ -186,20 +186,20 @@ export default function KalitePolitikasiPage() {
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="primary" size="lg" className="mb-6">
-              Kalite Taahhutlerimiz
+              Kalite Taahhütlerimiz
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-              Kalite Politikamiz ve{" "}
+              Kalite Politikamız ve{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
-                Standartlarimiz
+                Standartlarımız
               </span>
             </h1>
             <p className="text-lg text-neutral-600 leading-relaxed">
-              Reflektif olarak, ulusal ve uluslararasi kalite standartlarina
-              uygun, seffaf, etik ve surekli gelisen hizmetler sunmayi
-              taahhut ediyoruz. Bu sayfa, kalite politikamiz, sertifikasyonlarimiz,
-              on kosullarimiz ve sikayet yonetimi sureclerimiz hakkinda
-              detayli bilgi icermektedir.
+              Reflektif olarak, ulusal ve uluslararası kalite standartlarına
+              uygun, şeffaf, etik ve sürekli gelişen hizmetler sunmayı
+              taahhüt ediyoruz. Bu sayfa, kalite politikamız, sertifikasyonlarımız,
+              ön koşullarımız ve şikayet yönetimi süreçlerimiz hakkında
+              detaylı bilgi içermektedir.
             </p>
           </div>
         </Container>
@@ -210,10 +210,10 @@ export default function KalitePolitikasiPage() {
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Kalite Gostergeleri
+              Kalite Göstergeleri
             </h2>
             <p className="text-white/80">
-              Son 12 aylik performans verilerimiz
+              Son 12 aylık performans verilerimiz
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -244,7 +244,7 @@ export default function KalitePolitikasiPage() {
               Sertifikasyonlar ve Standartlar
             </h2>
             <p className="text-neutral-600 max-w-2xl mx-auto">
-              Ulusal ve uluslararasi kalite standartlarina uyumlulugumuz
+              Ulusal ve uluslararası kalite standartlarına uyumluluğumuz
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -270,10 +270,10 @@ export default function KalitePolitikasiPage() {
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-              Kalite Taahhutlerimiz
+              Kalite Taahhütlerimiz
             </h2>
             <p className="text-neutral-600 max-w-2xl mx-auto">
-              Hizmet kalitemizi garanti altina alan temel ilkelerimiz
+              Hizmet kalitemizi garanti altına alan temel ilkelerimiz
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -301,10 +301,10 @@ export default function KalitePolitikasiPage() {
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-              On Kosullar ve Katilim Sartlari
+              Ön Koşullar ve Katılım Şartları
             </h2>
             <p className="text-neutral-600 max-w-2xl mx-auto">
-              Her modul icin gerekli on kosullar ve katilim gereksinimleri
+              Her modül için gerekli ön koşullar ve katılım gereksinimleri
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -335,10 +335,10 @@ export default function KalitePolitikasiPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-                Degerlendirme Yontemleri ve Sureci
+                Değerlendirme Yöntemleri ve Süreci
               </h2>
               <p className="text-neutral-600">
-                Testlerimizin nasil yapilandirildigini ve degerlendirildigini anlayin
+                Testlerimizin nasıl yapılandırıldığını ve değerlendirildiğini anlayın
               </p>
             </div>
 
@@ -346,20 +346,20 @@ export default function KalitePolitikasiPage() {
               <Card variant="bordered" padding="lg">
                 <CardContent>
                   <h3 className="text-xl font-bold text-neutral-900 mb-4">
-                    1. Test Oncesi Hazirlik
+                    1. Test Öncesi Hazırlık
                   </h3>
                   <ul className="space-y-2 text-neutral-700">
                     <li className="flex items-start">
                       <span className="w-2 h-2 rounded-full bg-primary-500 mr-3 mt-2" />
-                      Kullanici profili olusturma ve on bilgi toplama
+                      Kullanıcı profili oluşturma ve ön bilgi toplama
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 rounded-full bg-primary-500 mr-3 mt-2" />
-                      Acik rizaname ve veri isleme izni (KVKK uyumlu)
+                      Açık rızaname ve veri işleme izni (KVKK uyumlu)
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 rounded-full bg-primary-500 mr-3 mt-2" />
-                      Test suresi, formati ve beklentiler hakkinda bilgilendirme
+                      Test süresi, formatı ve beklentiler hakkında bilgilendirme
                     </li>
                   </ul>
                 </CardContent>
@@ -368,24 +368,24 @@ export default function KalitePolitikasiPage() {
               <Card variant="bordered" padding="lg">
                 <CardContent>
                   <h3 className="text-xl font-bold text-neutral-900 mb-4">
-                    2. Degerlendirme Sureci
+                    2. Değerlendirme Süreci
                   </h3>
                   <ul className="space-y-2 text-neutral-700">
                     <li className="flex items-start">
                       <span className="w-2 h-2 rounded-full bg-secondary-500 mr-3 mt-2" />
-                      Psikometrik testler: Holland RIASEC, Big Five, bilisssel yetenek
+                      Psikometrik testler: Holland RIASEC, Big Five, bilişsel yetenek
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 rounded-full bg-secondary-500 mr-3 mt-2" />
-                      AI destekli analiz ve oruntu tanima
+                      AI destekli analiz ve örüntü tanıma
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 rounded-full bg-secondary-500 mr-3 mt-2" />
-                      Normatif karsilastirma (10.000+ kullanici veritabani)
+                      Normatif karşılaştırma (10.000+ kullanıcı veritabanı)
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 rounded-full bg-secondary-500 mr-3 mt-2" />
-                      Otomatik tutarlilik ve guvenirllik kontrolleri
+                      Otomatik tutarlılık ve güvenilirlik kontrolleri
                     </li>
                   </ul>
                 </CardContent>
@@ -399,19 +399,19 @@ export default function KalitePolitikasiPage() {
                   <ul className="space-y-2 text-neutral-700">
                     <li className="flex items-start">
                       <span className="w-2 h-2 rounded-full bg-accent-500 mr-3 mt-2" />
-                      Anlasilir dilde yazilmis detayli rapor (24-48 saat icinde)
+                      Anlaşılır dilde yazılmış detaylı rapor (24-48 saat içinde)
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 rounded-full bg-accent-500 mr-3 mt-2" />
-                      Kisisellestirilmis kariyer/gelisim onerileri
+                      Kişiselleştirilmiş kariyer/gelişim önerileri
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 rounded-full bg-accent-500 mr-3 mt-2" />
-                      Premium paketlerde uzman danismanligi
+                      Premium paketlerde uzman danışmanlığı
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 rounded-full bg-accent-500 mr-3 mt-2" />
-                      6-12 ay takip ve yeniden degerlendirme imkani
+                      6-12 ay takip ve yeniden değerlendirme imkanı
                     </li>
                   </ul>
                 </CardContent>
@@ -427,10 +427,10 @@ export default function KalitePolitikasiPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-                Sikayet ve Geri Bildirim Yonetimi
+                Şikayet ve Geri Bildirim Yönetimi
               </h2>
               <p className="text-neutral-600">
-                Sikayetleriniz ve geri bildirimleriniz bizim icin degerlidir
+                Şikayetleriniz ve geri bildirimleriniz bizim için değerlidir
               </p>
             </div>
 
@@ -440,28 +440,28 @@ export default function KalitePolitikasiPage() {
                   <div>
                     <h3 className="text-xl font-bold text-neutral-900 mb-4 flex items-center">
                       <MessageSquare className="w-5 h-5 text-primary-600 mr-2" />
-                      Sikayet Sureci
+                      Şikayet Süreci
                     </h3>
                     <ol className="space-y-3 text-neutral-700">
                       <li className="flex items-start">
                         <span className="w-6 h-6 rounded-full bg-primary-100 text-primary-600 text-sm font-bold flex items-center justify-center mr-3 mt-0.5">1</span>
-                        <span><strong>Basvuru:</strong> Web sitesi, e-posta veya telefon ile sikayet bildirimi</span>
+                        <span><strong>Başvuru:</strong> Web sitesi, e-posta veya telefon ile şikayet bildirimi</span>
                       </li>
                       <li className="flex items-start">
                         <span className="w-6 h-6 rounded-full bg-primary-100 text-primary-600 text-sm font-bold flex items-center justify-center mr-3 mt-0.5">2</span>
-                        <span><strong>Kayit:</strong> 2 is gunu icinde sikayet kaydinin olusturulmasi ve bildirim</span>
+                        <span><strong>Kayıt:</strong> 2 iş günü içinde şikayet kaydının oluşturulması ve bildirim</span>
                       </li>
                       <li className="flex items-start">
                         <span className="w-6 h-6 rounded-full bg-primary-100 text-primary-600 text-sm font-bold flex items-center justify-center mr-3 mt-0.5">3</span>
-                        <span><strong>Inceleme:</strong> 5 is gunu icinde detayli inceleme</span>
+                        <span><strong>İnceleme:</strong> 5 iş günü içinde detaylı inceleme</span>
                       </li>
                       <li className="flex items-start">
                         <span className="w-6 h-6 rounded-full bg-primary-100 text-primary-600 text-sm font-bold flex items-center justify-center mr-3 mt-0.5">4</span>
-                        <span><strong>Cozum:</strong> 10 is gunu icinde cozum onerisi veya aciklama</span>
+                        <span><strong>Çözüm:</strong> 10 iş günü içinde çözüm önerisi veya açıklama</span>
                       </li>
                       <li className="flex items-start">
                         <span className="w-6 h-6 rounded-full bg-primary-100 text-primary-600 text-sm font-bold flex items-center justify-center mr-3 mt-0.5">5</span>
-                        <span><strong>Takip:</strong> Memnuniyet kontrolu ve surecin kapatilmasi</span>
+                        <span><strong>Takip:</strong> Memnuniyet kontrolü ve sürecin kapatılması</span>
                       </li>
                     </ol>
                   </div>
@@ -469,29 +469,29 @@ export default function KalitePolitikasiPage() {
                   <div>
                     <h3 className="text-xl font-bold text-neutral-900 mb-4 flex items-center">
                       <Scale className="w-5 h-5 text-secondary-600 mr-2" />
-                      Itiraz Hakki
+                      İtiraz Hakkı
                     </h3>
                     <p className="text-neutral-700 mb-4">
-                      Cozumden memnun kalmamaniz durumunda:
+                      Çözümden memnun kalmamanız durumunda:
                     </p>
                     <ul className="space-y-2 text-neutral-700">
                       <li className="flex items-start">
                         <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5" />
-                        Ust yonetim degerlendirmesi talep edebilirsiniz
+                        Üst yönetim değerlendirmesi talep edebilirsiniz
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5" />
-                        Tuketici Hakem Heyeti'ne basvurabilirsiniz
+                        Tüketici Hakem Heyeti&apos;ne başvurabilirsiniz
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5" />
-                        KVKK kapsaminda veri sorumlusuna basvurabilirsiniz
+                        KVKK kapsamında veri sorumlusuna başvurabilirsiniz
                       </li>
                     </ul>
 
                     <div className="mt-6 p-4 bg-primary-50 rounded-lg">
                       <p className="text-sm text-primary-800">
-                        <strong>Iletisim:</strong><br />
+                        <strong>İletişim:</strong><br />
                         E-posta: sikayet@reflektif.net<br />
                         Telefon: 0507 43 43 253<br />
                         Form: reflektif.net/iletisim
@@ -511,10 +511,10 @@ export default function KalitePolitikasiPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-                Surekli Iyilestirme Sureci
+                Sürekli İyileştirme Süreci
               </h2>
               <p className="text-neutral-600">
-                Kalite yonetim sistemimizin temel yaklasimi
+                Kalite yönetim sistemimizin temel yaklaşımı
               </p>
             </div>
 
@@ -526,10 +526,10 @@ export default function KalitePolitikasiPage() {
                     Veri Toplama
                   </h3>
                   <ul className="space-y-1 text-sm text-neutral-700">
-                    <li>• Kullanici memnuniyet anketleri (her test sonrasi)</li>
-                    <li>• NPS (Net Promoter Score) olcumu (aylik)</li>
-                    <li>• Sikayet ve oneri analizi (haftalik)</li>
-                    <li>• Kullanim istatistikleri ve terk oranlari</li>
+                    <li>• Kullanıcı memnuniyet anketleri (her test sonrası)</li>
+                    <li>• NPS (Net Promoter Score) ölçümü (aylık)</li>
+                    <li>• Şikayet ve öneri analizi (haftalık)</li>
+                    <li>• Kullanım istatistikleri ve terk oranları</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -541,10 +541,10 @@ export default function KalitePolitikasiPage() {
                     Analiz ve Planlama
                   </h3>
                   <ul className="space-y-1 text-sm text-neutral-700">
-                    <li>• Aylik kalite toplantilari</li>
-                    <li>• Kok neden analizi (sikayet/sorunlar icin)</li>
-                    <li>• Benchmark karsilastirmalari</li>
-                    <li>• Iyilestirme onceliklerinin belirlenmesi</li>
+                    <li>• Aylık kalite toplantıları</li>
+                    <li>• Kök neden analizi (şikayet/sorunlar için)</li>
+                    <li>• Benchmark karşılaştırmaları</li>
+                    <li>• İyileştirme önceliklerinin belirlenmesi</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -556,10 +556,10 @@ export default function KalitePolitikasiPage() {
                     Uygulama
                   </h3>
                   <ul className="space-y-1 text-sm text-neutral-700">
-                    <li>• Sprint bazli iyilestirme calismalari (2 haftalik)</li>
+                    <li>• Sprint bazlı iyileştirme çalışmaları (2 haftalık)</li>
                     <li>• Test ve pilot uygulamalar</li>
-                    <li>• Personel egitimleri</li>
-                    <li>• Dokumantasyon guncellemeleri</li>
+                    <li>• Personel eğitimleri</li>
+                    <li>• Dokümantasyon güncellemeleri</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -568,13 +568,13 @@ export default function KalitePolitikasiPage() {
                 <CardContent>
                   <FileCheck className="w-8 h-8 text-green-600 mb-4" />
                   <h3 className="text-lg font-bold text-neutral-900 mb-2">
-                    Dogrulama
+                    Doğrulama
                   </h3>
                   <ul className="space-y-1 text-sm text-neutral-700">
-                    <li>• A/B testleri ile etkinlik olcumu</li>
-                    <li>• Kullanici geri bildirimi toplama</li>
+                    <li>• A/B testleri ile etkinlik ölçümü</li>
+                    <li>• Kullanıcı geri bildirimi toplama</li>
                     <li>• KPI takibi ve raporlama</li>
-                    <li>• Yillik ic denetim</li>
+                    <li>• Yıllık iç denetim</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -582,12 +582,12 @@ export default function KalitePolitikasiPage() {
 
             <div className="mt-8 p-6 bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl">
               <h3 className="text-xl font-bold text-neutral-900 mb-4">
-                2024-2025 Iyilestirme Hedeflerimiz
+                2024-2025 İyileştirme Hedeflerimiz
               </h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-2 mt-0.5" />
-                  <span className="text-neutral-700">Memnuniyet oranini %96'ya cikarmak</span>
+                  <span className="text-neutral-700">Memnuniyet oranını %96&apos;ya çıkarmak</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-2 mt-0.5" />
@@ -595,19 +595,19 @@ export default function KalitePolitikasiPage() {
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-2 mt-0.5" />
-                  <span className="text-neutral-700">MYK resmi ortakligi kurmak</span>
+                  <span className="text-neutral-700">MYK resmi ortaklığı kurmak</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-2 mt-0.5" />
-                  <span className="text-neutral-700">Erisilebilirlik WCAG 2.1 AAA seviyesi</span>
+                  <span className="text-neutral-700">Erişilebilirlik WCAG 2.1 AAA seviyesi</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-2 mt-0.5" />
-                  <span className="text-neutral-700">Destek cevap suresini 1 saate dusurmek</span>
+                  <span className="text-neutral-700">Destek cevap süresini 1 saate düşürmek</span>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-2 mt-0.5" />
-                  <span className="text-neutral-700">Yeni 3 dil destegi eklemek</span>
+                  <span className="text-neutral-700">Yeni 3 dil desteği eklemek</span>
                 </div>
               </div>
             </div>
@@ -621,7 +621,7 @@ export default function KalitePolitikasiPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-                Ekip Yetkinlikleri ve Egitim
+                Ekip Yetkinlikleri ve Eğitim
               </h2>
               <p className="text-neutral-600">
                 Hizmet kalitemizi garantileyen uzman kadromuz
@@ -632,25 +632,25 @@ export default function KalitePolitikasiPage() {
               <Card variant="bordered" padding="lg">
                 <CardContent>
                   <h3 className="text-xl font-bold text-neutral-900 mb-4">
-                    Danismanlarimizin Nitelikleri
+                    Danışmanlarımızın Nitelikleri
                   </h3>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <h4 className="font-semibold text-neutral-800 mb-2">Egitim Gereksinimleri</h4>
+                      <h4 className="font-semibold text-neutral-800 mb-2">Eğitim Gereksinimleri</h4>
                       <ul className="space-y-1 text-sm text-neutral-700">
-                        <li>• Psikoloji, PDR veya IK alaninda lisans derecesi</li>
-                        <li>• Kariyer danismanligi sertifikasi</li>
-                        <li>• Minimum 3 yil saha deneyimi</li>
+                        <li>• Psikoloji, PDR veya İK alanında lisans derecesi</li>
+                        <li>• Kariyer danışmanlığı sertifikası</li>
+                        <li>• Minimum 3 yıl saha deneyimi</li>
                         <li>• Psikometrik test uygulama yetkisi</li>
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-neutral-800 mb-2">Surekli Egitim</h4>
+                      <h4 className="font-semibold text-neutral-800 mb-2">Sürekli Eğitim</h4>
                       <ul className="space-y-1 text-sm text-neutral-700">
-                        <li>• Yillik 40 saat mesleki gelisim egitimi</li>
-                        <li>• Platform kullanim sertifikasyonu (yenileme)</li>
-                        <li>• KVKK ve veri guvenligi egitimi</li>
-                        <li>• Etik kurallar ve surekli gelisim</li>
+                        <li>• Yıllık 40 saat mesleki gelişim eğitimi</li>
+                        <li>• Platform kullanım sertifikasyonu (yenileme)</li>
+                        <li>• KVKK ve veri güvenliği eğitimi</li>
+                        <li>• Etik kurallar ve sürekli gelişim</li>
                       </ul>
                     </div>
                   </div>
@@ -666,17 +666,17 @@ export default function KalitePolitikasiPage() {
                     <div>
                       <h4 className="font-semibold text-neutral-800 mb-2">AI ve Veri Bilimi</h4>
                       <ul className="space-y-1 text-sm text-neutral-700">
-                        <li>• Makine ogrenmesi ve NLP uzmanligi</li>
+                        <li>• Makine öğrenmesi ve NLP uzmanlığı</li>
                         <li>• Psikometrik veri analizi deneyimi</li>
-                        <li>• Model dogrulama ve validasyon</li>
+                        <li>• Model doğrulama ve validasyon</li>
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-neutral-800 mb-2">Guvenlik ve Uyum</h4>
+                      <h4 className="font-semibold text-neutral-800 mb-2">Güvenlik ve Uyum</h4>
                       <ul className="space-y-1 text-sm text-neutral-700">
-                        <li>• KVKK ve GDPR uyum uzmanligi</li>
-                        <li>• Siber guvenlik sertifikalari</li>
-                        <li>• Veri guvenligi denetimleri</li>
+                        <li>• KVKK ve GDPR uyum uzmanlığı</li>
+                        <li>• Siber güvenlik sertifikaları</li>
+                        <li>• Veri güvenliği denetimleri</li>
                       </ul>
                     </div>
                   </div>
@@ -692,16 +692,16 @@ export default function KalitePolitikasiPage() {
         <Container>
           <div className="text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Kalite Taahhutumuzle Tanisın
+              Kalite Taahhütümüzle Tanışın
             </h2>
             <p className="text-white/80 mb-8 max-w-2xl mx-auto">
-              Sorulariniz mi var? Kalite politikamiz hakkinda daha fazla bilgi
-              almak veya geri bildirimde bulunmak icin bizimle iletisime gecin.
+              Sorularınız mı var? Kalite politikamız hakkında daha fazla bilgi
+              almak veya geri bildirimde bulunmak için bizimle iletişime geçin.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/iletisim">
                 <Button variant="white" size="lg">
-                  Iletisime Gec
+                  İletişime Geç
                 </Button>
               </Link>
               <Link href="/kayit">
@@ -710,7 +710,7 @@ export default function KalitePolitikasiPage() {
                   size="lg"
                   className="border-white text-white hover:bg-white/10"
                 >
-                  Ucretsiz Dene
+                  Ücretsiz Dene
                 </Button>
               </Link>
             </div>

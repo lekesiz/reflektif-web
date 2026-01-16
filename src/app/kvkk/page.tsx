@@ -13,7 +13,7 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
-import { Container, Card, CardContent, Badge, Button } from "@/components/ui";
+import { Container, Card, CardContent, Badge } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "KVKK Aydınlatma Metni",
@@ -37,7 +37,7 @@ export default function KVKKPage() {
             Son güncelleme: 16 Ocak 2025
           </p>
           <p className="text-neutral-600">
-            6698 sayılı Kişisel Verilerin Korunması Kanunu'nun ("Kanun") 10. maddesi
+            6698 sayılı Kişisel Verilerin Korunması Kanunu&apos;nun (&quot;Kanun&quot;) 10. maddesi
             uyarınca, veri sorumlusu sıfatıyla Reflektif Teknoloji A.Ş. tarafından
             kişisel verilerinizin işlenmesine ilişkin aydınlatma metnidir.
           </p>
@@ -177,7 +177,7 @@ export default function KVKKPage() {
             </div>
 
             <p className="text-neutral-700 mb-6">
-              Kişisel verileriniz, Kanun'un 5. ve 6. maddelerinde belirtilen kişisel veri
+              Kişisel verileriniz, Kanun&apos;un 5. ve 6. maddelerinde belirtilen kişisel veri
               işleme şartları dahilinde aşağıdaki amaçlarla işlenmektedir:
             </p>
 
@@ -216,7 +216,7 @@ export default function KVKKPage() {
             </div>
 
             <p className="text-neutral-700 mb-6">
-              Kişisel verileriniz, Kanun'un 5. maddesinde belirtilen aşağıdaki hukuki
+              Kişisel verileriniz, Kanun&apos;un 5. maddesinde belirtilen aşağıdaki hukuki
               sebeplere dayanılarak işlenmektedir:
             </p>
 
@@ -284,7 +284,7 @@ export default function KVKKPage() {
             </div>
 
             <p className="text-neutral-700 mb-6">
-              Kişisel verileriniz, Kanun'un 8. ve 9. maddelerinde belirtilen şartlar
+              Kişisel verileriniz, Kanun&apos;un 8. ve 9. maddelerinde belirtilen şartlar
               dahilinde aşağıdaki taraflara aktarılabilmektedir:
             </p>
 
@@ -366,7 +366,7 @@ export default function KVKKPage() {
             </div>
 
             <p className="text-neutral-700 mb-6">
-              Kanun'un 11. maddesi uyarınca, kişisel veri sahibi olarak aşağıdaki
+              Kanun&apos;un 11. maddesi uyarınca, kişisel veri sahibi olarak aşağıdaki
               haklara sahipsiniz:
             </p>
 
@@ -378,7 +378,7 @@ export default function KVKKPage() {
                   "Kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme",
                   "Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme",
                   "Kişisel verilerinizin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme",
-                  "Kanun'un 7. maddesinde öngörülen şartlar çerçevesinde kişisel verilerinizin silinmesini veya yok edilmesini isteme",
+                  "Kanun&apos;un 7. maddesinde öngörülen şartlar çerçevesinde kişisel verilerinizin silinmesini veya yok edilmesini isteme",
                   "Düzeltme, silme veya yok etme işlemlerinin, kişisel verilerinizin aktarıldığı üçüncü kişilere bildirilmesini isteme",
                   "İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme",
                   "Kişisel verilerinizin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme",

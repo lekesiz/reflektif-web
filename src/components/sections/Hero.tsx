@@ -26,41 +26,41 @@ export function Hero() {
           >
             <Badge variant="primary" size="lg" className="mb-6">
               <Sparkles className="w-4 h-4 mr-2" />
-              Turkiye&apos;nin Ilk AI Destekli Platformu
+              Türkiye&apos;nin İlk AI Destekli Platformu
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-6 leading-tight">
-              Kendini Kesfet,{" "}
+              Kendini Keşfet,{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500">
-                Gelecegini Sec
+                Geleceğini Seç
               </span>
             </h1>
 
             <p className="text-lg md:text-xl text-neutral-600 mb-8 leading-relaxed max-w-xl">
-              AI destekli yetkinlik degerlendirme ve meslek eslestirme platformu
-              ile dogru kariyer kararlarini al. Kisiligini, yeteneklerini ve
-              tutkularini kesfet.
+              AI destekli yetkinlik değerlendirme ve meslek eşleştirme platformu
+              ile doğru kariyer kararlarını al. Kişiliğini, yeteneklerini ve
+              tutkularını keşfet.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Link href="/kayit">
                 <Button size="lg" rightIcon={<ArrowRight className="w-5 h-5" />}>
-                  Ucretsiz Basla
+                  Ücretsiz Başla
                 </Button>
               </Link>
               <Button variant="outline" size="lg" leftIcon={<Play className="w-5 h-5" />}>
-                Nasil Calisir?
+                Nasıl Çalışır?
               </Button>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6 text-sm text-neutral-600">
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                Ucretsiz temel test
+                Ücretsiz temel test
               </div>
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                15 dakikada sonuc
+                15 dakikada sonuç
               </div>
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
@@ -86,18 +86,18 @@ export function Hero() {
                       A
                     </div>
                     <div>
-                      <p className="font-semibold text-neutral-900">Ayse Yilmaz</p>
-                      <p className="text-sm text-neutral-600">Kisilik Tipi: ENFJ</p>
+                      <p className="font-semibold text-neutral-900">Ayşe Yılmaz</p>
+                      <p className="text-sm text-neutral-600">Kişilik Tipi: ENFJ</p>
                     </div>
                   </div>
 
                   {/* Skills Radar Preview */}
                   <div className="space-y-3">
-                    <p className="font-medium text-neutral-900">Yetenek Haritasi</p>
+                    <p className="font-medium text-neutral-900">Yetenek Haritası</p>
                     {[
-                      { label: "Analitik Dusunme", value: 92 },
-                      { label: "Iletisim", value: 88 },
-                      { label: "Yaraticilik", value: 85 },
+                      { label: "Analitik Düşünme", value: 92 },
+                      { label: "İletişim", value: 88 },
+                      { label: "Yaratıcılık", value: 85 },
                       { label: "Liderlik", value: 78 },
                     ].map((skill) => (
                       <div key={skill.label} className="space-y-1">
@@ -121,7 +121,7 @@ export function Hero() {
                   <div className="p-4 bg-accent-50 rounded-2xl">
                     <p className="font-medium text-accent-700 mb-2">En Uygun Meslekler</p>
                     <div className="flex flex-wrap gap-2">
-                      {["UX Tasarimci", "Proje Yoneticisi", "Danismanlik"].map((job) => (
+                      {["UX Tasarımcı", "Proje Yöneticisi", "Danışmanlık"].map((job) => (
                         <span
                           key={job}
                           className="px-3 py-1 bg-white rounded-full text-sm text-neutral-700"
@@ -145,8 +145,8 @@ export function Hero() {
                     <CheckCircle className="w-5 h-5 text-green-600" />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-neutral-900">%92 Eslesme</p>
-                    <p className="text-xs text-neutral-600">UX Tasarimci</p>
+                    <p className="text-sm font-medium text-neutral-900">%92 Eşleşme</p>
+                    <p className="text-xs text-neutral-600">UX Tasarımcı</p>
                   </div>
                 </div>
               </motion.div>
@@ -158,7 +158,7 @@ export function Hero() {
               >
                 <div className="flex items-center space-x-2">
                   <Sparkles className="w-6 h-6 text-primary-500" />
-                  <p className="text-sm font-medium text-neutral-900">AI Analiz Tamamlandi</p>
+                  <p className="text-sm font-medium text-neutral-900">AI Analiz Tamamlandı</p>
                 </div>
               </motion.div>
             </div>

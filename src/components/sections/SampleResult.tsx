@@ -19,24 +19,24 @@ import { Container, Button, Badge, Card, CardContent } from "@/components/ui";
 
 const sampleProfile = {
   name: "Elif Demir",
-  type: "ENFJ - Ilham Veren Lider",
+  type: "ENFJ - İlham Veren Lider",
   avatar: "E",
   topMatches: [
-    { job: "UX/UI Tasarimci", match: 94, trend: "up" },
-    { job: "Proje Yoneticisi", match: 89, trend: "up" },
-    { job: "Egitim Danismani", match: 87, trend: "stable" },
-    { job: "Icerik Stratejisti", match: 82, trend: "up" },
+    { job: "UX/UI Tasarımcı", match: 94, trend: "up" },
+    { job: "Proje Yöneticisi", match: 89, trend: "up" },
+    { job: "Eğitim Danışmanı", match: 87, trend: "stable" },
+    { job: "İçerik Stratejisti", match: 82, trend: "up" },
   ],
   skills: [
-    { name: "Yaratici Dusunme", score: 95, color: "primary" },
-    { name: "Iletisim", score: 92, color: "secondary" },
-    { name: "Problem Cozme", score: 88, color: "accent" },
+    { name: "Yaratıcı Düşünme", score: 95, color: "primary" },
+    { name: "İletişim", score: 92, color: "secondary" },
+    { name: "Problem Çözme", score: 88, color: "accent" },
     { name: "Liderlik", score: 85, color: "primary" },
     { name: "Analitik", score: 78, color: "secondary" },
   ],
-  interests: ["Tasarim", "Psikoloji", "Teknoloji", "Egitim"],
+  interests: ["Tasarım", "Psikoloji", "Teknoloji", "Eğitim"],
   aiInsight:
-    "Elif'in guclü yaratici düşünme ve iletişim becerileri, insan odaklı tasarım rollerinde öne çıkmasını sağlıyor. UX/UI alanında %94 uyum skoru, hem teknik hem de empatik yeteneklerinin mükemmel bir kesişimini yansıtıyor.",
+    "Elif'in güçlü yaratıcı düşünme ve iletişim becerileri, insan odaklı tasarım rollerinde öne çıkmasını sağlıyor. UX/UI alanında %94 uyum skoru, hem teknik hem de empatik yeteneklerinin mükemmel bir kesişimini yansıtıyor.",
 };
 
 export function SampleResult() {
@@ -51,17 +51,17 @@ export function SampleResult() {
           className="text-center mb-12"
         >
           <Badge variant="primary" size="lg" className="mb-6">
-            Ornek Sonuc
+            Örnek Sonuç
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
-            Sonuclariniz Boyle{" "}
+            Sonuçlarınız Böyle{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
-              Gorunecek
+              Görünecek
             </span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            AI destekli analizimiz, kisilik profilinizi, yeteneklerinizi ve
-            ilgi alanlarinizi detayli sekilde degerlendirir.
+            AI destekli analizimiz, kişilik profilinizi, yeteneklerinizi ve
+            ilgi alanlarınızı detaylı şekilde değerlendirir.
           </p>
         </motion.div>
 
@@ -121,7 +121,7 @@ export function SampleResult() {
                 <div>
                   <h4 className="font-semibold text-neutral-900 flex items-center mb-3">
                     <Heart className="w-4 h-4 mr-2 text-red-500" />
-                    Ilgi Alanlari
+                    İlgi Alanları
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {sampleProfile.interests.map((interest) => (
@@ -172,7 +172,7 @@ export function SampleResult() {
                             {match.trend === "up" ? (
                               <>
                                 <TrendingUp className="w-3 h-3 mr-1 text-green-400" />
-                                Yukselis trendinde
+                                Yükseliş trendinde
                               </>
                             ) : (
                               <>
@@ -212,7 +212,7 @@ export function SampleResult() {
               <CardContent>
                 <h4 className="font-semibold text-neutral-900 flex items-center mb-4">
                   <Star className="w-5 h-5 mr-2 text-yellow-500" />
-                  AI Analiz Ozeti
+                  AI Analiz Özeti
                 </h4>
 
                 <div className="p-4 bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl mb-6">
@@ -222,12 +222,12 @@ export function SampleResult() {
                 </div>
 
                 <div className="space-y-4">
-                  <h5 className="font-medium text-neutral-900">Onerilen Aksiyonlar</h5>
+                  <h5 className="font-medium text-neutral-900">Önerilen Aksiyonlar</h5>
                   {[
-                    "UX/UI tasarim egitimlerine katil",
-                    "Portfolio olustur ve GitHub'a yukle",
-                    "Tasarim toplukluklarina katil",
-                    "Staj basvurularini baslat",
+                    "UX/UI tasarım eğitimlerine katıl",
+                    "Portfolio oluştur ve GitHub'a yükle",
+                    "Tasarım topluluklarına katıl",
+                    "Staj başvurularını başlat",
                   ].map((action, index) => (
                     <div
                       key={index}
@@ -255,7 +255,7 @@ export function SampleResult() {
         >
           <Link href="/kayit">
             <Button size="lg" rightIcon={<ArrowRight className="w-5 h-5" />}>
-              Kendi Sonuclarini Gor
+              Kendi Sonuçlarını Gör
             </Button>
           </Link>
         </motion.div>

@@ -17,32 +17,32 @@ import { Container, Button, Badge, Card, CardContent } from "@/components/ui";
 
 const riskLevels = [
   {
-    level: "Dusuk Risk",
+    level: "Düşük Risk",
     percentage: "0-25%",
     color: "green",
-    description: "Yaratici, stratejik ve insan iliskisi gerektiren meslekler",
-    examples: ["Psikolog", "Tasarimci", "Ogretmen", "Avukat"],
+    description: "Yaratıcı, stratejik ve insan ilişkisi gerektiren meslekler",
+    examples: ["Psikolog", "Tasarımcı", "Öğretmen", "Avukat"],
   },
   {
     level: "Orta Risk",
     percentage: "25-50%",
     color: "yellow",
-    description: "Kismi otomasyon potansiyeli olan, hibrit beceri gerektiren roller",
-    examples: ["Pazarlamaci", "Analist", "Muhendis", "Yonetici"],
+    description: "Kısmi otomasyon potansiyeli olan, hibrit beceri gerektiren roller",
+    examples: ["Pazarlamacı", "Analist", "Mühendis", "Yönetici"],
   },
   {
-    level: "Yuksek Risk",
+    level: "Yüksek Risk",
     percentage: "50-75%",
     color: "orange",
-    description: "Rutin gorevleri agirlikli, otomasyon altinda olan meslekler",
-    examples: ["Veri Girisi", "Muhasebe", "Musteri Hizmetleri", "Sekreterlik"],
+    description: "Rutin görevleri ağırlıklı, otomasyon altında olan meslekler",
+    examples: ["Veri Girişi", "Muhasebe", "Müşteri Hizmetleri", "Sekreterlik"],
   },
   {
-    level: "Cok Yuksek Risk",
+    level: "Çok Yüksek Risk",
     percentage: "75-100%",
     color: "red",
-    description: "Yakin gelecekte buyuk olcude otomatize edilecek roller",
-    examples: ["Kasiyerlik", "Depo Iscilik", "Cagri Merkezi", "Montaj Hatti"],
+    description: "Yakın gelecekte büyük ölçüde otomatize edilecek roller",
+    examples: ["Kasiyerlik", "Depo İşçilik", "Çağrı Merkezi", "Montaj Hattı"],
   },
 ];
 
@@ -76,23 +76,23 @@ const colorClasses = {
 const futureSkills = [
   {
     icon: Lightbulb,
-    title: "Yaratici Dusunme",
-    description: "AI'nin taklit edemeyecegi orijinal fikirler uretme yetisi",
+    title: "Yaratıcı Düşünme",
+    description: "AI'nin taklit edemeyeceği orijinal fikirler üretme yetisi",
   },
   {
     icon: TrendingUp,
     title: "Adaptasyon",
-    description: "Degisen teknolojilere hizla uyum saglama becerisi",
+    description: "Değişen teknolojilere hızla uyum sağlama becerisi",
   },
   {
     icon: Shield,
     title: "Duygusal Zeka",
-    description: "Insan iliskilerini yonetme ve empati kurma yetenegi",
+    description: "İnsan ilişkilerini yönetme ve empati kurma yeteneği",
   },
   {
     icon: Bot,
-    title: "AI Isbirligi",
-    description: "Yapay zeka araclariyla verimli calisabilme yetkinligi",
+    title: "AI İşbirliği",
+    description: "Yapay zeka araçlarıyla verimli çalışabilme yetkinliği",
   },
 ];
 
@@ -110,7 +110,7 @@ export function AIFuture() {
         >
           <Badge variant="accent" size="lg" className="mb-6">
             <Bot className="w-4 h-4 mr-2" />
-            Yapay Zeka Cagi
+            Yapay Zeka Çağı
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Kariyerin{" "}
@@ -120,8 +120,8 @@ export function AIFuture() {
             mu?
           </h2>
           <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
-            Yapay zeka is piyasasini hizla donusturuyor. Bazi meslekler risk
-            altindayken, bazilari daha degerli hale geliyor. Senin meslegin
+            Yapay zeka iş piyasasını hızla dönüştürüyor. Bazı meslekler risk
+            altındayken, bazıları daha değerli hale geliyor. Senin mesleğin
             hangi kategoride?
           </p>
         </motion.div>
@@ -183,7 +183,7 @@ export function AIFuture() {
           className="mb-16"
         >
           <h3 className="text-2xl font-bold text-center mb-8">
-            Gelecege Hazir Beceriler
+            Geleceğe Hazır Beceriler
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {futureSkills.map((skill, index) => (
@@ -219,7 +219,7 @@ export function AIFuture() {
                 Kariyer Risk Analizini Yap
               </h3>
               <p className="text-neutral-300 text-sm">
-                AI destekli analizimizle mesleginin gelecekteki durumunu ogren
+                AI destekli analizimizle mesleğinin gelecekteki durumunu öğren
               </p>
             </div>
             <Link href="/testler/kariyer-risk-analizi">
@@ -228,7 +228,7 @@ export function AIFuture() {
                 size="lg"
                 rightIcon={<ArrowRight className="w-5 h-5" />}
               >
-                Ucretsiz Analiz
+                Ücretsiz Analiz
               </Button>
             </Link>
           </div>

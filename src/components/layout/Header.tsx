@@ -144,12 +144,12 @@ export function Header() {
           <div className="hidden lg:flex items-center space-x-3">
             <Link href="/giris">
               <Button variant="ghost" size="sm">
-                Giris Yap
+                Giriş Yap
               </Button>
             </Link>
             <Link href="/kayit">
               <Button variant="primary" size="sm">
-                Ucretsiz Basla
+                Ücretsiz Başla
               </Button>
             </Link>
           </div>
@@ -241,12 +241,12 @@ export function Header() {
                 <div className="pt-4 border-t border-neutral-100 space-y-2">
                   <Link href="/giris" className="block">
                     <Button variant="outline" size="md" className="w-full">
-                      Giris Yap
+                      Giriş Yap
                     </Button>
                   </Link>
                   <Link href="/kayit" className="block">
                     <Button variant="primary" size="md" className="w-full">
-                      Ucretsiz Basla
+                      Ücretsiz Başla
                     </Button>
                   </Link>
                 </div>

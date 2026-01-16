@@ -17,42 +17,42 @@ const features = [
     icon: Brain,
     title: "AI Destekli Analiz",
     description:
-      "Gelismis yapay zeka algoritmalariyla kisilik, yetenek ve ilgi alanlarinizi derinlemesine analiz edin.",
+      "Gelişmiş yapay zeka algoritmalarıyla kişilik, yetenek ve ilgi alanlarınızı derinlemesine analiz edin.",
     color: "primary",
   },
   {
     icon: Target,
-    title: "Hassas Eslestirme",
+    title: "Hassas Eşleştirme",
     description:
-      "250+ meslek ve binlerce veri noktasiyla size en uygun kariyer yollarini kesfetmenizi saglariz.",
+      "250+ meslek ve binlerce veri noktasıyla size en uygun kariyer yollarını keşfetmenizi sağlarız.",
     color: "secondary",
   },
   {
     icon: Heart,
     title: "Hobi-Meslek Uyumu",
     description:
-      "Tutkulariniz ve hobilerinizle uyumlu meslekleri kesfederek anlamli bir kariyer insaa edin.",
+      "Tutkularınız ve hobilerinizle uyumlu meslekleri keşfederek anlamlı bir kariyer inşa edin.",
     color: "accent",
   },
   {
     icon: LineChart,
-    title: "Detayli Raporlama",
+    title: "Detaylı Raporlama",
     description:
-      "Profesyonel PDF raporlar, interaktif dashboard ve zaman icinde gelisim takibi.",
+      "Profesyonel PDF raporlar, interaktif dashboard ve zaman içinde gelişim takibi.",
     color: "primary",
   },
   {
     icon: Shield,
     title: "KVKK Uyumlu",
     description:
-      "Verileriniz AES-256 ile sifrelenir, KVKK kapsaminda korunur ve asla ucuncu taraflarla paylasilmaz.",
+      "Verileriniz AES-256 ile şifrelenir, KVKK kapsamında korunur ve asla üçüncü taraflarla paylaşılmaz.",
     color: "secondary",
   },
   {
     icon: Zap,
-    title: "Hizli Sonuclar",
+    title: "Hızlı Sonuçlar",
     description:
-      "15-20 dakikalik testler, aninda AI analizi ve kisisellestirilmis kariyer onerileri.",
+      "15-20 dakikalık testler, anında AI analizi ve kişiselleştirilmiş kariyer önerileri.",
     color: "accent",
   },
 ];
@@ -93,8 +93,8 @@ export function Features() {
             </span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Modern teknoloji ve bilimsel metodolojileri birlestirerek kariyer
-            yolculugunuzda size rehberlik ediyoruz.
+            Modern teknoloji ve bilimsel metodolojileri birleştirerek kariyer
+            yolculuğunuzda size rehberlik ediyoruz.
           </p>
         </motion.div>
 

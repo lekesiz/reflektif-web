@@ -17,7 +17,6 @@ import {
   AlertCircle,
   Sparkles,
   CircleDot,
-  Briefcase,
   Shield,
 } from "lucide-react";
 import { Container, Card, CardContent, Button, Badge } from "@/components/ui";
@@ -34,8 +33,8 @@ const moduleIcons: Record<string, React.ElementType> = {
 };
 
 export async function generateStaticParams() {
-  return modules.map((module) => ({
-    slug: module.slug,
+  return modules.map((m) => ({
+    slug: m.slug,
   }));
 }
 
@@ -45,17 +44,17 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const module = getModuleBySlug(slug);
+  const moduleData = getModuleBySlug(slug);
 
-  if (!module) {
+  if (!moduleData) {
     return {
       title: "Modul Bulunamadi",
     };
   }
 
   return {
-    title: module.name,
-    description: module.longDescription,
+    title: moduleData.name,
+    description: moduleData.longDescription,
   };
 }
 
@@ -65,13 +64,13 @@ export default async function ModulePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const module = getModuleBySlug(slug);
+  const moduleData = getModuleBySlug(slug);
 
-  if (!module) {
+  if (!moduleData) {
     notFound();
   }
 
-  const Icon = moduleIcons[module.icon];
+  const Icon = moduleIcons[moduleData.icon];
 
   return (
     <div className="pt-32 pb-24">
@@ -85,22 +84,22 @@ export default async function ModulePage({
                   <Icon className="w-7 h-7 text-primary-600" />
                 </div>
                 <Badge variant="primary" size="lg">
-                  {module.title}
+                  {moduleData.title}
                 </Badge>
               </div>
 
               <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-                {module.name}
+                {moduleData.name}
               </h1>
 
               <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-                {module.longDescription}
+                {moduleData.longDescription}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/kayit">
                   <Button size="lg" rightIcon={<ArrowRight className="w-5 h-5" />}>
-                    {module.cta}
+                    {moduleData.cta}
                   </Button>
                 </Link>
                 <Link href="/iletisim">
@@ -116,7 +115,7 @@ export default async function ModulePage({
                 Hedef Kitle
               </h3>
               <ul className="space-y-3 mb-8">
-                {module.targetAudience.map((audience) => (
+                {moduleData.targetAudience.map((audience) => (
                   <li key={audience} className="flex items-center text-neutral-700">
                     <CheckCircle className="w-5 h-5 text-primary-500 mr-3 flex-shrink-0" />
                     {audience}
@@ -128,7 +127,7 @@ export default async function ModulePage({
                 Temel Avantajlar
               </h3>
               <ul className="space-y-3">
-                {module.benefits.map((benefit) => (
+                {moduleData.benefits.map((benefit) => (
                   <li key={benefit} className="flex items-center text-neutral-700">
                     <Star className="w-5 h-5 text-accent-500 mr-3 flex-shrink-0" />
                     {benefit}
@@ -141,7 +140,7 @@ export default async function ModulePage({
       </section>
 
       {/* Highlights Section */}
-      {module.highlights && module.highlights.length > 0 && (
+      {moduleData.highlights && moduleData.highlights.length > 0 && (
         <section className="py-12 bg-gradient-to-r from-primary-600 to-secondary-600">
           <Container>
             <div className="text-center mb-8">
@@ -150,7 +149,7 @@ export default async function ModulePage({
               </h2>
             </div>
             <div className="flex flex-wrap justify-center gap-4">
-              {module.highlights.map((highlight, index) => (
+              {moduleData.highlights.map((highlight, index) => (
                 <div
                   key={index}
                   className="flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3"
@@ -165,7 +164,7 @@ export default async function ModulePage({
       )}
 
       {/* Program Phases Section */}
-      {module.programPhases && module.programPhases.length > 0 && (
+      {moduleData.programPhases && moduleData.programPhases.length > 0 && (
         <section className="py-16 bg-neutral-50">
           <Container>
             <div className="text-center mb-12">
@@ -185,7 +184,7 @@ export default async function ModulePage({
               <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary-500 via-secondary-500 to-accent-500" />
 
               <div className="space-y-12">
-                {module.programPhases.map((phase, index) => {
+                {moduleData.programPhases.map((phase, index) => {
                   const isEven = index % 2 === 0;
                   const phaseColors = [
                     "bg-primary-500",
@@ -286,7 +285,7 @@ export default async function ModulePage({
       )}
 
       {/* Prerequisites & Quality Info Section */}
-      {(module.prerequisites || module.evaluationMethods || module.duration || module.certifications) && (
+      {(moduleData.prerequisites || moduleData.evaluationMethods || moduleData.duration || moduleData.certifications) && (
         <section className="py-16 bg-white">
           <Container>
             <div className="text-center mb-12">
@@ -299,7 +298,7 @@ export default async function ModulePage({
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {module.prerequisites && (
+              {moduleData.prerequisites && (
                 <Card variant="bordered">
                   <CardContent>
                     <div className="flex items-center gap-2 mb-4">
@@ -307,7 +306,7 @@ export default async function ModulePage({
                       <h3 className="font-bold text-neutral-900">On Kosullar</h3>
                     </div>
                     <ul className="space-y-2">
-                      {module.prerequisites.map((prereq) => (
+                      {moduleData.prerequisites.map((prereq) => (
                         <li key={prereq} className="flex items-start text-sm text-neutral-700">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                           {prereq}
@@ -318,7 +317,7 @@ export default async function ModulePage({
                 </Card>
               )}
 
-              {module.evaluationMethods && (
+              {moduleData.evaluationMethods && (
                 <Card variant="bordered">
                   <CardContent>
                     <div className="flex items-center gap-2 mb-4">
@@ -326,7 +325,7 @@ export default async function ModulePage({
                       <h3 className="font-bold text-neutral-900">Degerlendirme</h3>
                     </div>
                     <ul className="space-y-2">
-                      {module.evaluationMethods.map((method) => (
+                      {moduleData.evaluationMethods.map((method) => (
                         <li key={method} className="flex items-start text-sm text-neutral-700">
                           <span className="w-1.5 h-1.5 rounded-full bg-secondary-500 mr-2 mt-2 flex-shrink-0" />
                           {method}
@@ -337,14 +336,14 @@ export default async function ModulePage({
                 </Card>
               )}
 
-              {module.duration && (
+              {moduleData.duration && (
                 <Card variant="bordered">
                   <CardContent>
                     <div className="flex items-center gap-2 mb-4">
                       <Clock className="w-5 h-5 text-accent-600" />
                       <h3 className="font-bold text-neutral-900">Sure</h3>
                     </div>
-                    <p className="text-neutral-700">{module.duration}</p>
+                    <p className="text-neutral-700">{moduleData.duration}</p>
                     <p className="text-sm text-neutral-500 mt-2">
                       Testler dilediginiz zaman durdurulabilir ve kalinan yerden devam edilebilir.
                     </p>
@@ -352,7 +351,7 @@ export default async function ModulePage({
                 </Card>
               )}
 
-              {module.certifications && (
+              {moduleData.certifications && (
                 <Card variant="bordered">
                   <CardContent>
                     <div className="flex items-center gap-2 mb-4">
@@ -360,7 +359,7 @@ export default async function ModulePage({
                       <h3 className="font-bold text-neutral-900">Sertifikasyonlar</h3>
                     </div>
                     <ul className="space-y-2">
-                      {module.certifications.map((cert) => (
+                      {moduleData.certifications.map((cert) => (
                         <li key={cert} className="flex items-start text-sm text-neutral-700">
                           <Badge variant="primary" size="sm" className="mr-2">{cert}</Badge>
                         </li>
@@ -388,12 +387,12 @@ export default async function ModulePage({
               Ozellikler
             </h2>
             <p className="text-neutral-600 max-w-2xl mx-auto">
-              {module.name} ile neler yapabilirsiniz?
+              {moduleData.name} ile neler yapabilirsiniz?
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {module.features.map((feature) => (
+            {moduleData.features.map((feature) => (
               <Card key={feature.title} variant="elevated" hover>
                 <CardContent>
                   <h3 className="text-lg font-bold text-neutral-900 mb-2">
@@ -420,7 +419,7 @@ export default async function ModulePage({
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {module.pricing.map((plan) => (
+            {moduleData.pricing.map((plan) => (
               <Card
                 key={plan.name}
                 variant={plan.highlighted ? "gradient" : "bordered"}
@@ -508,7 +507,7 @@ export default async function ModulePage({
             </p>
             <Link href="/kayit">
               <Button variant="white" size="lg">
-                {module.cta}
+                {moduleData.cta}
               </Button>
             </Link>
           </div>

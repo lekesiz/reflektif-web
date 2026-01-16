@@ -54,14 +54,14 @@ export function Modules() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
-            Her Ihtiyaca Uygun{" "}
+            Her İhtiyaca Uygun{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
-              Cozumler
+              Çözümler
             </span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Ogrenciden profesyonele, bireyden kuruma herkes icin ozel
-            tasarlanmis moduller.
+            Öğrenciden profesyonele, bireyden kuruma herkes için özel
+            tasarlanmış modüller.
           </p>
         </motion.div>
 
@@ -112,7 +112,7 @@ export function Modules() {
                         className="w-full"
                         rightIcon={<ArrowRight className="w-4 h-4" />}
                       >
-                        Detayli Incele
+                        Detaylı İncele
                       </Button>
                     </Link>
                   </CardContent>

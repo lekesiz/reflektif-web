@@ -17,14 +17,14 @@ const steps = [
   {
     number: "01",
     icon: ClipboardList,
-    title: "Sorulari Yanitla",
+    title: "Soruları Yanıtla",
     description:
-      "Kisilik, yetenek ve ilgi alanlarinizi olcen bilimsel temelli sorulari yanitlayin. Testlerimiz Holland RIASEC ve Big Five metodolojilerine dayanir.",
+      "Kişilik, yetenek ve ilgi alanlarınızı ölçen bilimsel temelli soruları yanıtlayın. Testlerimiz Holland RIASEC ve Big Five metodolojilerine dayanır.",
     duration: "15-20 dakika",
     features: [
-      "Kisilik envanteri",
+      "Kişilik envanteri",
       "Yetenek testleri",
-      "Ilgi alani analizi",
+      "İlgi alanı analizi",
     ],
     color: "primary",
   },
@@ -33,40 +33,40 @@ const steps = [
     icon: Brain,
     title: "AI Analiz Etsin",
     description:
-      "Gelismis yapay zeka algoritmamiz cevaplarnizi analiz eder, 250+ meslek ve binlerce veri noktasiyla karsilastirir.",
-    duration: "Anlik sonuc",
+      "Gelişmiş yapay zeka algoritmamız cevaplarınızı analiz eder, 250+ meslek ve binlerce veri noktasıyla karşılaştırır.",
+    duration: "Anlık sonuç",
     features: [
-      "Derin ogrenme modelleri",
-      "10.000+ kullanici verisi",
-      "Surekli iyilestirme",
+      "Derin öğrenme modelleri",
+      "10.000+ kullanıcı verisi",
+      "Sürekli iyileştirme",
     ],
     color: "secondary",
   },
   {
     number: "03",
     icon: Target,
-    title: "Eslesmelerini Gor",
+    title: "Eşleşmelerini Gör",
     description:
-      "Kisilik profilinize, yeteneklerinize ve tutkulariniza en uygun meslekleri ve kariyer yollarini kesfet.",
-    duration: "Detayli rapor",
+      "Kişilik profilinize, yeteneklerinize ve tutkularınıza en uygun meslekleri ve kariyer yollarını keşfet.",
+    duration: "Detaylı rapor",
     features: [
-      "Meslek eslestirme",
-      "Uyum yuzdeleri",
-      "Kariyer yol haritasi",
+      "Meslek eşleştirme",
+      "Uyum yüzdeleri",
+      "Kariyer yol haritası",
     ],
     color: "accent",
   },
   {
     number: "04",
     icon: Rocket,
-    title: "Harekete Gec",
+    title: "Harekete Geç",
     description:
-      "Kisisellestirilmis kariyer yol haritaniz, egitim onerileri ve aksiyon planiyla gelecegine adim at.",
-    duration: "Surekli destek",
+      "Kişiselleştirilmiş kariyer yol haritanız, eğitim önerileri ve aksiyon planıyla geleceğine adım at.",
+    duration: "Sürekli destek",
     features: [
-      "Egitim onerileri",
-      "Beceri gelistirme plani",
-      "Mentor eslestirme",
+      "Eğitim önerileri",
+      "Beceri geliştirme planı",
+      "Mentor eşleştirme",
     ],
     color: "primary",
   },
@@ -105,17 +105,17 @@ export function HowItWorks() {
           className="text-center mb-16"
         >
           <Badge variant="secondary" size="lg" className="mb-6">
-            Basit 4 Adim
+            Basit 4 Adım
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
-            Nasil{" "}
+            Nasıl{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
-              Calisir?
+              Çalışır?
             </span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Kariyer yolculugunuzu baslatmak icin sadece birkac adim yeterli.
-            AI destekli platformumuz sizin icin en uygun meslekleri belirler.
+            Kariyer yolculuğunuzu başlatmak için sadece birkaç adım yeterli.
+            AI destekli platformumuz sizin için en uygun meslekleri belirler.
           </p>
         </motion.div>
 
@@ -187,11 +187,11 @@ export function HowItWorks() {
         >
           <Link href="/kayit">
             <Button size="lg" rightIcon={<ArrowRight className="w-5 h-5" />}>
-              Hemen Basla - Ucretsiz
+              Hemen Başla - Ücretsiz
             </Button>
           </Link>
           <p className="text-sm text-neutral-500 mt-4">
-            Kredi karti gerektirmez. Temel testler tamamen ucretsiz.
+            Kredi kartı gerektirmez. Temel testler tamamen ücretsiz.
           </p>
         </motion.div>
       </Container>

@@ -21,13 +21,13 @@ export function FAQ() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
-            Sik Sorulan{" "}
+            Sık Sorulan{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
               Sorular
             </span>
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Merak ettiginiz her seyin cevabi burada.
+            Merak ettiğiniz her şeyin cevabı burada.
           </p>
         </motion.div>
 

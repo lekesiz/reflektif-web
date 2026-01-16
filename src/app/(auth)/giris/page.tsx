@@ -46,10 +46,10 @@ export default function GirisPage() {
               </span>
             </Link>
             <h1 className="text-2xl font-bold text-neutral-900 mb-2">
-              Tekrar Hos Geldiniz
+              Tekrar Hoş Geldiniz
             </h1>
             <p className="text-neutral-600">
-              Hesabiniza giris yaparak devam edin
+              Hesabınıza giriş yaparak devam edin
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export default function GirisPage() {
 
                 <div className="relative">
                   <Input
-                    label="Sifre"
+                    label="Şifre"
                     name="password"
                     type={showPassword ? "text" : "password"}
                     value={formState.password}
@@ -101,14 +101,14 @@ export default function GirisPage() {
                       className="w-4 h-4 rounded border-neutral-300 text-primary-600 focus:ring-primary-500"
                     />
                     <span className="ml-2 text-sm text-neutral-600">
-                      Beni hatirla
+                      Beni hatırla
                     </span>
                   </label>
                   <Link
                     href="/sifremi-unuttum"
                     className="text-sm text-primary-600 hover:text-primary-700"
                   >
-                    Sifremi unuttum
+                    Şifremi unuttum
                   </Link>
                 </div>
 
@@ -119,7 +119,7 @@ export default function GirisPage() {
                   isLoading={isLoading}
                   rightIcon={<ArrowRight className="w-5 h-5" />}
                 >
-                  Giris Yap
+                  Giriş Yap
                 </Button>
               </form>
 
@@ -167,12 +167,12 @@ export default function GirisPage() {
           </Card>
 
           <p className="text-center mt-8 text-neutral-600">
-            Hesabiniz yok mu?{" "}
+            Hesabınız yok mu?{" "}
             <Link
               href="/kayit"
               className="text-primary-600 font-medium hover:text-primary-700"
             >
-              Ucretsiz kayit olun
+              Ücretsiz kayıt olun
             </Link>
           </p>
         </div>

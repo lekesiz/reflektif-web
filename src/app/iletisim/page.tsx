@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Metadata } from "next";
+// Metadata is not used in client components
 import {
   Mail,
   Phone,
@@ -85,14 +85,14 @@ export default function IletisimPage() {
                 <CheckCircle className="w-10 h-10 text-green-600" />
               </div>
               <h1 className="text-2xl font-bold text-neutral-900 mb-4">
-                Mesajiniz Alindi!
+                Mesajınız Alındı!
               </h1>
               <p className="text-neutral-600 mb-6">
-                En kisa surede sizinle iletisime gececegiz. Genellikle 24 saat
-                icinde geri donus yapiyoruz.
+                En kısa sürede sizinle iletişime geçeceğiz. Genellikle 24 saat
+                içinde geri dönüş yapıyoruz.
               </p>
               <Button onClick={() => setIsSubmitted(false)}>
-                Yeni Mesaj Gonder
+                Yeni Mesaj Gönder
               </Button>
             </CardContent>
           </Card>
@@ -108,17 +108,17 @@ export default function IletisimPage() {
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <Badge variant="primary" size="lg" className="mb-6">
-              Iletisim
+              İletişim
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
               Bizimle{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
-                Iletisime Gecin
+                İletişime Geçin
               </span>
             </h1>
             <p className="text-lg text-neutral-600">
-              Sorulariniz, onerileriniz veya isbirligi teklifleri icin bize
-              ulasin. En kisa surede geri donus yapacagiz.
+              Sorularınız, önerileriniz veya işbirliği teklifleri için bize
+              ulaşın. En kısa sürede geri dönüş yapacağız.
             </p>
           </div>
         </Container>
@@ -147,7 +147,7 @@ export default function IletisimPage() {
                         info@reflektif.net
                       </a>
                       <p className="text-sm text-neutral-500 mt-1">
-                        24 saat icinde geri donus
+                        24 saat içinde geri dönüş
                       </p>
                     </div>
                   </div>
@@ -171,7 +171,7 @@ export default function IletisimPage() {
                         0507 43 43 253
                       </a>
                       <p className="text-sm text-neutral-500 mt-1">
-                        Hafta ici 09:00 - 18:00
+                        Hafta içi 09:00 - 18:00
                       </p>
                     </div>
                   </div>
@@ -204,13 +204,13 @@ export default function IletisimPage() {
                 <CardContent>
                   <MessageSquare className="w-8 h-8 text-white mb-4" />
                   <h3 className="font-semibold text-white mb-2">
-                    Canli Destek
+                    Canlı Destek
                   </h3>
                   <p className="text-white/80 text-sm mb-4">
-                    Aninda yardim icin canli destek hattimizi kullanin.
+                    Anında yardım için canlı destek hattımızı kullanın.
                   </p>
                   <Button variant="white" size="sm">
-                    Sohbet Baslat
+                    Sohbet Başlat
                   </Button>
                 </CardContent>
               </Card>
@@ -221,7 +221,7 @@ export default function IletisimPage() {
               <Card variant="bordered" padding="lg">
                 <CardContent>
                   <h2 className="text-xl font-bold text-neutral-900 mb-6">
-                    Mesaj Gonderin
+                    Mesaj Gönderin
                   </h2>
 
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -234,7 +234,7 @@ export default function IletisimPage() {
                         {[
                           { value: "individual", label: "Bireysel", icon: User },
                           { value: "corporate", label: "Kurumsal", icon: Building2 },
-                          { value: "institution", label: "Egitim Kurumu", icon: MapPin },
+                          { value: "institution", label: "Eğitim Kurumu", icon: MapPin },
                         ].map((type) => (
                           <button
                             key={type.value}
@@ -275,7 +275,7 @@ export default function IletisimPage() {
                         name="name"
                         value={formState.name}
                         onChange={handleChange}
-                        placeholder="Adiniz Soyadiniz"
+                        placeholder="Adınız Soyadınız"
                         required
                       />
                       <Input
@@ -300,11 +300,11 @@ export default function IletisimPage() {
                       />
                       {formState.type !== "individual" && (
                         <Input
-                          label="Sirket/Kurum Adi"
+                          label="Şirket/Kurum Adı"
                           name="company"
                           value={formState.company}
                           onChange={handleChange}
-                          placeholder="Sirket veya kurum adiniz"
+                          placeholder="Şirket veya kurum adınız"
                         />
                       )}
                     </div>
@@ -320,22 +320,22 @@ export default function IletisimPage() {
                         className="w-full h-11 px-4 rounded-lg border border-neutral-300 bg-white text-neutral-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                         required
                       >
-                        <option value="">Konu secin</option>
+                        <option value="">Konu seçin</option>
                         <option value="demo">Demo Talebi</option>
-                        <option value="pricing">Fiyatlandirma Bilgisi</option>
-                        <option value="partnership">Isbirligi Teklifi</option>
+                        <option value="pricing">Fiyatlandırma Bilgisi</option>
+                        <option value="partnership">İşbirliği Teklifi</option>
                         <option value="support">Teknik Destek</option>
                         <option value="feedback">Geri Bildirim</option>
-                        <option value="other">Diger</option>
+                        <option value="other">Diğer</option>
                       </select>
                     </div>
 
                     <Textarea
-                      label="Mesajiniz *"
+                      label="Mesajınız *"
                       name="message"
                       value={formState.message}
                       onChange={handleChange}
-                      placeholder="Mesajinizi buraya yazin..."
+                      placeholder="Mesajınızı buraya yazın..."
                       rows={5}
                       required
                     />
@@ -349,7 +349,7 @@ export default function IletisimPage() {
                         isLoading={isSubmitting}
                         rightIcon={<Send className="w-4 h-4" />}
                       >
-                        Gonder
+                        Gönder
                       </Button>
                     </div>
                   </form>

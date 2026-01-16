@@ -176,7 +176,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <Card className="p-6 bg-gradient-to-br from-primary-500 to-secondary-500 text-white">
                   <h4 className="font-semibold mb-2">Demo Talep Edin</h4>
                   <p className="text-sm opacity-90 mb-4">
-                    Reflektif'in tüm özelliklerini keşfedin.
+                    Reflektif&apos;in tüm özelliklerini keşfedin.
                   </p>
                   <Link href="/iletisim">
                     <Button className="w-full bg-white text-neutral-900 hover:bg-neutral-100">

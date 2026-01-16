@@ -116,7 +116,7 @@ export default function OzelliklerPage() {
               Neden Reflektif?
             </h2>
             <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
-              Türkiye'nin en kapsamlı değerlendirme ve işe alım platformu
+              Türkiye&apos;nin en kapsamlı değerlendirme ve işe alım platformu
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -162,7 +162,7 @@ export default function OzelliklerPage() {
               Tüm Özellikleri Keşfedin
             </h2>
             <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-              Ücretsiz demo ile Reflektif'in tüm özelliklerini deneyimleyin ve
+              Ücretsiz demo ile Reflektif&apos;in tüm özelliklerini deneyimleyin ve
               organizasyonunuz için en uygun çözümü keşfedin.
             </p>
             <div className="flex flex-wrap justify-center gap-4">

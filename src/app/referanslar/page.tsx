@@ -6,7 +6,6 @@ import {
   Award,
   TrendingUp,
   Quote,
-  ArrowRight,
   CheckCircle2,
   Star,
 } from "lucide-react";
@@ -44,8 +43,8 @@ export default function ReferanslarPage() {
               </span>
             </h1>
             <p className="text-xl text-neutral-600">
-              Türkiye'nin önde gelen şirketleri değerlendirme ve işe alım
-              süreçlerinde Reflektif'i tercih ediyor.
+              Türkiye&apos;nin önde gelen şirketleri değerlendirme ve işe alım
+              süreçlerinde Reflektif&apos;i tercih ediyor.
             </p>
           </div>
         </Container>
@@ -121,7 +120,7 @@ export default function ReferanslarPage() {
                       <div className="border-t border-white/20 pt-6 mt-6">
                         <Quote className="w-8 h-8 opacity-50 mb-4" />
                         <p className="italic opacity-90 mb-4">
-                          "{caseStudy.quote.text}"
+                          &quot;{caseStudy.quote.text}&quot;
                         </p>
                         <div>
                           <p className="font-semibold">{caseStudy.quote.author}</p>
@@ -174,7 +173,7 @@ export default function ReferanslarPage() {
               Müşterilerimiz
             </h2>
             <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
-              Her sektörden lider şirketler Reflektif'i tercih ediyor
+              Her sektörden lider şirketler Reflektif&apos;i tercih ediyor
             </p>
           </div>
 
@@ -227,7 +226,7 @@ export default function ReferanslarPage() {
                   ))}
                 </div>
                 <p className="text-neutral-700 mb-4 italic">
-                  "{caseStudy.quote?.text}"
+                  &quot;{caseStudy.quote?.text}&quot;
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-semibold">

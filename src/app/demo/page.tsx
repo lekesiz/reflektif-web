@@ -142,7 +142,7 @@ export default function DemoPage() {
                 Ücretsiz Demo
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-                Reflektif'i{" "}
+                Reflektif&apos;i{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
                   Keşfedin
                 </span>
@@ -350,7 +350,7 @@ export default function DemoPage() {
                     <Link href="/gizlilik" className="text-primary-600 hover:underline">
                       Gizlilik Politikası
                     </Link>
-                    'nı kabul etmiş olursunuz.
+                    &apos;nı kabul etmiş olursunuz.
                   </p>
                 </form>
               </Card>

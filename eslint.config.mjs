@@ -12,7 +12,11 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Custom rules (CommonJS)
+    "eslint-rules/**",
   ]),
+  // Turkish character validation rule is available in eslint-rules/turkish-chars.js
+  // To enable it, run: node eslint-rules/check-turkish.js <file>
 ]);
 
 export default eslintConfig;

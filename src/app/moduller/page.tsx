@@ -9,13 +9,13 @@ import {
   ArrowRight,
   Accessibility,
 } from "lucide-react";
-import { Container, Card, CardContent, Button, Badge } from "@/components/ui";
+import { Container, Card, Button, Badge } from "@/components/ui";
 import { modules } from "@/data/modules";
 
 export const metadata: Metadata = {
-  title: "Moduller",
+  title: "Modüller",
   description:
-    "Reflektif platformunun tum modulleri. Ogrenci, universite, kariyer, IK ve kurumsal cozumler.",
+    "Reflektif platformunun tüm modülleri. Öğrenci, üniversite, kariyer, İK ve kurumsal çözümler.",
 };
 
 const moduleIcons: Record<string, React.ElementType> = {
@@ -33,17 +33,17 @@ export default function ModullerPage() {
       <Container>
         <div className="text-center mb-16">
           <Badge variant="primary" size="lg" className="mb-4">
-            6 Farkli Modul
+            6 Farklı Modül
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-            Her Ihtiyaca Uygun{" "}
+            Her İhtiyaca Uygun{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
-              Cozumler
+              Çözümler
             </span>
           </h1>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Ogrenciden profesyonele, bireyden kuruma herkes icin ozel tasarlanmis
-            yetkinlik degerlendirme modulleri.
+            Öğrenciden profesyonele, bireyden kuruma herkes için özel tasarlanmış
+            yetkinlik değerlendirme modülleri.
           </p>
         </div>
 

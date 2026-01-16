@@ -2,42 +2,41 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle, HelpCircle } from "lucide-react";
 import { Container, Card, CardContent, Button, Badge } from "@/components/ui";
-import { modules } from "@/data/modules";
 import { formatPrice } from "@/lib/utils";
 import { FAQ } from "@/components/sections";
 
 export const metadata: Metadata = {
-  title: "Fiyatlandirma",
+  title: "Fiyatlandırma",
   description:
-    "Reflektif fiyatlandirma planlari. Bireysel, kurumsal ve egitim kurumlari icin uygun fiyatlar.",
+    "Reflektif fiyatlandırma planları. Bireysel, kurumsal ve eğitim kurumları için uygun fiyatlar.",
 };
 
 const b2cPlans = [
   {
-    name: "Ucretsiz",
+    name: "Ücretsiz",
     price: 0,
-    description: "Kesfetmeye baslamak icin",
+    description: "Keşfetmeye başlamak için",
     features: [
-      "Temel kisilik testi",
+      "Temel kişilik testi",
       "Genel rapor",
-      "5 meslek onerisi",
+      "5 meslek önerisi",
       "Email destek",
     ],
-    limitations: ["Detayli analiz yok", "PDF rapor yok"],
-    cta: "Ucretsiz Basla",
+    limitations: ["Detaylı analiz yok", "PDF rapor yok"],
+    cta: "Ücretsiz Başla",
     highlighted: false,
   },
   {
     name: "Standart",
     price: 299,
-    description: "Kapsamli degerlendirme",
+    description: "Kapsamlı değerlendirme",
     features: [
-      "Tum testler (5+ test)",
-      "AI destekli detayli rapor",
-      "20+ meslek onerisi",
-      "Hobi-meslek eslestirme",
+      "Tüm testler (5+ test)",
+      "AI destekli detaylı rapor",
+      "20+ meslek önerisi",
+      "Hobi-meslek eşleştirme",
       "PDF rapor indirme",
-      "1 yil erisim",
+      "1 yıl erişim",
     ],
     limitations: [],
     cta: "Standart Al",
@@ -48,12 +47,12 @@ const b2cPlans = [
     price: 599,
     description: "Profesyonel destek ile",
     features: [
-      "Standart tum ozellikler",
-      "30 dk video danismanlik",
-      "Kisisellestirilmis yol haritasi",
+      "Standart tüm özellikler",
+      "30 dk video danışmanlık",
+      "Kişiselleştirilmiş yol haritası",
       "CV ve LinkedIn optimizasyonu",
       "6 ay takip",
-      "Oncelikli destek",
+      "Öncelikli destek",
     ],
     limitations: [],
     cta: "Premium Al",
@@ -64,9 +63,9 @@ const b2cPlans = [
     price: 1499,
     description: "Tam destek paketi",
     features: [
-      "Premium tum ozellikler",
-      "3 seans kariyer koclugu",
-      "Mentor eslestirme",
+      "Premium tüm özellikler",
+      "3 seans kariyer koçluğu",
+      "Mentor eşleştirme",
       "12 ay takip",
       "7/24 destek",
       "Garantili memnuniyet",
@@ -81,25 +80,25 @@ const b2bPlans = [
   {
     name: "Starter",
     price: 4999,
-    period: "yil",
-    description: "Kucuk isletmeler icin",
+    period: "yıl",
+    description: "Küçük işletmeler için",
     features: [
-      "25 degerlendirme/yil",
+      "25 değerlendirme/yıl",
       "Temel raporlar",
       "Email destek",
-      "1 yonetici hesabi",
+      "1 yönetici hesabı",
     ],
   },
   {
     name: "Professional",
     price: 14999,
-    period: "yil",
-    description: "Buyuyen sirketler icin",
+    period: "yıl",
+    description: "Büyüyen şirketler için",
     features: [
-      "100 degerlendirme/yil",
-      "Karsilastirmali analizler",
-      "Oncelikli destek",
-      "5 yonetici hesabi",
+      "100 değerlendirme/yıl",
+      "Karşılaştırmalı analizler",
+      "Öncelikli destek",
+      "5 yönetici hesabı",
       "ATS entegrasyonu",
     ],
     highlighted: true,
@@ -107,28 +106,28 @@ const b2bPlans = [
   {
     name: "Business",
     price: 29999,
-    period: "yil",
-    description: "Orta olcekli sirketler icin",
+    period: "yıl",
+    description: "Orta ölçekli şirketler için",
     features: [
-      "250 degerlendirme/yil",
-      "API erisimi",
-      "Ozel raporlama",
-      "15 yonetici hesabi",
+      "250 değerlendirme/yıl",
+      "API erişimi",
+      "Özel raporlama",
+      "15 yönetici hesabı",
       "Dedicated destek",
     ],
   },
   {
     name: "Enterprise",
     price: 79999,
-    period: "yil",
-    description: "Buyuk kurumlar icin",
+    period: "yıl",
+    description: "Büyük kurumlar için",
     features: [
-      "Sinirsiz degerlendirme",
-      "Ozel entegrasyon",
-      "White-label secenegi",
-      "Sinirsiz kullanici",
+      "Sınırsız değerlendirme",
+      "Özel entegrasyon",
+      "White-label seçeneği",
+      "Sınırsız kullanıcı",
       "SLA garantisi",
-      "Onsite egitim",
+      "Onsite eğitim",
     ],
   },
 ];
@@ -141,17 +140,17 @@ export default function FiyatlandirmaPage() {
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <Badge variant="primary" size="lg" className="mb-6">
-              Fiyatlandirma
+              Fiyatlandırma
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-              Her Butceye Uygun{" "}
+              Her Bütçeye Uygun{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
                 Planlar
               </span>
             </h1>
             <p className="text-lg text-neutral-600">
-              Bireysel kullanicilardan buyuk kurumlara kadar herkes icin esnek
-              fiyatlandirma secenekleri.
+              Bireysel kullanıcılardan büyük kurumlara kadar herkes için esnek
+              fiyatlandırma seçenekleri.
             </p>
           </div>
         </Container>
@@ -162,10 +161,10 @@ export default function FiyatlandirmaPage() {
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-2xl font-bold text-neutral-900 mb-2">
-              Bireysel Kullanicilar
+              Bireysel Kullanıcılar
             </h2>
             <p className="text-neutral-600">
-              Ogrenciler ve kariyer planlayicilar icin
+              Öğrenciler ve kariyer planlayıcılar için
             </p>
           </div>
 
@@ -180,7 +179,7 @@ export default function FiyatlandirmaPage() {
                 <CardContent>
                   {plan.highlighted && (
                     <Badge variant="accent" size="sm" className="mb-4">
-                      En Populer
+                      En Popüler
                     </Badge>
                   )}
                   <h3
@@ -270,10 +269,10 @@ export default function FiyatlandirmaPage() {
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-2xl font-bold text-neutral-900 mb-2">
-              Kurumsal Cozumler
+              Kurumsal Çözümler
             </h2>
             <p className="text-neutral-600">
-              Sirketler ve IK departmanlari icin
+              Şirketler ve İK departmanları için
             </p>
           </div>
 
@@ -288,7 +287,7 @@ export default function FiyatlandirmaPage() {
                 <CardContent>
                   {plan.highlighted && (
                     <Badge variant="accent" size="sm" className="mb-4">
-                      En Populer
+                      En Popüler
                     </Badge>
                   )}
                   <h3
@@ -360,10 +359,10 @@ export default function FiyatlandirmaPage() {
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-2xl font-bold text-neutral-900 mb-2">
-              Egitim Kurumlari
+              Eğitim Kurumları
             </h2>
             <p className="text-neutral-600">
-              Universiteler ve liseler icin ozel fiyatlandirma
+              Üniversiteler ve liseler için özel fiyatlandırma
             </p>
           </div>
 
@@ -372,7 +371,7 @@ export default function FiyatlandirmaPage() {
               {
                 name: "Lise Paketi",
                 price: 9999,
-                capacity: "500 ogrenci",
+                capacity: "500 öğrenci",
                 features: [
                   "Rehberlik paneli",
                   "Toplu raporlama",
@@ -381,25 +380,25 @@ export default function FiyatlandirmaPage() {
                 ],
               },
               {
-                name: "Universite Standart",
+                name: "Üniversite Standart",
                 price: 29999,
-                capacity: "2000 ogrenci",
+                capacity: "2000 öğrenci",
                 features: [
                   "Kariyer merkezi paneli",
                   "LMS entegrasyonu",
-                  "Detayli analizler",
+                  "Detaylı analizler",
                   "Telefon destek",
                 ],
                 highlighted: true,
               },
               {
-                name: "Universite Premium",
+                name: "Üniversite Premium",
                 price: 59999,
-                capacity: "5000 ogrenci",
+                capacity: "5000 öğrenci",
                 features: [
-                  "Tum ozellikler",
-                  "API erisimi",
-                  "Ozel entegrasyon",
+                  "Tüm özellikler",
+                  "API erişimi",
+                  "Özel entegrasyon",
                   "Dedicated destek",
                 ],
               },
@@ -430,7 +429,7 @@ export default function FiyatlandirmaPage() {
                         plan.highlighted ? "text-white/80" : "text-neutral-500"
                       }
                     >
-                      /yil
+                      /yıl
                     </span>
                   </div>
                   <p
@@ -482,11 +481,11 @@ export default function FiyatlandirmaPage() {
               <HelpCircle className="w-8 h-8 text-primary-600" />
             </div>
             <h2 className="text-2xl font-bold text-neutral-900 mb-4">
-              30 Gun Para Iade Garantisi
+              30 Gün Para İade Garantisi
             </h2>
             <p className="text-neutral-600 mb-6">
-              Hizmetimizden memnun kalmazsaniz, satin alma tarihinizden itibaren
-              30 gun icinde tam para iadesi yapiyoruz. Hicbir soru sorulmadan.
+              Hizmetimizden memnun kalmazsanız, satın alma tarihinizden itibaren
+              30 gün içinde tam para iadesi yapıyoruz. Hiçbir soru sorulmadan.
             </p>
             <Button variant="primary">Daha Fazla Bilgi</Button>
           </div>
