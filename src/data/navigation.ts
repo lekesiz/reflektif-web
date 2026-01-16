@@ -38,6 +38,7 @@ export const navigation: NavItem[] = [
   { label: "Referanslar", href: "/referanslar" },
   { label: "Kaynaklar", href: "/kaynaklar" },
   { label: "Fiyatlandırma", href: "/fiyatlandirma" },
+  { label: "Kalite", href: "/kalite-politikasi" },
   { label: "İletişim", href: "/iletisim" },
 ];
 
@@ -67,6 +68,7 @@ export const footerNavigation = {
     { label: "Hakkımızda", href: "/hakkimizda" },
     { label: "Referanslar", href: "/referanslar" },
     { label: "Kaynaklar", href: "/kaynaklar" },
+    { label: "Kalite Politikası", href: "/kalite-politikasi" },
     { label: "İletişim", href: "/iletisim" },
   ],
   destek: [

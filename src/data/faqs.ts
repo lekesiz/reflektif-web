@@ -41,4 +41,24 @@ export const faqs: FAQ[] = [
     answer:
       "Premium paketlerimizde CV hazirlama, mulakat teknikleri ve LinkedIn optimizasyonu gibi hizmetler bulunmaktadir. Ayrica partner is platformlarimiz uzerinden dogrudan is basvurusu yapabilirsiniz.",
   },
+  {
+    question: "Kalite standartlariniz nelerdir?",
+    answer:
+      "KVKK uyumlu veri koruma, MYK meslek standartlariyla uyumluluk, ISKUR mesleki rehabilitasyon standartlari ve Turkiye Yeterlilikler Cercevesi (TYC) seviye tanimlamalarina uygun calismaktayiz. Detayli bilgi icin Kalite Politikasi sayfamizi ziyaret edebilirsiniz.",
+  },
+  {
+    question: "Sikayet ve geri bildirim nasil iletebilirim?",
+    answer:
+      "Sikayetlerinizi web sitemizdeki iletisim formu, sikayet@reflektif.net e-posta adresi veya 0850 numarali telefonumuz uzerinden iletebilirsiniz. Tum sikayetler 2 is gunu icinde kayit altina alinir ve 10 is gunu icinde cozum onerilir. Detayli surec icin Kalite Politikasi sayfamizi inceleyebilirsiniz.",
+  },
+  {
+    question: "Testlerinizin gecerliligi ve guvenilirligi nasil saglaniyor?",
+    answer:
+      "Testlerimiz uluslararasi gecerliligi kanitlanmis psikometrik yontemlere (Holland RIASEC, Big Five) dayanmaktadir. Surekli validasyon calismalari yapilmakta, 10.000+ kullanici veritabanimizla normatif karsilastirmalar saglanmaktadir. AI modellerimiz duzenli olarak kalibre edilmektedir.",
+  },
+  {
+    question: "Engelli bireyler icin erisilebilirlik destegi var mi?",
+    answer:
+      "Evet, platformumuz WCAG 2.1 AA seviyesi erisilebilirlik standartlarina uygundur. Ekran okuyucu destegi, klavye navigasyonu ve yuksek kontrast modu gibi ozellikler mevcuttur. Engelli bireyler icin ozel tasarlanmis Reflektif Engelsiz modulumuz tamamen ucretsizdir.",
+  },
 ];

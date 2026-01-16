@@ -11,6 +11,10 @@ import {
   ArrowRight,
   Star,
   Accessibility,
+  Clock,
+  Award,
+  FileCheck,
+  AlertCircle,
 } from "lucide-react";
 import { Container, Card, CardContent, Button, Badge } from "@/components/ui";
 import { modules, getModuleBySlug } from "@/data/modules";
@@ -132,8 +136,103 @@ export default async function ModulePage({
         </Container>
       </section>
 
+      {/* Prerequisites & Quality Info Section */}
+      {(module.prerequisites || module.evaluationMethods || module.duration || module.certifications) && (
+        <section className="py-16 bg-neutral-50">
+          <Container>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-neutral-900 mb-4">
+                Katilim Kosullari ve Kalite Bilgileri
+              </h2>
+              <p className="text-neutral-600 max-w-2xl mx-auto">
+                Hizmet kalitemizi garanti altina alan standartlar ve gereksinimler
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {module.prerequisites && (
+                <Card variant="bordered">
+                  <CardContent>
+                    <div className="flex items-center gap-2 mb-4">
+                      <AlertCircle className="w-5 h-5 text-primary-600" />
+                      <h3 className="font-bold text-neutral-900">On Kosullar</h3>
+                    </div>
+                    <ul className="space-y-2">
+                      {module.prerequisites.map((prereq) => (
+                        <li key={prereq} className="flex items-start text-sm text-neutral-700">
+                          <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                          {prereq}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              )}
+
+              {module.evaluationMethods && (
+                <Card variant="bordered">
+                  <CardContent>
+                    <div className="flex items-center gap-2 mb-4">
+                      <FileCheck className="w-5 h-5 text-secondary-600" />
+                      <h3 className="font-bold text-neutral-900">Degerlendirme</h3>
+                    </div>
+                    <ul className="space-y-2">
+                      {module.evaluationMethods.map((method) => (
+                        <li key={method} className="flex items-start text-sm text-neutral-700">
+                          <span className="w-1.5 h-1.5 rounded-full bg-secondary-500 mr-2 mt-2 flex-shrink-0" />
+                          {method}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              )}
+
+              {module.duration && (
+                <Card variant="bordered">
+                  <CardContent>
+                    <div className="flex items-center gap-2 mb-4">
+                      <Clock className="w-5 h-5 text-accent-600" />
+                      <h3 className="font-bold text-neutral-900">Sure</h3>
+                    </div>
+                    <p className="text-neutral-700">{module.duration}</p>
+                    <p className="text-sm text-neutral-500 mt-2">
+                      Testler dilediginiz zaman durdurulabilir ve kalinan yerden devam edilebilir.
+                    </p>
+                  </CardContent>
+                </Card>
+              )}
+
+              {module.certifications && (
+                <Card variant="bordered">
+                  <CardContent>
+                    <div className="flex items-center gap-2 mb-4">
+                      <Award className="w-5 h-5 text-amber-600" />
+                      <h3 className="font-bold text-neutral-900">Sertifikasyonlar</h3>
+                    </div>
+                    <ul className="space-y-2">
+                      {module.certifications.map((cert) => (
+                        <li key={cert} className="flex items-start text-sm text-neutral-700">
+                          <Badge variant="primary" size="sm" className="mr-2">{cert}</Badge>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              )}
+            </div>
+
+            <div className="mt-8 text-center">
+              <Link href="/kalite-politikasi" className="text-primary-600 hover:text-primary-700 font-medium">
+                Kalite Politikamiz hakkinda daha fazla bilgi alin →
+              </Link>
+            </div>
+          </Container>
+        </section>
+      )}
+
       {/* Features Section */}
-      <section className="py-16 bg-neutral-50">
+      <section className="py-16">
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 mb-4">

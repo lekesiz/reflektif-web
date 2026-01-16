@@ -86,6 +86,20 @@ export const modules: Module[] = [
       "Aile ile saglikli iletisim",
     ],
     cta: "Gelecegini Kesfet",
+    prerequisites: [
+      "14-18 yas arasi olmak",
+      "Turkce okuma yazma becerisi",
+      "Internet erisimi ve temel bilgisayar kullanimi",
+      "Veli/vasi izni (18 yas alti icin)",
+    ],
+    evaluationMethods: [
+      "Holland RIASEC kisilik envanteri",
+      "Coklu zeka testi",
+      "Ilgi alanlari analizi",
+      "AI destekli meslek eslestirme",
+    ],
+    duration: "45-60 dakika (tum testler)",
+    certifications: ["MYK meslek standartlariyla uyumlu"],
   },
   {
     id: "universite",
@@ -173,6 +187,20 @@ export const modules: Module[] = [
       "Yuksek lisans planlamasi",
     ],
     cta: "Kariyerini Planla",
+    prerequisites: [
+      "Aktif universite ogrencisi olmak",
+      "Turkce veya Ingilizce yeterlilik",
+      "E-posta adresi ve telefon numarasi",
+      "Internet erisimi",
+    ],
+    evaluationMethods: [
+      "Bolum-kisilik uyum analizi",
+      "Yetkinlik envanter testi",
+      "Kariyer ilgi alanlari olcegi",
+      "AI destekli staj eslestirme",
+    ],
+    duration: "60-90 dakika (tum testler)",
+    certifications: ["TYC uyumlu seviye belirleme", "MYK meslek standartlari"],
   },
   {
     id: "kariyer",
@@ -273,6 +301,20 @@ export const modules: Module[] = [
       "Profesyonel destek agi",
     ],
     cta: "Yeni Sayfani Ac",
+    prerequisites: [
+      "18 yas ve uzeri olmak",
+      "En az lise mezunu olmak",
+      "Is deneyimi (tercih edilen)",
+      "Kariyer degisikligi motivasyonu",
+    ],
+    evaluationMethods: [
+      "Transferable skills analizi",
+      "Kisilik ve deger olcumleri",
+      "Sektor-meslek uyum testi",
+      "Gap analizi ve egitim ihtiyaci belirleme",
+    ],
+    duration: "90-120 dakika (kapsamli degerlendirme)",
+    certifications: ["ISKUR standartlari", "MYK mesleki yeterlilik uyumlu"],
   },
   {
     id: "ik",
@@ -382,6 +424,20 @@ export const modules: Module[] = [
       "Objektif ve adil degerlendirme",
     ],
     cta: "Demo Talep Et",
+    prerequisites: [
+      "Kurumsal e-posta adresi",
+      "Yetkili kisi onayi",
+      "Minimum 5 calisan",
+      "Sozlesme imzalama yetkisi",
+    ],
+    evaluationMethods: [
+      "Pozisyon bazli yetkinlik analizi",
+      "Aday-pozisyon uyum skoru",
+      "Karsilastirmali benchmark raporlari",
+      "Prediktif turnover analizi",
+    ],
+    duration: "Aday basina 45-90 dakika",
+    certifications: ["KVKK uyumlu veri isleme", "ISO 27001 bilgi guvenligi (hedeflenen)"],
   },
   {
     id: "kurum",
@@ -477,6 +533,20 @@ export const modules: Module[] = [
       "Veri odakli karar alma",
     ],
     cta: "Kurum Paketi Al",
+    prerequisites: [
+      "Egitim kurumu yetkili belgesi",
+      "MEB veya YOK onayli kurum olmak",
+      "IT altyapisi (LMS entegrasyonu icin)",
+      "Veri isleme sozlesmesi",
+    ],
+    evaluationMethods: [
+      "Toplu ogrenci tarama testleri",
+      "Bolum-ogrenci uyum analizi",
+      "Mezun takip ve basari metrikleri",
+      "Kurum bazli benchmark raporlari",
+    ],
+    duration: "Ogrenci basina 30-60 dakika",
+    certifications: ["MEB uyumlu", "YOK akreditasyon destegi", "TYC uyumlu"],
   },
 ];
 
@@ -593,6 +663,20 @@ const engelliModule: Module = {
     "Sosyal sorumluluk ve kurumsal itibar artisi",
   ],
   cta: "Engelsiz Kariyere Basla",
+  prerequisites: [
+    "Engelli saglik kurulu raporu (bireysel ucretsiz erisim icin)",
+    "18 yas ve uzeri (veya veli izni)",
+    "Erisilebilir cihaz (ekran okuyucu destegi mevcut)",
+    "ISKUR kaydı (is eslestirme icin tercih edilen)",
+  ],
+  evaluationMethods: [
+    "Engel durumuna gore uyarlanmis yetenek testleri",
+    "Erisilebilir isyeri eslestirme algoritmasi",
+    "Mesleki rehabilitasyon uygunluk analizi",
+    "AI destekli kariyer oneri sistemi",
+  ],
+  duration: "30-60 dakika (esnek sureli)",
+  certifications: ["ISKUR mesleki rehabilitasyon standartlari", "4857 Is Kanunu uyumlu"],
 };
 
 // Add engelli module to modules array

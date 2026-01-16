@@ -12,6 +12,10 @@ export interface Module {
   pricing: PricingPlan[];
   benefits: string[];
   cta: string;
+  prerequisites?: string[];
+  evaluationMethods?: string[];
+  duration?: string;
+  certifications?: string[];
 }
 
 export interface Feature {
