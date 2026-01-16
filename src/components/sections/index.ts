@@ -7,3 +7,6 @@ export { FAQ } from "./FAQ";
 export { CTA } from "./CTA";
 export { Tests } from "./Tests";
 export { Customers } from "./Customers";
+export { HowItWorks } from "./HowItWorks";
+export { AIFuture } from "./AIFuture";
+export { SampleResult } from "./SampleResult";

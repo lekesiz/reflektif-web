@@ -8,6 +8,9 @@ import {
   Testimonials,
   FAQ,
   CTA,
+  HowItWorks,
+  AIFuture,
+  SampleResult,
 } from "@/components/sections";
 
 export default function Home() {
@@ -16,7 +19,10 @@ export default function Home() {
       <Hero />
       <Customers />
       <Stats />
+      <HowItWorks />
       <Features />
+      <SampleResult />
+      <AIFuture />
       <Modules />
       <Tests />
       <Testimonials />
