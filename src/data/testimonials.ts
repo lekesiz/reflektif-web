@@ -3,55 +3,55 @@ import { Testimonial } from "@/types";
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Elif Yilmaz",
-    role: "Lise Ogrencisi",
+    name: "Elif Yılmaz",
+    role: "Lise Öğrencisi",
     content:
-      "Reflektif sayesinde hangi universite bolumunu secmem gerektigini cok net anladim. Testler eglenceli ve sonuclar gercekten bana uygundu!",
+      "Reflektif sayesinde hangi üniversite bölümünü seçmem gerektiğini çok net anladım. Testler eğlenceli ve sonuçlar gerçekten bana uygundu!",
     rating: 5,
   },
   {
     id: "2",
     name: "Ahmet Demir",
-    role: "Universite Ogrencisi",
-    company: "ITU Bilgisayar Muhendisligi",
+    role: "Üniversite Öğrencisi",
+    company: "İTÜ Bilgisayar Mühendisliği",
     content:
-      "Bolum uyum analizim %92 cikti ve bu beni cok motive etti. Staj eslestirme ozelligi sayesinde hayalimdeki sirkette staj yapiyorum.",
+      "Bölüm uyum analizim %92 çıktı ve bu beni çok motive etti. Staj eşleştirme özelliği sayesinde hayalimdeki şirkette staj yapıyorum.",
     rating: 5,
   },
   {
     id: "3",
     name: "Zeynep Kaya",
-    role: "Kariyer Degistiren",
-    company: "Eski: Bankacilik, Yeni: UX Tasarim",
+    role: "Kariyer Değiştiren",
+    company: "Eski: Bankacılık, Yeni: UX Tasarım",
     content:
-      "10 yillik bankacilik kariyerinden sonra UX tasarimci oldum. Reflektif'in gap analizi ve gecis plani olmadan bunu basaramazdim.",
+      "10 yıllık bankacılık kariyerinden sonra UX tasarımcı oldum. Reflektif'in gap analizi ve geçiş planı olmadan bunu başaramazdım.",
     rating: 5,
   },
   {
     id: "4",
-    name: "Mehmet Ozturk",
-    role: "IK Muduru",
-    company: "TechStart A.S.",
+    name: "Mehmet Öztürk",
+    role: "İK Müdürü",
+    company: "TechStart A.Ş.",
     content:
-      "Ise alim surecimiz %60 hizlandi ve son 1 yilda turnover oranlarimiz %35 dustu. ROI cok net goruluyor.",
+      "İşe alım sürecimiz %60 hızlandı ve son 1 yılda turnover oranlarımız %35 düştü. ROI çok net görülüyor.",
     rating: 5,
   },
   {
     id: "5",
-    name: "Ayse Sahin",
-    role: "Kariyer Merkezi Muduru",
-    company: "Koc Universitesi",
+    name: "Ayşe Şahin",
+    role: "Kariyer Merkezi Müdürü",
+    company: "Koç Üniversitesi",
     content:
-      "Ogrencilerimize sundugumuz hizmet kalitesi cok artti. Mezun takip verilerimiz artik cok daha anlamli.",
+      "Öğrencilerimize sunduğumuz hizmet kalitesi çok arttı. Mezun takip verilerimiz artık çok daha anlamlı.",
     rating: 5,
   },
   {
     id: "6",
-    name: "Can Aktas",
-    role: "Rehber Ogretmen",
-    company: "Ozel Bilfen Lisesi",
+    name: "Can Aktaş",
+    role: "Rehber Öğretmen",
+    company: "Özel Bilfen Lisesi",
     content:
-      "500 ogrenciyi takip etmek artik cok kolay. Veli gorusmelerinde somut verilerle konusabiliyorum.",
+      "500 öğrenciyi takip etmek artık çok kolay. Veli görüşmelerinde somut verilerle konuşabiliyorum.",
     rating: 5,
   },
 ];

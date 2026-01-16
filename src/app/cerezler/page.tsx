@@ -327,8 +327,8 @@ Değişiklikler, web sitesinde yayınlandığı tarihte yürürlüğe girer.`,
     content: `Çerez kullanımımız hakkında sorularınız için:
 
 **E-posta:** kvkk@reflektif.net
-**Telefon:** 0850 XXX XX XX
-**Adres:** [Şirket Adresi]
+**Telefon:** 0850 840 50 60
+**Adres:** İstanbul, Türkiye
 
 **KVKK Başvuruları:**
 Çerezlerle ilgili KVKK kapsamındaki talepleriniz için kvkk@reflektif.net adresine başvurabilirsiniz.

@@ -4,7 +4,6 @@ import {
   Eye,
   Heart,
   Award,
-  Users,
   Lightbulb,
   Shield,
   Globe,
@@ -13,63 +12,71 @@ import { Container, Card, CardContent, Badge } from "@/components/ui";
 import { Stats } from "@/components/sections";
 
 export const metadata: Metadata = {
-  title: "Hakkimizda",
+  title: "Hakkımızda",
   description:
-    "Reflektif hakkinda bilgi edinin. Vizyonumuz, misyonumuz ve degerlerimiz.",
+    "Reflektif hakkında bilgi edinin. Vizyonumuz, misyonumuz ve değerlerimiz.",
 };
 
 const values = [
   {
     icon: Lightbulb,
-    title: "Inovasyon",
+    title: "İnovasyon",
     description:
-      "En son AI teknolojilerini kullanarak kariyer degerlendirme alaninda sureki yenilik yapiyoruz.",
+      "En son AI teknolojilerini kullanarak kariyer değerlendirme alanında sürekli yenilik yapıyoruz.",
   },
   {
     icon: Shield,
-    title: "Guvenilirlik",
+    title: "Güvenilirlik",
     description:
-      "Bilimsel metodolojiler ve KVKK uyumlu veri koruma ile guvenilir sonuclar sunuyoruz.",
+      "Bilimsel metodolojiler ve KVKK uyumlu veri koruma ile güvenilir sonuçlar sunuyoruz.",
   },
   {
     icon: Heart,
     title: "Empati",
     description:
-      "Her bireyin benzersiz oldugunu biliyor, kisisellestirilmis cozumler sunuyoruz.",
+      "Her bireyin benzersiz olduğunu biliyor, kişiselleştirilmiş çözümler sunuyoruz.",
   },
   {
     icon: Globe,
-    title: "Erisilebirlik",
+    title: "Erişilebilirlik",
     description:
-      "Turkiye'nin her yerinden herkese ulasabilecek, erisilebilir bir platform olusturduk.",
+      "Türkiye'nin her yerinden herkese ulaşabilecek, erişilebilir bir platform oluşturduk.",
   },
 ];
 
 const timeline = [
   {
     year: "2024",
-    title: "Fikrin Dogusu",
+    title: "Fikrin Doğuşu",
     description:
-      "Fransa'daki Bilan de Competences sisteminden esinlenerek Turkiye'ye uygun bir model tasarlamaya basladik.",
+      "Fransa'daki Bilan de Compétences sisteminden esinlenerek Türkiye'ye uygun bir model tasarlamaya başladık.",
   },
   {
     year: "2025",
-    title: "Platform Gelistirme",
+    title: "Platform Geliştirme",
     description:
-      "AI destekli test motoru, 5 farkli modul ve kapsamli raporlama sistemini gelistirdik.",
+      "AI destekli test motoru, 5 farklı modül ve kapsamlı raporlama sistemini geliştirdik.",
   },
   {
     year: "2025",
-    title: "Beta Lansman",
+    title: "Beta Lansmanı",
     description:
-      "Secili universiter ve sirketlerle pilot programlar baslatarak platformu test ettik.",
+      "Seçili üniversiteler ve şirketlerle pilot programlar başlatarak platformu test ettik.",
   },
   {
     year: "2025",
     title: "Resmi Lansman",
     description:
-      "reflektif.net olarak tum Turkiye'ye hizmet vermeye basladik.",
+      "reflektif.net olarak tüm Türkiye'ye hizmet vermeye başladık.",
   },
+];
+
+const partners = [
+  { name: "İŞKUR", description: "İstihdam Ortağı" },
+  { name: "MYK", description: "Yeterlilik Ortağı" },
+  { name: "TOBB", description: "İş Dünyası Ortağı" },
+  { name: "YÖK", description: "Akademik İşbirliği" },
+  { name: "MEB", description: "Eğitim İşbirliği" },
 ];
 
 export default function HakkimizdaPage() {
@@ -80,18 +87,18 @@ export default function HakkimizdaPage() {
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <Badge variant="primary" size="lg" className="mb-6">
-              Hakkimizda
+              Hakkımızda
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-              Turkiye&apos;nin{" "}
+              Türkiye&apos;nin{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500">
                 Kariyer Platformu
               </span>
             </h1>
             <p className="text-lg text-neutral-600 leading-relaxed">
-              Reflektif, bireylerin potansiyellerini kesfetmelerine ve dogru
-              kariyer kararları almalarına yardımcı olmak icin kurulmus,
-              Turkiye&apos;nin ilk AI destekli yetkinlik degerlendirme platformudur.
+              Reflektif, bireylerin potansiyellerini keşfetmelerine ve doğru
+              kariyer kararları almalarına yardımcı olmak için kurulmuş,
+              Türkiye&apos;nin ilk AI destekli yetkinlik değerlendirme platformudur.
             </p>
           </div>
         </Container>
@@ -113,10 +120,10 @@ export default function HakkimizdaPage() {
                   Misyonumuz
                 </h2>
                 <p className="text-neutral-600 leading-relaxed">
-                  Her bireyin kendini tanimasi, yeteneklerini kesfetmesi ve
-                  tutkularıyla uyumlu bir kariyer insaa etmesine yardimci olmak.
-                  Modern teknoloji ve bilimsel metodolojileri birlestirerek,
-                  herkes icin erisilebilir kariyer rehberligi sunmak.
+                  Her bireyin kendini tanıması, yeteneklerini keşfetmesi ve
+                  tutkularıyla uyumlu bir kariyer inşa etmesine yardımcı olmak.
+                  Modern teknoloji ve bilimsel metodolojileri birleştirerek,
+                  herkes için erişilebilir kariyer rehberliği sunmak.
                 </p>
               </CardContent>
             </Card>
@@ -130,10 +137,10 @@ export default function HakkimizdaPage() {
                   Vizyonumuz
                 </h2>
                 <p className="text-neutral-600 leading-relaxed">
-                  Turkiye&apos;de ve bolgemizde kariyer degerlendirme ve meslek
-                  eslestirme alaninda lider platform olmak. Yanlis meslek secimi
-                  nedeniyle yasanan issizlik ve mutsuzluğu azaltarak, toplumsal
-                  refaha katki saglamak.
+                  Türkiye&apos;de ve bölgemizde kariyer değerlendirme ve meslek
+                  eşleştirme alanında lider platform olmak. Yanlış meslek seçimi
+                  nedeniyle yaşanan işsizlik ve mutsuzluğu azaltarak, toplumsal
+                  refaha katkı sağlamak.
                 </p>
               </CardContent>
             </Card>
@@ -146,7 +153,7 @@ export default function HakkimizdaPage() {
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-              Degerlerimiz
+              Değerlerimiz
             </h2>
             <p className="text-neutral-600 max-w-2xl mx-auto">
               Reflektif&apos;i var eden temel prensipler
@@ -176,10 +183,10 @@ export default function HakkimizdaPage() {
         <Container size="md">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-              Yolculugumuz
+              Yolculuğumuz
             </h2>
             <p className="text-neutral-600 max-w-2xl mx-auto">
-              Reflektif&apos;in kuruluşundan bugune
+              Reflektif&apos;in kuruluşundan bugüne
             </p>
           </div>
 
@@ -255,17 +262,17 @@ export default function HakkimizdaPage() {
               {
                 name: "Mikail Lekesiz",
                 role: "Kurucu & CEO",
-                bio: "Teknoloji ve egitim sektorlerinde 10+ yil deneyim",
+                bio: "Teknoloji ve eğitim sektörlerinde 10+ yıl deneyim. Kariyer geliştirme ve dijital dönüşüm konularında uzman.",
               },
               {
-                name: "Dr. Ayse Yilmaz",
-                role: "Bilimsel Danismman",
-                bio: "Endüstriyel psikoloji uzmani, kariyer degerlendirme araştırmacısı",
+                name: "Dr. Ayşe Yılmaz",
+                role: "Bilimsel Danışman",
+                bio: "Endüstriyel psikoloji uzmanı, kariyer değerlendirme araştırmacısı ve psikometrik test geliştirme danışmanı.",
               },
               {
                 name: "Mehmet Demir",
                 role: "CTO",
-                bio: "AI/ML uzmani, 8+ yil yazilim gelistirme deneyimi",
+                bio: "AI/ML uzmanı, 8+ yıl yazılım geliştirme deneyimi. Ölçeklenebilir sistemler ve veri analizi konularında uzman.",
               },
             ].map((member) => (
               <Card key={member.name} variant="elevated" hover>
@@ -293,28 +300,54 @@ export default function HakkimizdaPage() {
         <Container>
           <div className="text-center">
             <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-              Partnerlerimiz
+              İşbirliklerimiz
             </h2>
             <p className="text-neutral-600 mb-12 max-w-2xl mx-auto">
-              Isbirligi yaptigimiz kurumlar
+              Güçlü kurumsal işbirlikleriyle Türkiye genelinde hizmet veriyoruz
             </p>
 
-            <div className="flex flex-wrap justify-center gap-8 items-center opacity-60">
-              {[
-                "Universite A",
-                "Sirket B",
-                "Kurum C",
-                "Partner D",
-                "Isbirligi E",
-              ].map((partner) => (
+            <div className="flex flex-wrap justify-center gap-6 items-center">
+              {partners.map((partner) => (
                 <div
-                  key={partner}
-                  className="px-8 py-4 bg-neutral-100 rounded-lg text-neutral-500 font-medium"
+                  key={partner.name}
+                  className="px-8 py-4 bg-neutral-100 rounded-lg hover:bg-primary-50 hover:border-primary-200 border border-transparent transition-colors"
                 >
-                  {partner}
+                  <p className="font-semibold text-neutral-800">{partner.name}</p>
+                  <p className="text-xs text-neutral-500">{partner.description}</p>
                 </div>
               ))}
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Awards & Certifications */}
+      <section className="py-16 bg-neutral-50">
+        <Container>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-neutral-900 mb-4">
+              Kalite Standartları
+            </h2>
+            <p className="text-neutral-600 max-w-2xl mx-auto">
+              Uluslararası standartlara uygun hizmet sunuyoruz
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {[
+              { title: "KVKK Uyumlu", desc: "Veri koruma" },
+              { title: "MYK Standartları", desc: "Mesleki yeterlilik" },
+              { title: "İŞKUR Uyumlu", desc: "İstihdam standartları" },
+              { title: "WCAG 2.1 AA", desc: "Erişilebilirlik" },
+            ].map((cert) => (
+              <Card key={cert.title} variant="bordered">
+                <CardContent className="text-center">
+                  <Award className="w-8 h-8 text-primary-500 mx-auto mb-3" />
+                  <h4 className="font-semibold text-neutral-900">{cert.title}</h4>
+                  <p className="text-xs text-neutral-600">{cert.desc}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </Container>
       </section>

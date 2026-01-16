@@ -25,12 +25,11 @@ Bu politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK), ilgili y
     content: `Kişisel verileriniz bakımından veri sorumlusu:
 
 **Reflektif Teknoloji A.Ş.**
-Adres: [Şirket Adresi]
-Telefon: 0850 XXX XX XX
+Adres: İstanbul, Türkiye
+Telefon: 0850 840 50 60
 E-posta: kvkk@reflektif.net
 KEP Adresi: reflektif@hs01.kep.tr
-Mersis No: [Mersis Numarası]
-Vergi Dairesi/No: [Vergi Bilgileri]
+Web: www.reflektif.net
 
 Veri sorumlusu temsilcisi ve iletişim bilgileri için kvkk@reflektif.net adresinden bize ulaşabilirsiniz.`,
   },
@@ -221,8 +220,8 @@ Platformumuzu kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiği
     content: `Gizlilik politikamız veya kişisel verilerinizle ilgili sorularınız için:
 
 **E-posta:** kvkk@reflektif.net
-**Telefon:** 0850 XXX XX XX
-**Adres:** [Şirket Adresi]
+**Telefon:** 0850 840 50 60
+**Adres:** İstanbul, Türkiye
 **KEP:** reflektif@hs01.kep.tr
 
 KVKK kapsamındaki başvurularınız en geç 30 gün içinde yanıtlanacaktır.`,

@@ -72,10 +72,10 @@ export const footerNavigation = {
     { label: "İletişim", href: "/iletisim" },
   ],
   destek: [
-    { label: "Yardım Merkezi", href: "/yardim" },
-    { label: "SSS", href: "/sss" },
-    { label: "API Dokümantasyonu", href: "/api-docs" },
-    { label: "Entegrasyonlar", href: "/entegrasyonlar" },
+    { label: "Sıkça Sorulan Sorular", href: "/#faq" },
+    { label: "Demo Talep Et", href: "/demo" },
+    { label: "Fiyatlandırma", href: "/fiyatlandirma" },
+    { label: "İletişim", href: "/iletisim" },
   ],
   yasal: [
     { label: "Gizlilik Politikası", href: "/gizlilik" },

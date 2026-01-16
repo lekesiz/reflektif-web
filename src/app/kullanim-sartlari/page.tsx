@@ -268,7 +268,7 @@ Ticari uyuşmazlıklarda, dava açılmadan önce arabuluculuğa başvurulması z
 **Bildirim Adresi:**
 Yasal bildirimler için:
 Reflektif Teknoloji A.Ş.
-[Şirket Adresi]
+İstanbul, Türkiye
 E-posta: hukuk@reflektif.net`,
   },
   {
@@ -279,7 +279,7 @@ E-posta: hukuk@reflektif.net`,
 
 **Genel Destek:**
 E-posta: destek@reflektif.net
-Telefon: 0850 XXX XX XX
+Telefon: 0850 840 50 60
 
 **Hukuki Konular:**
 E-posta: hukuk@reflektif.net
@@ -288,7 +288,7 @@ E-posta: hukuk@reflektif.net
 E-posta: kvkk@reflektif.net
 
 **Adres:**
-[Şirket Adresi]
+İstanbul, Türkiye
 
 **Çalışma Saatleri:**
 Pazartesi - Cuma: 09:00 - 18:00

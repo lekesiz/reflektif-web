@@ -57,11 +57,11 @@ export default function KVKKPage() {
                   <div className="space-y-2 text-white/90">
                     <p className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      [Şirket Adresi]
+                      İstanbul, Türkiye
                     </p>
                     <p className="flex items-center gap-2">
                       <Phone className="w-4 h-4" />
-                      0850 XXX XX XX
+                      0850 840 50 60
                     </p>
                     <p className="flex items-center gap-2">
                       <Mail className="w-4 h-4" />
@@ -70,10 +70,8 @@ export default function KVKKPage() {
                   </div>
                 </div>
                 <div className="text-white/90">
-                  <p><strong>Mersis No:</strong> [Mersis Numarası]</p>
-                  <p><strong>Vergi Dairesi:</strong> [Vergi Dairesi]</p>
-                  <p><strong>Vergi No:</strong> [Vergi Numarası]</p>
                   <p><strong>KEP:</strong> reflektif@hs01.kep.tr</p>
+                  <p><strong>Web:</strong> www.reflektif.net</p>
                 </div>
               </div>
             </CardContent>

@@ -2,63 +2,63 @@ import { FAQ } from "@/types";
 
 export const faqs: FAQ[] = [
   {
-    question: "Reflektif testleri ne kadar surer?",
+    question: "Reflektif testleri ne kadar sürer?",
     answer:
-      "Temel testler yaklasik 15-20 dakika, tam degerlendirme paketi ise 45-60 dakika surmektedir. Testleri dilediginiz zaman durdurabilir ve kalinan yerden devam edebilirsiniz.",
+      "Temel testler yaklaşık 15-20 dakika, tam değerlendirme paketi ise 45-60 dakika sürmektedir. Testleri dilediğiniz zaman durdurabilir ve kalınan yerden devam edebilirsiniz.",
   },
   {
-    question: "Test sonuclarim ne kadar guvenilir?",
+    question: "Test sonuçlarım ne kadar güvenilir?",
     answer:
-      "Testlerimiz uluslararasi gecerliligi kanitlanmis metodolojilere (Holland RIASEC, Big Five) dayanmaktadir. AI destekli analizlerimiz surekli ogrenme ve iyilestirme surecindedir. Sonuclarin guvenilirligi icin academik validasyon calismalari yapilmaktadir.",
+      "Testlerimiz uluslararası geçerliliği kanıtlanmış metodolojilere (Holland RIASEC, Big Five) dayanmaktadır. AI destekli analizlerimiz sürekli öğrenme ve iyileştirme sürecindedir. Sonuçların güvenilirliği için akademik validasyon çalışmaları yapılmaktadır.",
   },
   {
-    question: "Verilerim guvenli mi?",
+    question: "Verilerim güvenli mi?",
     answer:
-      "Evet, KVKK (6698 sayili Kanun) kapsaminda tum gerekli onlemleri aliyoruz. Verileriniz AES-256 ile sifrelenmekte ve Turkiye'de konuslanan sunucularda saklanmaktadir. Verilerinizi ucuncu taraflarla paylasmiyor ve dilediginiz zaman silme hakkiniz bulunmaktadir.",
+      "Evet, KVKK (6698 sayılı Kanun) kapsamında tüm gerekli önlemleri alıyoruz. Verileriniz AES-256 ile şifrelenmekte ve Türkiye'de konuşlanan sunucularda saklanmaktadır. Verilerinizi üçüncü taraflarla paylaşmıyor ve dilediğiniz zaman silme hakkınız bulunmaktadır.",
   },
   {
-    question: "Kurumsal paketlerde fiyatlandirma nasil?",
+    question: "Kurumsal paketlerde fiyatlandırma nasıl?",
     answer:
-      "Kurumsal paketlerimiz kullanici sayisi ve ozellik ihtiyaclarina gore fiyatlandirilmaktadir. Demo talebinde bulunarak size ozel teklif alabilirsiniz. Universite ve kamu kurumlari icin ozel indirimler uygulanmaktadir.",
+      "Kurumsal paketlerimiz kullanıcı sayısı ve özellik ihtiyaçlarına göre fiyatlandırılmaktadır. Demo talebinde bulunarak size özel teklif alabilirsiniz. Üniversite ve kamu kurumları için özel indirimler uygulanmaktadır.",
   },
   {
     question: "Testleri tekrar alabilir miyim?",
     answer:
-      "Evet, premium paketlerde yillik yeniden degerlendirme hakkiniz bulunmaktadir. Kariyer degisikligi veya onemli yasam olaylarindan sonra testi yenilemenizi oneririz. Temel ucretsiz testler sinirsiz tekrarlanabilir.",
+      "Evet, premium paketlerde yıllık yeniden değerlendirme hakkınız bulunmaktadır. Kariyer değişikliği veya önemli yaşam olaylarından sonra testi yenilemenizi öneririz. Temel ücretsiz testler sınırsız tekrarlanabilir.",
   },
   {
-    question: "MYK sertifikasyon desteginiz var mi?",
+    question: "MYK sertifikasyon desteğiniz var mı?",
     answer:
-      "MYK (Mesleki Yeterlilik Kurumu) standartlariyla uyumlu calisiyoruz. Yakinda resmi MYK belgelendirme ortakligi icin calismalarimiz devam etmektedir. Mevcut durumda MYK meslek standartlariyla eslesen yetkinlik analizleri sunuyoruz.",
+      "MYK (Mesleki Yeterlilik Kurumu) standartlarıyla uyumlu çalışıyoruz. Yakında resmi MYK belgelendirme ortaklığı için çalışmalarımız devam etmektedir. Mevcut durumda MYK meslek standartlarıyla eşleşen yetkinlik analizleri sunuyoruz.",
   },
   {
-    question: "Mobil uygulama var mi?",
+    question: "Mobil uygulama var mı?",
     answer:
-      "Web sitemiz tamamen mobil uyumludur ve tum cihazlarda sorunsuz calisir. Native iOS ve Android uygulamalarimiz yakin zamanda yayinlanacaktir. Beta programimiza kayit olarak erken erisim saglayabilirsiniz.",
+      "Web sitemiz tamamen mobil uyumludur ve tüm cihazlarda sorunsuz çalışır. Native iOS ve Android uygulamalarımız yakın zamanda yayınlanacaktır. Beta programımıza kayıt olarak erken erişim sağlayabilirsiniz.",
   },
   {
-    question: "Is arama destegi sunuyor musunuz?",
+    question: "İş arama desteği sunuyor musunuz?",
     answer:
-      "Premium paketlerimizde CV hazirlama, mulakat teknikleri ve LinkedIn optimizasyonu gibi hizmetler bulunmaktadir. Ayrica partner is platformlarimiz uzerinden dogrudan is basvurusu yapabilirsiniz.",
+      "Premium paketlerimizde CV hazırlama, mülakat teknikleri ve LinkedIn optimizasyonu gibi hizmetler bulunmaktadır. Ayrıca partner iş platformlarımız üzerinden doğrudan iş başvurusu yapabilirsiniz.",
   },
   {
-    question: "Kalite standartlariniz nelerdir?",
+    question: "Kalite standartlarınız nelerdir?",
     answer:
-      "KVKK uyumlu veri koruma, MYK meslek standartlariyla uyumluluk, ISKUR mesleki rehabilitasyon standartlari ve Turkiye Yeterlilikler Cercevesi (TYC) seviye tanimlamalarina uygun calismaktayiz. Detayli bilgi icin Kalite Politikasi sayfamizi ziyaret edebilirsiniz.",
+      "KVKK uyumlu veri koruma, MYK meslek standartlarıyla uyumluluk, İŞKUR mesleki rehabilitasyon standartları ve Türkiye Yeterlilikler Çerçevesi (TYÇ) seviye tanımlamalarına uygun çalışmaktayız. Detaylı bilgi için Kalite Politikası sayfamızı ziyaret edebilirsiniz.",
   },
   {
-    question: "Sikayet ve geri bildirim nasil iletebilirim?",
+    question: "Şikayet ve geri bildirim nasıl iletebilirim?",
     answer:
-      "Sikayetlerinizi web sitemizdeki iletisim formu, sikayet@reflektif.net e-posta adresi veya 0850 numarali telefonumuz uzerinden iletebilirsiniz. Tum sikayetler 2 is gunu icinde kayit altina alinir ve 10 is gunu icinde cozum onerilir. Detayli surec icin Kalite Politikasi sayfamizi inceleyebilirsiniz.",
+      "Şikayetlerinizi web sitemizdeki iletişim formu, sikayet@reflektif.net e-posta adresi veya 0850 840 50 60 numaralı telefonumuz üzerinden iletebilirsiniz. Tüm şikayetler 2 iş günü içinde kayıt altına alınır ve 10 iş günü içinde çözüm önerilir. Detaylı süreç için Kalite Politikası sayfamızı inceleyebilirsiniz.",
   },
   {
-    question: "Testlerinizin gecerliligi ve guvenilirligi nasil saglaniyor?",
+    question: "Testlerinizin geçerliliği ve güvenilirliği nasıl sağlanıyor?",
     answer:
-      "Testlerimiz uluslararasi gecerliligi kanitlanmis psikometrik yontemlere (Holland RIASEC, Big Five) dayanmaktadir. Surekli validasyon calismalari yapilmakta, 10.000+ kullanici veritabanimizla normatif karsilastirmalar saglanmaktadir. AI modellerimiz duzenli olarak kalibre edilmektedir.",
+      "Testlerimiz uluslararası geçerliliği kanıtlanmış psikometrik yöntemlere (Holland RIASEC, Big Five) dayanmaktadır. Sürekli validasyon çalışmaları yapılmakta, 10.000+ kullanıcı veritabanımızla normatif karşılaştırmalar sağlanmaktadır. AI modellerimiz düzenli olarak kalibre edilmektedir.",
   },
   {
-    question: "Engelli bireyler icin erisilebilirlik destegi var mi?",
+    question: "Engelli bireyler için erişilebilirlik desteği var mı?",
     answer:
-      "Evet, platformumuz WCAG 2.1 AA seviyesi erisilebilirlik standartlarina uygundur. Ekran okuyucu destegi, klavye navigasyonu ve yuksek kontrast modu gibi ozellikler mevcuttur. Engelli bireyler icin ozel tasarlanmis Reflektif Engelsiz modulumuz tamamen ucretsizdir.",
+      "Evet, platformumuz WCAG 2.1 AA seviyesi erişilebilirlik standartlarına uygundur. Ekran okuyucu desteği, klavye navigasyonu ve yüksek kontrast modu gibi özellikler mevcuttur. Engelli bireyler için özel tasarlanmış Reflektif Engelsiz modülümüz tamamen ücretsizdir.",
   },
 ];
