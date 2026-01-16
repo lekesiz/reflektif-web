@@ -408,10 +408,10 @@ export default function DemoPage() {
                   Sorularınız için bize ulaşın
                 </p>
                 <a
-                  href="tel:+908501234567"
+                  href="tel:+905074343253"
                   className="text-2xl font-bold hover:underline"
                 >
-                  0850 123 45 67
+                  0507 43 43 253
                 </a>
                 <p className="text-sm opacity-75 mt-2">
                   Pazartesi - Cuma, 09:00 - 18:00

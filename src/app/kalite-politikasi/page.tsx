@@ -493,7 +493,7 @@ export default function KalitePolitikasiPage() {
                       <p className="text-sm text-primary-800">
                         <strong>Iletisim:</strong><br />
                         E-posta: sikayet@reflektif.net<br />
-                        Telefon: 0850 840 50 60<br />
+                        Telefon: 0507 43 43 253<br />
                         Form: reflektif.net/iletisim
                       </p>
                     </div>

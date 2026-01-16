@@ -165,10 +165,10 @@ export default function IletisimPage() {
                         Telefon
                       </h3>
                       <a
-                        href="tel:+908501234567"
+                        href="tel:+905074343253"
                         className="text-primary-600 hover:underline"
                       >
-                        0850 123 45 67
+                        0507 43 43 253
                       </a>
                       <p className="text-sm text-neutral-500 mt-1">
                         Hafta ici 09:00 - 18:00

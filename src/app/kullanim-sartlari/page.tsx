@@ -279,7 +279,7 @@ E-posta: hukuk@reflektif.net`,
 
 **Genel Destek:**
 E-posta: destek@reflektif.net
-Telefon: 0850 840 50 60
+Telefon: 0507 43 43 253
 
 **Hukuki Konular:**
 E-posta: hukuk@reflektif.net

@@ -61,7 +61,7 @@ export default function KVKKPage() {
                     </p>
                     <p className="flex items-center gap-2">
                       <Phone className="w-4 h-4" />
-                      0850 840 50 60
+                      0507 43 43 253
                     </p>
                     <p className="flex items-center gap-2">
                       <Mail className="w-4 h-4" />

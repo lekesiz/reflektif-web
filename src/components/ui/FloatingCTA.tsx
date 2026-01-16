@@ -153,10 +153,10 @@ export function FloatingCTA() {
                     </div>
                     <p className="text-neutral-600 mb-4">Bizi hemen arayın</p>
                     <a
-                      href="tel:+908501234567"
+                      href="tel:+905074343253"
                       className="text-2xl font-bold text-primary-600 hover:underline"
                     >
-                      0850 123 45 67
+                      0507 43 43 253
                     </a>
                     <p className="text-sm text-neutral-500 mt-2">
                       Pzt - Cuma, 09:00 - 18:00

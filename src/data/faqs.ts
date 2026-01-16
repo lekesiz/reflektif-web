@@ -49,7 +49,7 @@ export const faqs: FAQ[] = [
   {
     question: "Şikayet ve geri bildirim nasıl iletebilirim?",
     answer:
-      "Şikayetlerinizi web sitemizdeki iletişim formu, sikayet@reflektif.net e-posta adresi veya 0850 840 50 60 numaralı telefonumuz üzerinden iletebilirsiniz. Tüm şikayetler 2 iş günü içinde kayıt altına alınır ve 10 iş günü içinde çözüm önerilir. Detaylı süreç için Kalite Politikası sayfamızı inceleyebilirsiniz.",
+      "Şikayetlerinizi web sitemizdeki iletişim formu, sikayet@reflektif.net e-posta adresi veya 0507 43 43 253 numaralı telefonumuz üzerinden iletebilirsiniz. Tüm şikayetler 2 iş günü içinde kayıt altına alınır ve 10 iş günü içinde çözüm önerilir. Detaylı süreç için Kalite Politikası sayfamızı inceleyebilirsiniz.",
   },
   {
     question: "Testlerinizin geçerliliği ve güvenilirliği nasıl sağlanıyor?",

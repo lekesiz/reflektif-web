@@ -26,7 +26,7 @@ Bu politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK), ilgili y
 
 **Reflektif Teknoloji A.Ş.**
 Adres: İstanbul, Türkiye
-Telefon: 0850 840 50 60
+Telefon: 0507 43 43 253
 E-posta: kvkk@reflektif.net
 KEP Adresi: reflektif@hs01.kep.tr
 Web: www.reflektif.net
@@ -220,7 +220,7 @@ Platformumuzu kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiği
     content: `Gizlilik politikamız veya kişisel verilerinizle ilgili sorularınız için:
 
 **E-posta:** kvkk@reflektif.net
-**Telefon:** 0850 840 50 60
+**Telefon:** 0507 43 43 253
 **Adres:** İstanbul, Türkiye
 **KEP:** reflektif@hs01.kep.tr
 
