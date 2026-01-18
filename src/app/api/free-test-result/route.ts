@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { resend, FROM_EMAIL, TO_EMAIL } from "@/lib/resend";
+import { sendEmail, FROM_EMAIL, TO_EMAIL } from "@/lib/resend";
 
 interface TestResultData {
   firstName: string;
@@ -177,16 +177,15 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email via Resend
-    const { data: emailData, error } = await resend.emails.send({
-      from: FROM_EMAIL,
+    const result = await sendEmail({
       to: TO_EMAIL,
       replyTo: data.email,
       subject: `🎯 Yeni Ucretsiz Test Sonucu - ${data.firstName} ${data.lastName} (${data.resultTitle})`,
       html: getTestResultEmailTemplate(data),
     });
 
-    if (error) {
-      console.error("Resend error:", error);
+    if (!result.success) {
+      console.error("Email sending error:", result.error);
       return NextResponse.json(
         { error: "E-posta gonderilemedi" },
         { status: 500 }
@@ -195,7 +194,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      messageId: emailData?.id,
+      messageId: result.data?.data?.id,
     });
   } catch (error) {
     console.error("API error:", error);

@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 import { modules } from "@/data/modules";
-import { tests } from "@/data/tests";
+
 import { features } from "@/data/features";
 import { blogPosts } from "@/data/blog";
 
@@ -14,14 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const testPages = tests.flatMap((category) =>
-    category.tests.map((test) => ({
-      url: `${baseUrl}/testler/${category.slug}/${test.slug}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.7,
-    }))
-  );
+
 
   const featurePages = features.map((feature) => ({
     url: `${baseUrl}/ozellikler/${feature.slug}`,
@@ -57,7 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
-    ...testPages,
+
     {
       url: `${baseUrl}/ozellikler`,
       lastModified: new Date(),

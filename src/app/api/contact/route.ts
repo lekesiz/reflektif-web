@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { ZodError } from "zod";
 import { checkRateLimit, getClientIP } from "@/lib/rate-limit";
 import { contactSchema } from "@/lib/validation";
-import { resend } from "@/lib/resend";
+import { sendEmail, FROM_EMAIL, TO_EMAIL } from "@/lib/resend";
 
 export async function POST(request: Request) {
   try {
@@ -35,10 +35,8 @@ export async function POST(request: Request) {
 
     // E-posta gönderimi (Resend kullanarak)
     try {
-      await resend.emails.send({
-        from: "Reflektif İletişim <iletisim@reflektif.net>",
-        to: ["info@reflektif.net"],
-        replyTo: validatedData.email,
+      await sendEmail({
+        to: TO_EMAIL,
         subject: `Yeni İletişim Formu: ${validatedData.subject}`,
         html: `
           <h2>Yeni İletişim Formu Mesajı</h2>
@@ -54,10 +52,11 @@ export async function POST(request: Request) {
           <hr>
           <p><small>Gönderim Zamanı: ${new Date().toLocaleString("tr-TR")}</small></p>
         `,
+        replyTo: validatedData.email,
       });
 
       // Kullanıcıya otomatik yanıt gönder
-      await resend.emails.send({
+      await sendEmail({
         from: "Reflektif <noreply@reflektif.net>",
         to: validatedData.email,
         subject: "Mesajınızı Aldık - Reflektif",
@@ -89,7 +88,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           error: "Geçersiz form verisi",
-          details: error.errors.map((err) => ({
+          details: error.issues.map((err) => ({
             field: err.path.join("."),
             message: err.message,
           })),

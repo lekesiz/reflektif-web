@@ -32,7 +32,7 @@ export const contactSchema = z.object({
     .min(10, "Mesaj en az 10 karakter olmalıdır")
     .max(5000, "Mesaj en fazla 5000 karakter olabilir"),
   type: z.enum(["genel", "demo", "destek", "satis"], {
-    errorMap: () => ({ message: "Geçersiz mesaj tipi" }),
+    message: "Geçersiz mesaj tipi",
   }),
 });
 
@@ -61,7 +61,7 @@ export const registerSchema = z.object({
     .optional()
     .or(z.literal("")),
   userType: z.enum(["ogrenci", "universite", "profesyonel", "kurum"], {
-    errorMap: () => ({ message: "Geçersiz kullanıcı tipi" }),
+    message: "Geçersiz kullanıcı tipi",
   }),
 });
 
@@ -102,7 +102,7 @@ export const freeTestResultSchema = z.object({
     .email("Geçersiz e-posta adresi")
     .max(255, "E-posta en fazla 255 karakter olabilir"),
   testType: z.enum(["kişilik", "yetenek", "ilgi", "deger"], {
-    errorMap: () => ({ message: "Geçersiz test tipi" }),
+    message: "Geçersiz test tipi",
   }),
   answers: z.record(z.string(), z.any()).optional(),
 });

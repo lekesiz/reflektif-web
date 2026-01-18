@@ -1,7 +1,5 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import { sendEmail, TO_EMAIL } from "@/lib/resend";
 
 export async function POST(request: Request) {
   try {
@@ -43,7 +41,7 @@ export async function POST(request: Request) {
 
     // Send email notification
     try {
-      await resend.emails.send({
+      await sendEmail({
         from: "Reflektif <noreply@reflektif.net>",
         to: ["info@reflektif.net"],
         subject: `Yeni Kayıt Başvurusu: ${name}`,
