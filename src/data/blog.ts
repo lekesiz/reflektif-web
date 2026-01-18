@@ -371,21 +371,7 @@ Z kuşağını çekmek için işe alım süreçlerini modernize etmek ve değerl
     featured: true,
     tags: ["Z kuşağı", "işe alım", "employer branding", "çalışan deneyimi"],
   },
-];
-
-export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
-  return blogPosts.find((post) => post.slug === slug);
-};
-
-export const getBlogPostsByCategory = (categorySlug: string): BlogPost[] => {
-  return blogPosts.filter((post) => post.category.slug === categorySlug);
-};
-
-export const getFeaturedPosts = (): BlogPost[] => {
-  return blogPosts.filter((post) => post.featured);
-};
-
-,  {
+  {
     id: "7",
     slug: "dogru-kariyer-secimi-rehberi",
     title: "Doğru Kariyer Seçimi: Kişilik, Yetenek ve Değerler Üçgeni",
@@ -450,4 +436,17 @@ Unutmayın, en iyi kariyer, sadece iyi para kazandığınız değil, aynı zaman
     readTime: "12 dk",
     featured: true,
     tags: ["kariyer seçimi", "kişilik", "yetenek", "değerler", "kişisel gelişim"],
-  }
+  },
+];
+
+export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
+  return blogPosts.find((post) => post.slug === slug);
+};
+
+export const getBlogPostsByCategory = (categorySlug: string): BlogPost[] => {
+  return blogPosts.filter((post) => post.category.slug === categorySlug);
+};
+
+export const getFeaturedPosts = (): BlogPost[] => {
+  return blogPosts.filter((post) => post.featured);
+};
