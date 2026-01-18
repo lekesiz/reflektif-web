@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ReactMarkdown from "react-markdown";
 import {
   Calendar,
   Clock,
@@ -108,18 +109,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
               {/* Article Content */}
               <article className="prose prose-lg max-w-none prose-headings:text-neutral-900 prose-p:text-neutral-600 prose-a:text-primary-600 prose-strong:text-neutral-900">
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: post.content
-                      .replace(/## /g, "<h2>")
-                      .replace(/### /g, "<h3>")
-                      .replace(/\n\n/g, "</p><p>")
-                      .replace(/<h2>/g, "</p><h2>")
-                      .replace(/<h3>/g, "</p><h3>")
-                      .replace(/<\/h2>/g, "</h2><p>")
-                      .replace(/<\/h3>/g, "</h3><p>"),
-                  }}
-                />
+                <ReactMarkdown>{post.content}</ReactMarkdown>
               </article>
 
               {/* Tags */}
