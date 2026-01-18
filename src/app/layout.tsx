@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header, Footer } from "@/components/layout";
 import { LeadPopup, FloatingCTA, StickyBar } from "@/components/ui";
+import { getOrganizationSchema, getWebSiteSchema, generateJSONLD } from "@/lib/structured-data";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -75,8 +76,27 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const organizationSchema = getOrganizationSchema();
+  const websiteSchema = getWebSiteSchema();
+
   return (
     <html lang="tr">
+      <head>
+        {/* Organization Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: generateJSONLD(organizationSchema),
+          }}
+        />
+        {/* Website Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: generateJSONLD(websiteSchema),
+          }}
+        />
+      </head>
       <body className={inter.className}>
         <Header />
         <main className="min-h-screen">{children}</main>

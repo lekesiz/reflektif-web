@@ -1,5 +1,8 @@
 import { MetadataRoute } from "next";
 import { modules } from "@/data/modules";
+import { tests } from "@/data/tests";
+import { features } from "@/data/features";
+import { blogPosts } from "@/data/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://reflektif.net";
@@ -9,6 +12,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.8,
+  }));
+
+  const testPages = tests.flatMap((category) =>
+    category.tests.map((test) => ({
+      url: `${baseUrl}/testler/${category.slug}/${test.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    }))
+  );
+
+  const featurePages = features.map((feature) => ({
+    url: `${baseUrl}/ozellikler/${feature.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  const blogPages = blogPosts.map((post) => ({
+    url: `${baseUrl}/kaynaklar/blog/${post.slug}`,
+    lastModified: new Date(post.publishedAt),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
   }));
 
   return [
@@ -25,6 +51,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     ...modulePages,
+    {
+      url: `${baseUrl}/testler`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    ...testPages,
+    {
+      url: `${baseUrl}/ozellikler`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    ...featurePages,
+    {
+      url: `${baseUrl}/kaynaklar`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    ...blogPages,
+    {
+      url: `${baseUrl}/referanslar`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
     {
       url: `${baseUrl}/fiyatlandirma`,
       lastModified: new Date(),
