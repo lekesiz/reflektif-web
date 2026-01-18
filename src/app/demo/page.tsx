@@ -36,7 +36,7 @@ const industries = [
 ];
 
 const interests = [
-  { id: "kisilik", label: "Kişilik Envanteri" },
+  { id: "kişilik", label: "Kişilik Envanteri" },
   { id: "yetenek", label: "Yetenek Testleri" },
   { id: "video", label: "Video Mülakat" },
   { id: "ats", label: "Başvuru Takip (ATS)" },

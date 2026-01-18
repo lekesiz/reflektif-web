@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 const sections = [
   {
-    id: "giris",
+    id: "giriş",
     title: "1. Giriş ve Kabul",
     icon: FileText,
     content: `Bu Kullanım Şartları ("Şartlar"), Reflektif Teknoloji A.Ş. ("Reflektif", "biz", "bizim") tarafından reflektif.net web sitesi ve mobil uygulamaları üzerinden sunulan hizmetlerin kullanım koşullarını düzenlemektedir.
@@ -272,7 +272,7 @@ Reflektif Teknoloji A.Ş.
 E-posta: hukuk@reflektif.net`,
   },
   {
-    id: "iletisim",
+    id: "iletişim",
     title: "13. İletişim",
     icon: Mail,
     content: `Kullanım şartları veya hizmetlerimizle ilgili sorularınız için:

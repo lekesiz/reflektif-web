@@ -22,7 +22,7 @@ export interface Test {
 
 export const testCategories: TestCategory[] = [
   {
-    id: "kisilik",
+    id: "kişilik",
     slug: "kisilik-envanteri",
     name: "Kişilik Envanteri - RiT",
     description: "Reflektif Item Test ile çok boyutlu kişilik analizi",

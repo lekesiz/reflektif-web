@@ -101,7 +101,7 @@ export const freeTestResultSchema = z.object({
     .string()
     .email("Geçersiz e-posta adresi")
     .max(255, "E-posta en fazla 255 karakter olabilir"),
-  testType: z.enum(["kisilik", "yetenek", "ilgi", "deger"], {
+  testType: z.enum(["kişilik", "yetenek", "ilgi", "deger"], {
     errorMap: () => ({ message: "Geçersiz test tipi" }),
   }),
   answers: z.record(z.string(), z.any()).optional(),

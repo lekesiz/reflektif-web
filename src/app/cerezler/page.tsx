@@ -321,7 +321,7 @@ Tarayıcınızı, kapandığında tüm çerezleri otomatik silecek şekilde ayar
 Değişiklikler, web sitesinde yayınlandığı tarihte yürürlüğe girer.`,
   },
   {
-    id: "iletisim",
+    id: "iletişim",
     title: "10. İletişim",
     icon: Mail,
     content: `Çerez kullanımımız hakkında sorularınız için:

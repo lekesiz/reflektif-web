@@ -445,7 +445,7 @@ export default async function ModulePage({
                         plan.highlighted ? "text-white" : "text-neutral-900"
                       }`}
                     >
-                      {plan.price === 0 ? "Ucretsiz" : formatPrice(plan.price)}
+                      {plan.price === 0 ? "Ücretsiz" : formatPrice(plan.price)}
                     </span>
                     {plan.period && (
                       <span

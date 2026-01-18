@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const sections = [
   {
-    id: "giris",
+    id: "giriş",
     title: "1. Giriş",
     icon: Shield,
     content: `Reflektif Teknoloji A.Ş. ("Reflektif", "biz", "bizim") olarak, gizliliğinize ve kişisel verilerinizin korunmasına büyük önem veriyoruz. Bu Gizlilik Politikası, reflektif.net web sitesi ve mobil uygulamalarımız aracılığıyla toplanan kişisel verilerin nasıl işlendiğini, korunduğunu ve haklarınızı açıklamaktadır.
@@ -214,7 +214,7 @@ Temel çerez kategorileri:
 Platformumuzu kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.`,
   },
   {
-    id: "iletisim",
+    id: "iletişim",
     title: "11. İletişim",
     icon: Mail,
     content: `Gizlilik politikamız veya kişisel verilerinizle ilgili sorularınız için:
