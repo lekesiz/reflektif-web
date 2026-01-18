@@ -67,7 +67,8 @@ export const blogCategories: BlogCategory[] = [
 export const blogPosts: BlogPost[] = [
   {
     id: "1",
-    slug: "2025-i    title: "2025 İşe Alım Trendleri: AI ve Yetenek Ekonomisi",
+    slug: "2025-ise-alim-trendleri",
+    title: "2025 İşe Alım Trendleri: AI ve Yetenek Ekonomisi",
     excerpt:
       "2025 işe alım dünyasını şekillendiren yapay zeka, beceri bazlı işe alım ve yeşil dönüşüm gibi kritik trendleri World Economic Forum verileriyle keşfedin.",
     content: `
@@ -116,7 +117,8 @@ Yetenek kıtlığının arttığı bir dönemde, adaylar artık sadece bir iş a
 ### Referanslar
 [1] World Economic Forum. (2025). *The Future of Jobs Report 2025*. [https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/](https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/)
 [2] Demand Sage. (2026). *AI Recruitment Statistics 2026*. [https://www.demandsage.com/ai-recruitment-statistics/](https://www.demandsage.com/ai-recruitment-statistics/)
-    ` category: blogCategories[0],
+    `,
+    category: blogCategories[0],
     author: {
       name: "Dr. Elif Yılmaz",
       role: "İK Araştırma Direktörü",
