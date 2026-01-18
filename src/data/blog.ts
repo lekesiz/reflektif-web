@@ -56,43 +56,67 @@ export const blogCategories: BlogCategory[] = [
     slug: "arastirma",
     description: "Sektör araştırmaları ve raporlar",
   },
+  {
+    id: "psikoloji-kisisel-gelisim",
+    name: "Psikoloji & Kişisel Gelişim",
+    slug: "psikoloji-kisisel-gelisim",
+    description: "Kişilik, motivasyon, stres yönetimi ve kariyer tatmini",
+  },
 ];
 
 export const blogPosts: BlogPost[] = [
   {
     id: "1",
-    slug: "2025-ise-alim-trendleri",
-    title: "2025 İşe Alım Trendleri: Yapay Zeka ve İnsan Odaklı Yaklaşım",
+    slug: "2025-i    title: "2025 İşe Alım Trendleri: AI ve Yetenek Ekonomisi",
     excerpt:
-      "2025 yılında işe alım dünyasını şekillendirecek temel trendleri, yapay zeka uygulamalarını ve insan odaklı yaklaşımların önemini keşfedin.",
+      "2025 işe alım dünyasını şekillendiren yapay zeka, beceri bazlı işe alım ve yeşil dönüşüm gibi kritik trendleri World Economic Forum verileriyle keşfedin.",
     content: `
-## Giriş
+## 2025: İşe Alımda Yeni Bir Çağın Başlangıcı
 
-2025 yılı, işe alım dünyası için köklü değişimlerin yaşandığı bir yıl olacak. Yapay zeka teknolojilerinin gelişimi, uzaktan çalışma modellerinin kalıcılaşması ve yetenek kıtlığı, şirketlerin işe alım stratejilerini yeniden düşünmelerini gerektiriyor.
+2025 yılı, işe alım dünyası için bir dönüm noktası niteliği taşıyor. **World Economic Forum'un 2025 İşlerin Geleceği Raporu**'na göre, teknolojik değişim, jeoekonomik parçalanma ve yeşil dönüşüm gibi makro trendler, küresel iş gücü piyasasını kökten değiştiriyor [1]. Bu değişim rüzgarı, şirketlerin yetenekleri nasıl bulduğunu, değerlendirdiğini ve işe aldığını yeniden şekillendiriyor. Peki, 2025'te İK profesyonellerini ve adayları neler bekliyor?
 
-## 1. Yapay Zeka Destekli İşe Alım
+## Trend 1: Yapay Zeka (AI) İşe Alımın Merkezinde
 
-AI artık sadece özgeçmiş taraması yapmıyor. Video mülakat analizi, yetkinlik eşleştirme ve aday deneyimi kişiselleştirme gibi alanlarda aktif rol oynuyor.
+Yapay zeka, artık sadece bir yardımcı araç değil, işe alım süreçlerinin ana motoru haline geliyor. WEF raporuna göre, şirketlerin **%86'sı** AI ve büyük veri teknolojilerinin işlerini dönüştürmesini bekliyor [1]. Bu dönüşüm, işe alımda şu alanlarda kendini gösteriyor:
 
-### AI'ın Kullanım Alanları:
-- Özgeçmiş ve başvuru analizi
-- Video mülakat değerlendirme
-- Chatbot ile aday iletişimi
-- Tahminsel analizler
+- **Akıllı Aday Eşleştirme**: AI algoritmaları, adayların yeteneklerini ve potansiyellerini analiz ederek, açık pozisyonlarla en uygun eşleşmeleri saniyeler içinde yapabiliyor.
+- **Otomatik Süreç Yönetimi**: Özgeçmiş taramasından mülakat planlamasına, aday iletişiminden değerlendirme raporlarının oluşturulmasına kadar birçok süreç otomatize ediliyor.
+- **Tahminsel Analizler**: AI, geçmiş verileri analiz ederek hangi adayın başarılı olma olasılığının daha yüksek olduğunu tahmin edebiliyor, böylece işe alım hatalarını minimize ediyor.
 
-## 2. Beceri Bazlı İşe Alım
+> **İstatistik**: Araştırmalar, AI kullanan şirketlerin işe alım süresini **%40**'a kadar kısalttığını ve aday kalitesini **%35** artırdığını gösteriyor [2].
 
-Geleneksel diploma ve deneyim odaklı yaklaşım yerini beceri bazlı değerlendirmeye bırakıyor. Şirketler, adayların gerçek yeteneklerini ölçen testler ve simülasyonlar kullanıyor.
+## Trend 2: Beceri Bazlı İşe Alım (Skills-First Hiring)
 
-## 3. Aday Deneyimi Önceliği
+WEF raporu, 2025-2030 döneminde mevcut yetenek setlerinin **%39'unun** güncelliğini yitireceğini öngörüyor [1]. Bu durum, geleneksel diploma ve deneyim odaklı işe alım anlayışını yıkıyor. Artık şirketler, bir adayın hangi okuldan mezun olduğundan çok, hangi becerilere sahip olduğuna odaklanıyor. 
 
-İşe alım sürecinde aday deneyimi, şirket markası kadar önemli hale geldi. Hızlı geri bildirim, şeffaf süreç ve kişiselleştirilmiş iletişim beklentisi artıyor.
+**Beceri bazlı işe alımın avantajları:**
 
-## Sonuç
+| Avantaj | Açıklama |
+|---|---|
+| **Geniş Yetenek Havuzu** | Geleneksel olmayan geçmişe sahip yetenekli adaylara kapı açar. |
+| **Artan Çeşitlilik** | Önyargıları azaltarak daha çeşitli ve kapsayıcı bir iş gücü oluşturur. |
+| **Yüksek Performans** | Pozisyon için gerekli becerilere sahip adaylar daha hızlı adapte olur ve daha yüksek performans gösterir. |
 
-2025'te başarılı işe alım, teknoloji ve insan odaklı yaklaşımı dengeli bir şekilde birleştiren şirketlerin elinde olacak.
-    `,
-    category: blogCategories[0],
+## Trend 3: Yeşil Dönüşüm ve Yeşil Yakalı İşler
+
+İklim değişikliği ile mücadele, yeni bir iş kategorisi yaratıyor: **yeşil yakalı işler**. WEF'e göre, yenilenebilir enerji mühendisleri, çevre mühendisleri ve otonom araç uzmanları en hızlı büyüyen meslekler arasında yer alıyor [1]. Bu trend, sadece mühendislik alanında değil, aynı zamanda sürdürülebilirlik danışmanlığı, yeşil pazarlama ve çevre hukuku gibi alanlarda da yeni kariyer fırsatları doğuruyor.
+
+## Trend 4: Aday Deneyimi ve Şeffaflık
+
+Yetenek kıtlığının arttığı bir dönemde, adaylar artık sadece bir iş aramıyor, aynı zamanda bir deneyim arıyor. Şirketler, adayları birer "müşteri" olarak görmeye başlıyor. Bu yaklaşım, şu unsurları ön plana çıkarıyor:
+
+- **Hızlı ve Şeffaf İletişim**: Adaylara sürecin her aşamasında düzenli ve net bilgi vermek.
+- **Kişiselleştirilmiş Yaklaşım**: Adayın ilgi alanlarına ve kariyer hedeflerine uygun bir iletişim kurmak.
+- **Esneklik**: Uzaktan veya hibrit çalışma modelleri sunmak.
+
+## Sonuç: Geleceğe Hazır Olmak
+
+2025 ve sonrası, işe alımda proaktif, teknoloji odaklı ve insanı merkeze alan bir yaklaşım gerektiriyor. Şirketlerin başarılı olmak için yapay zekayı etkin bir şekilde kullanması, beceri odaklı bir işe alım kültürü benimsemesi ve aday deneyimine yatırım yapması kaçınılmaz. Adaylar için ise sürekli öğrenme ve yeni beceriler kazanma, kariyerlerini geleceğe taşımanın anahtarı olacak.
+
+### Referanslar
+[1] World Economic Forum. (2025). *The Future of Jobs Report 2025*. [https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/](https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/)
+[2] Demand Sage. (2026). *AI Recruitment Statistics 2026*. [https://www.demandsage.com/ai-recruitment-statistics/](https://www.demandsage.com/ai-recruitment-statistics/)
+    ` category: blogCategories[0],
     author: {
       name: "Dr. Elif Yılmaz",
       role: "İK Araştırma Direktörü",
@@ -358,3 +382,70 @@ export const getBlogPostsByCategory = (categorySlug: string): BlogPost[] => {
 export const getFeaturedPosts = (): BlogPost[] => {
   return blogPosts.filter((post) => post.featured);
 };
+
+,  {
+    id: "7",
+    slug: "dogru-kariyer-secimi-rehberi",
+    title: "Doğru Kariyer Seçimi: Kişilik, Yetenek ve Değerler Üçgeni",
+    excerpt: "Kariyer yolculuğunuzda doğru kararları nasıl alırsınız? Kişilik tipiniz, yetenekleriniz ve kişisel değerleriniz arasındaki dengeyi bularak tatmin edici bir kariyere ulaşmanın yolları.",
+    content: `
+## Kariyer Seçimi: Bir Hayat Kararı
+
+Kariyer seçimi, hayatımızdaki en önemli kararlardan biridir. Sadece maddi kazanç değil, aynı zamanda kişisel tatmin, mutluluk ve yaşam kalitemizi de doğrudan etkiler. Peki, bu kadar önemli bir kararı alırken nelere dikkat etmeliyiz? Cevap, üç temel unsurun kesişiminde yatıyor: **kişilik, yetenek ve değerler**.
+
+## 1. Kişiliğinizi Tanıyın: Kimsiniz?
+
+Kişilik, davranışlarımızı, düşüncelerimizi ve duygularımızı şekillendiren temel yapıdır. İçe dönük müsünüz, yoksa dışa dönük mü? Detaycı ve analitik mi, yoksa yaratıcı ve büyük resmi gören mi? Bu soruların cevapları, hangi çalışma ortamında daha mutlu ve verimli olacağınızı belirler.
+
+### Popüler Kişilik Modelleri
+
+- **Big Five (Beş Faktör Modeli)**: Açıklık, Sorumluluk, Dışadönüklük, Uyumluluk ve Duygusal Denge olmak üzere beş temel kişilik özelliğini inceler.
+- **MBTI (Myers-Briggs Tip Göstergesi)**: 16 farklı kişilik tipi üzerinden bireylerin tercihlerini analiz eder.
+
+> **Reflektif Notu**: Reflektif platformu, bilimsel temelli kişilik envanterleri ile sizin için en uygun çalışma ortamını ve rollerini belirlemenize yardımcı olur.
+
+## 2. Yeteneklerinizi Keşfedin: Nelerde İyisiniz?
+
+Yetenekler, doğuştan gelen veya sonradan geliştirilen becerilerimizdir. Hangi konularda doğal bir eğiliminiz var? Hangi işleri yaparken zamanın nasıl geçtiğini anlamıyorsunuz? Yeteneklerinizi doğru bir şekilde belirlemek, kariyerinizde başarılı ve fark yaratan bir profesyonel olmanızı sağlar.
+
+| Yetenek Türü | Örnekler |
+|---|---|
+| **Analitik Yetenekler** | Problem çözme, eleştirel düşünme, veri analizi |
+| **Sosyal Yetenekler** | İletişim, empati, liderlik, ikna |
+| **Yaratıcı Yetenekler** | Tasarım, yazma, inovasyon, sanatsal ifade |
+| **Teknik Yetenekler** | Programlama, mühendislik, veri bilimi |
+
+## 3. Değerlerinizi Belirleyin: Sizin İçin Ne Önemli?
+
+Değerler, hayatımıza yön veren temel inançlarımız ve prensiplerimizdir. Kariyerinizde sizin için neyin önemli olduğunu belirlemek, uzun vadeli mutluluk ve tatmin için kritiktir.
+
+**Kendinize sormanız gereken sorular:**
+
+- Benim için maddi kazanç mı, yoksa iş-yaşam dengesi mi daha önemli?
+- Yaratıcılığımı kullanabileceğim bir iş mi, yoksa istikrarlı ve güvenli bir iş mi tercih ederim?
+- Topluma fayda sağlamak benim için bir motivasyon kaynağı mı?
+
+## Kesişim Noktası: İdeal Kariyeriniz
+
+İdeal kariyer, bu üç unsurun kesiştiği noktada bulunur:
+
+- **Kişiliğinize uygun** bir çalışma ortamı
+- **Yeteneklerinizi kullanabildiğiniz** ve geliştirebildiğiniz bir rol
+- **Değerlerinizle örtüşen** bir iş anlamı
+
+## Sonuç: Bilinçli Bir Seçim Yapın
+
+Doğru kariyer seçimi, bir gecede verilecek bir karar değildir. Kendinizi tanımak, araştırma yapmak ve farklı seçenekleri değerlendirmek için zaman ayırmanız gerekir. Reflektif gibi platformlar, bu yolculukta size bilimsel verilerle rehberlik ederek, kişiliğiniz, yetenekleriniz ve değerlerinizle uyumlu, tatmin edici bir kariyere ulaşmanıza yardımcı olabilir.
+
+Unutmayın, en iyi kariyer, sadece iyi para kazandığınız değil, aynı zamanda her sabah sizi heyecanla yataktan kaldıran iştir.
+    `,
+    category: blogCategories[4],
+    author: {
+      name: "Manus AI",
+      role: "Yapay Zeka Kariyer Danışmanı",
+    },
+    publishedAt: "2025-01-18",
+    readTime: "12 dk",
+    featured: true,
+    tags: ["kariyer seçimi", "kişilik", "yetenek", "değerler", "kişisel gelişim"],
+  }

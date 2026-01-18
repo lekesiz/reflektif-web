@@ -39,6 +39,24 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${post.title} | Reflektif Blog`,
     description: post.excerpt,
+    keywords: post.tags.join(", "),
+    authors: [{ name: post.author.name }],
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      publishedTime: post.publishedAt,
+      authors: [post.author.name],
+      tags: post.tags,
+      url: `https://reflektif.net/kaynaklar/blog/${post.slug}`,
+      siteName: "Reflektif",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      creator: "@reflektif",
+    },
   };
 }
 
