@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "KVKK Aydınlatma Metni | Reflektif",
@@ -17,7 +18,20 @@ export default function KVKKAydinlatmaMetniPage() {
         description="Kişisel Verilerin Korunması Kanunu Kapsamında Aydınlatma Metni"
       />
 
-      <div className="container mx-auto px-6 md:px-8 py-12">
+      {/* Hero Image */}
+      <div className="container mx-auto px-6 md:px-8 py-8">
+        <div className="relative w-full h-48 md:h-64 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary-50 to-purple-50 mb-8">
+          <Image
+            src="/images/pages/kvkk-hero.png"
+            alt="KVKK Aydınlatma Metni"
+            fill
+            className="object-contain p-8"
+            priority
+          />
+        </div>
+      </div>
+
+      <div className="container mx-auto px-6 md:px-8 pb-12">
         <div className="mx-auto max-w-4xl">
           <div className="rounded-lg bg-white p-8 shadow-lg">
             <p className="mb-6 text-sm text-gray-600">
