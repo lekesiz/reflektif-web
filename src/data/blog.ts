@@ -256,3 +256,18 @@ Doğru işe alım yapmak, bir sanat olduğu kadar bir bilimdir. Yetkinlik bazlı
     tags: ["işe alım", "mülakat teknikleri", "star tekniği", "yetkinlik bazlı mülakat"],
   },
 ];
+
+// Helper function to get blog post by slug
+export function getBlogPostBySlug(slug: string): BlogPost | undefined {
+  return blogPosts.find((post) => post.slug === slug);
+}
+
+// Helper function to get related posts
+export function getRelatedPosts(currentSlug: string, limit: number = 3): BlogPost[] {
+  const currentPost = getBlogPostBySlug(currentSlug);
+  if (!currentPost) return [];
+
+  return blogPosts
+    .filter((post) => post.slug !== currentSlug && post.category.id === currentPost.category.id)
+    .slice(0, limit);
+}
