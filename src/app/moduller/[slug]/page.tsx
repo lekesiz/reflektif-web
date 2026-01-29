@@ -110,7 +110,18 @@ export default async function ModulePage({
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-primary-50 via-secondary-50 to-accent-50 rounded-3xl p-8">
+            <div className="relative">
+              {/* Hero Image */}
+              <div className="relative w-full h-[400px] rounded-3xl overflow-hidden mb-8">
+                <img
+                  src={`/images/modules/${slug}-hero.png`}
+                  alt={`${moduleData.name} - Hero Image`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              
+              {/* Info Card */}
+              <div className="bg-gradient-to-br from-primary-50 via-secondary-50 to-accent-50 rounded-3xl p-8">
               <h3 className="font-bold text-neutral-900 mb-6 text-xl">
                 Hedef Kitle
               </h3>
@@ -134,6 +145,7 @@ export default async function ModulePage({
                   </li>
                 ))}
               </ul>
+              </div>
             </div>
           </div>
         </Container>
