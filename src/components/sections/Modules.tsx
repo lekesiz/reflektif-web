@@ -48,6 +48,8 @@ const colorClasses: Record<string, { bg: string; badge: string; button: string }
 };
 
 export function Modules() {
+  const displayedModules = modules.filter(m => m.id !== 'universite');
+
   return (
     <section className="py-24 bg-neutral-50">
       <Container>
@@ -71,7 +73,7 @@ export function Modules() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {modules.map((module, index) => {
+          {displayedModules.map((module, index) => {
             const Icon = moduleIcons[module.icon];
             const colors = colorClasses[module.color];
 

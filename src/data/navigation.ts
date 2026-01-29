@@ -72,6 +72,9 @@ export const footerNavigation = {
     { label: "Kaynaklar", href: "/kaynaklar" },
     { label: "Kalite Politikası", href: "/kalite-politikasi" },
     { label: "İletişim", href: "/iletisim" },
+    { label: "Karşılaştırma", href: "/karsilastirma" },
+    { label: "Bilimsel Temel", href: "/bilimsel-temel" },
+    { label: "Süreç", href: "/surec" },
   ],
   destek: [
     { label: "Sıkça Sorulan Sorular", href: "/#faq" },

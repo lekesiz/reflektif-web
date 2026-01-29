@@ -124,7 +124,7 @@ export const features: Feature[] = [
     seoKeywords: ["ik analitiği", "yetenek raporlama", "performans raporu", "kişilik raporu", "insan kaynakları analitiği"],
   },
   {
-    id: "360-degerlendirme",
+    id: "360",
     slug: "360-derece-degerlendirme",
     name: "360 Derece Geri Bildirim ve Performans",
     shortDescription:
@@ -225,6 +225,66 @@ export const features: Feature[] = [
     ],
     integrations: ["SAP SuccessFactors", "Workday", "Oracle HCM", "Greenhouse", "Lever", "Tüm REST/JSON uyumlu sistemler"],
     seoKeywords: ["ik yazılım entegrasyonu", "ats entegrasyonu", "hris entegrasyonu", "ik api", "yetenek yönetimi api"],
+  },
+  {
+    id: "ats",
+    slug: "basvuru-takip-sistemi",
+    name: "Başvuru Takip Sistemi (ATS)",
+    shortDescription: "Tüm işe alım sürecinizi tek bir yerden yönetin. Aday havuzu oluşturun, mülakatları planlayın ve ekibinizle işbirliği yapın.",
+    longDescription:
+      "Reflektif ATS, aday başvurularını toplamaktan iş teklifi aşamasına kadar tüm işe alım sürecinizi otomatize eden modern bir başvuru takip sistemidir. Sürükle-bırak arayüzü ile kendi işe alım akışınızı tasarlayabilir, adaylarla toplu iletişim kurabilir ve değerlendirme sonuçlarını tek bir ekranda görebilirsiniz.",
+    icon: "Users",
+    color: "info",
+    highlights: [],
+    benefits: [
+      {
+        title: "Verimlilik",
+        description: "İşe alım süreçlerinde zaman ve maliyet tasarrufu",
+        icon: "Zap",
+      },
+      {
+        title: "İyi Aday Deneyimi",
+        description: "Daha iyi aday deneyimi",
+        icon: "Award",
+      },
+      {
+        title: "Veriye Dayalı Kararlar",
+        description: "Veriye dayalı işe alım kararları",
+        icon: "BrainCircuit",
+      },
+    ],
+    useCases: ["Tüm ölçekteki şirketler", "İK departmanları"],
+    seoKeywords: ["başvuru takip sistemi", "ats", "işe alım yazılımı"],
+  },
+  {
+    id: "yetkinlik",
+    slug: "yetkinlik-bazli-degerlendirme",
+    name: "Yetkinlik Bazlı Değerlendirme",
+    shortDescription: "Pozisyon için kritik olan davranışsal ve teknik yetkinlikleri belirleyin ve adayları bu yetkinliklere göre objektif olarak ölçün.",
+    longDescription:
+      "Yetkinlik Bazlı Değerlendirme, adayın geçmiş deneyimlerinden çok gelecekteki potansiyeline odaklanır. Reflektif, şirketinizin veya pozisyonun gerektirdiği liderlik, problem çözme, iletişim gibi 50’den fazla standart yetkinlik modelini veya size özel oluşturulmuş modelleri kullanarak, adayların bu yetkinliklere ne kadar sahip olduğunu simülasyonlar, durumsal yargı testleri ve davranışsal mülakat soruları ile ölçer.",
+    icon: "Star",
+    color: "warning",
+    highlights: [],
+    benefits: [
+      {
+        title: "İsabetli İşe Alım",
+        description: "İşe alımda isabet oranını artırma",
+        icon: "Target",
+      },
+      {
+        title: "Potansiyel Belirleme",
+        description: "Performans ve potansiyeli öngörme",
+        icon: "TrendingUp",
+      },
+      {
+        title: "Gelişim Yol Haritası",
+        description: "Çalışan gelişimi için yol haritası oluşturma",
+        icon: "Map",
+      },
+    ],
+    useCases: ["Yönetici işe alımları", "Potansiyel belirleme", "Terfi süreçleri"],
+    seoKeywords: ["yetkinlik bazlı değerlendirme", "yetkinlik modeli", "davranışsal mülakat"],
   },
 ];
 

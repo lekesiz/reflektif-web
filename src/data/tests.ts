@@ -305,3 +305,102 @@ export const testCategories: TestCategory[] = [
 export const getTestCategoryBySlug = (slug: string): TestCategory | undefined => {
   return testCategories.find((t) => t.slug === slug);
 };
+
+
+// 404 hatalarını düzeltmek için eklenen yeni kategoriler
+
+export const newTestCategories: TestCategory[] = [
+  {
+    id: "teknik",
+    slug: "teknik-testler",
+    name: "Teknik Yetkinlik Testleri",
+    description: "Yazılım geliştirme, veri bilimi ve siber güvenlik gibi alanlarda teknik becerilerinizi ölçün.",
+    longDescription:
+      "Teknik Yetkinlik Testleri, adayların belirli bir teknoloji veya programlama dilindeki bilgi ve becerilerini ölçmek için tasarlanmıştır. Reflektif, 20’den fazla programlama dili ve teknoloji için (Python, Java, JavaScript, SQL, AWS, Azure vb.) kodlama testleri, proje simülasyonları ve çoktan seçmeli sorular sunar.",
+    icon: "Code",
+    color: "warning",
+    duration: "30-60 dakika",
+    questionCount: "15-30 soru",
+    tests: [
+      {
+        name: "Python Geliştirici Testi",
+        description: "Veri yapıları, algoritmalar ve OOP konularında Python bilginizi ölçün.",
+        duration: "45 dk",
+        questions: 20,
+      },
+      {
+        name: "SQL Veritabanı Testi",
+        description: "JOIN, GROUP BY, subquery gibi ileri seviye SQL sorgulama becerilerinizi test edin.",
+        duration: "30 dk",
+        questions: 15,
+      },
+    ],
+    benefits: [
+      "Teknik becerilerin objektif kanıtı",
+      "İşe alım süreçlerinde avantaj",
+      "Sertifika ile yetkinlik belgeleme",
+    ],
+    useCases: [
+      "Yazılım geliştirici işe alımları",
+      "Teknik ekip terfi süreçleri",
+      "Bootcamp ve eğitim programı mezuniyet sınavları",
+    ],
+    scientificBasis: ["Yetkinlik Bazlı Değerlendirme", "Performans Tabanlı Test"],
+    targetAudience: ["Yazılım geliştiriciler", "Veri bilimciler", "Sistem yöneticileri"],
+    sampleReport: "/samples/teknik-raporu.pdf",
+    seoKeywords: ["teknik test", "kodlama testi", "python testi", "sql testi", "yazılım testi"],
+  },
+  {
+    id: "oyun",
+    slug: "oyun-tabanli",
+    name: "Oyun Tabanlı Değerlendirme",
+    description: "Eğlenceli ve sürükleyici oyunlarla bilişsel yeteneklerinizi ve davranışsal eğilimlerinizi ölçün.",
+    longDescription:
+      "Oyun Tabanlı Değerlendirme, geleneksel testlerin yarattığı stresi ortadan kaldırarak adayların doğal davranışlarını ve potansiyellerini ölçmeyi hedefler. Reflektif, dikkat, hafıza, problem çözme gibi bilişsel yetenekleri ve risk alma, strateji kurma gibi davranışsal eğilimleri ölçen 10’dan fazla oyun sunar.",
+    icon: "Gamepad2",
+    color: "info",
+    duration: "10-15 dakika",
+    questionCount: "3-5 oyun",
+    tests: [],
+    benefits: [
+      "Eğlenceli ve ilgi çekici aday deneyimi",
+      "Doğal davranışların ölçümü",
+      "Y ve Z kuşağına hitap etme",
+    ],
+    useCases: [
+      "Yeni mezun ve stajyer işe alımları",
+      "Yüksek hacimli işe alım süreçleri",
+      "Marka imajını güçlendirme",
+    ],
+    scientificBasis: ["Gamification Teorileri", "Bilişsel Psikoloji"],
+    targetAudience: ["Tüm adaylar", "Özellikle Y ve Z kuşağı"],
+    sampleReport: "/samples/oyun-raporu.pdf",
+    seoKeywords: ["oyun tabanlı değerlendirme", "gamification", "işe alım oyunları"],
+  },
+  {
+    id: "risk",
+    slug: "kariyer-risk-analizi",
+    name: "Kariyer Risk Analizi",
+    description: "Yapay zeka çağında mesleğinizin gelecekteki durumunu ve risk seviyesini öğrenin.",
+    longDescription:
+      "Kariyer Risk Analizi, yapay zeka ve otomasyonun iş piyasası üzerindeki etkilerini analiz ederek, mevcut veya hedeflediğiniz mesleğin gelecekte ne kadar risk altında olduğunu belirler. Analiz, mesleğinizin rutin görev oranını, yaratıcılık ve stratejik düşünme gereksinimlerini ve insan etkileşimi düzeyini değerlendirir.",
+    icon: "ShieldAlert",
+    color: "danger",
+    duration: "5 dakika",
+    questionCount: "10 soru",
+    tests: [],
+    benefits: [
+      "Geleceğe yönelik kariyer planlaması",
+      "Upskill ve reskill ihtiyaçlarını belirleme",
+      "AI-proof bir kariyer yolu çizme",
+    ],
+    useCases: ["Tüm profesyoneller", "Kariyer danışmanları"],
+    scientificBasis: ["Oxford Üniversitesi - Mesleklerin Geleceği Raporu"],
+    targetAudience: ["Tüm profesyoneller"],
+    sampleReport: "/samples/risk-raporu.pdf",
+    seoKeywords: ["kariyer riski", "mesleklerin geleceği", "yapay zeka", "otomasyon"],
+  },
+];
+
+// testCategories array'ini yeni kategorilerle birleştir
+testCategories.push(...newTestCategories);
