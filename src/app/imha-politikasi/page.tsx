@@ -20,7 +20,7 @@ export default function ImhaPolitikasiPage() {
 
       {/* Hero Image */}
       <div className="container mx-auto px-6 md:px-8 py-8">
-        <div className="relative w-full h-48 md:h-64 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary-50 to-purple-50 mb-8">
+        <div className="relative w-full h-80 md:h-96 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary-50 to-purple-50 mb-8">
           <Image
             src="/images/pages/imha-politikasi-hero.webp"
             alt="Kişisel Veri Saklama ve İmha Politikası"
