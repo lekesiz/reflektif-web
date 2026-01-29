@@ -22,7 +22,7 @@ export default function KVKKAydinlatmaMetniPage() {
       <div className="container mx-auto px-6 md:px-8 py-8">
         <div className="relative w-full h-48 md:h-64 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary-50 to-purple-50 mb-8">
           <Image
-            src="/images/pages/kvkk-hero.png"
+            src="/images/pages/kvkk-hero.webp"
             alt="KVKK Aydınlatma Metni"
             fill
             className="object-contain p-8"

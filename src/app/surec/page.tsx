@@ -82,7 +82,7 @@ const SurecPage = () => {
       <section className="container mx-auto px-6 md:px-8 py-12">
         <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl">
           <Image
-            src="/images/pages/surec-hero.png"
+            src="/images/pages/surec-hero.webp"
             alt="Reflektif Kariyer Gelişim Süreci"
             fill
             className="object-contain"
