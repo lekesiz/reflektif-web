@@ -59,20 +59,14 @@ export function Header() {
       <Container>
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <img 
-              src="/images/logo/reflektif-logo-icon.png" 
-              alt="Reflektif Logo" 
-              className="w-10 h-10"
-            />
-            <span
-              className={cn(
-                "font-bold text-xl transition-colors",
-                isScrolled ? "text-neutral-900" : "text-neutral-900"
-              )}
-            >
-              Reflektif
-            </span>
+          <Link href="/" className="flex items-center space-x-3 group">
+            <div className="relative">
+              <img 
+                src="/images/logo/reflektif-logo-horizontal.webp" 
+                alt="Reflektif Logo" 
+                className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

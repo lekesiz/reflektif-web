@@ -25,13 +25,12 @@ export function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 lg:gap-6">
             {/* Brand Column */}
             <div className="col-span-2 md:col-span-3 lg:col-span-2">
-              <Link href="/" className="flex items-center space-x-2 mb-6">
+              <Link href="/" className="inline-block mb-6">
                 <img 
-                  src="/images/logo/reflektif-logo-icon.png" 
+                  src="/images/logo/reflektif-logo-horizontal.webp" 
                   alt="Reflektif Logo" 
-                  className="w-10 h-10"
+                  className="h-10 w-auto brightness-0 invert"
                 />
-                <span className="font-bold text-xl text-white">Reflektif</span>
               </Link>
               <p className="text-neutral-400 mb-6 max-w-sm">
                 Kendini keşfet, geleceğini seç. Türkiye&apos;nin ilk AI destekli
