@@ -85,7 +85,8 @@ export const footerNavigation = {
   yasal: [
     { label: "Gizlilik Politikası", href: "/gizlilik" },
     { label: "Kullanım Şartları", href: "/kullanim-sartlari" },
-    { label: "KVKK Aydınlatma", href: "/kvkk" },
+    { label: "KVKK Aydınlatma Metni", href: "/kvkk-aydinlatma-metni" },
+    { label: "İmha Politikası", href: "/imha-politikasi" },
     { label: "Çerez Politikası", href: "/cerezler" },
   ],
 };
