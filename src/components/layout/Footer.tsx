@@ -29,7 +29,7 @@ export function Footer() {
                 <img 
                   src="/images/logo/reflektif-logo-horizontal.webp" 
                   alt="Reflektif Logo" 
-                  className="h-10 w-auto brightness-0 invert"
+                  className="h-11 w-auto brightness-0 invert"
                 />
               </Link>
               <p className="text-neutral-400 mb-6 max-w-sm">

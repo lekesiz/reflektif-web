@@ -112,9 +112,9 @@ export default async function ModulePage({
 
             <div className="relative">
               {/* Hero Image */}
-              <div className="relative w-full h-[400px] rounded-3xl overflow-hidden mb-8">
+              <div className="relative w-full h-[360px] rounded-2xl overflow-hidden mb-6 shadow-xl">
                 <img
-                  src={`/images/modules/${slug}-hero.png`}
+                  src={`/images/modules/${slug}-hero.jpg`}
                   alt={`${moduleData.name} - Hero Image`}
                   className="w-full h-full object-cover"
                 />
