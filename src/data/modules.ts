@@ -350,7 +350,7 @@ export const modules: Module[] = [
       {
         name: "Profesyonel",
         price: 4999,
-        pricePeriod: "yıllık",
+        period: "yıllık",
         description: "KOBİ ve startup'lar için",
         features: [
           "Yılda 100 adaya kadar değerlendirme",
