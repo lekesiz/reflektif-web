@@ -114,7 +114,7 @@ export function HeroEnhanced() {
               {/* Main Dashboard Mockup */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
                 <Image
-                  src="/images/dashboards/analytics-dashboard.png"
+                  src="/images/hero/hero-dashboard.png"
                   alt="Reflektif Dashboard"
                   width={800}
                   height={600}
