@@ -67,386 +67,192 @@ export const blogCategories: BlogCategory[] = [
 export const blogPosts: BlogPost[] = [
   {
     id: "1",
-    slug: "2025-ise-alim-trendleri",
-    title: "2025 İşe Alım Trendleri: AI ve Yetenek Ekonomisi",
-    excerpt:
-      "2025 işe alım dünyasını şekillendiren yapay zeka, beceri bazlı işe alım ve yeşil dönüşüm gibi kritik trendleri World Economic Forum verileriyle keşfedin.",
+    slug: "hangi-meslek-bana-uygun-holland-kodu",
+    title: "Hangi Meslek Bana Uygun? Holland Koduna Göre Meslek Seçimi",
+    excerpt: "Kariyer yolculuğunuzda doğru adımı atın! Holland Kodu (RIASEC) teorisi ile kişilik tipinize en uygun meslekleri keşfedin. Reflektif'in AI destekli analizi ile potansiyelinizi ortaya çıkarın.",
     content: `
-## 2025: İşe Alımda Yeni Bir Çağın Başlangıcı
+# Hangi Meslek Bana Uygun? Holland Koduna Göre Meslek Seçimi
 
-2025 yılı, işe alım dünyası için bir dönüm noktası niteliği taşıyor. **World Economic Forum'un 2025 İşlerin Geleceği Raporu**'na göre, teknolojik değişim, jeoekonomik parçalanma ve yeşil dönüşüm gibi makro trendler, küresel iş gücü piyasasını kökten değiştiriyor [1]. Bu değişim rüzgarı, şirketlerin yetenekleri nasıl bulduğunu, değerlendirdiğini ve işe aldığını yeniden şekillendiriyor. Peki, 2025'te İK profesyonellerini ve adayları neler bekliyor?
+Kariyer seçimi, hayatımızın en önemli kararlarından biridir. Sadece para kazanmakla kalmaz, aynı zamanda kimliğimizin bir parçasını oluşturur ve günlük yaşam tatminimizi doğrudan etkiler. Peki, yüzlerce seçenek arasından **\"Hangi meslek bana uygun?\"** sorusuna nasıl doğru yanıt verebiliriz? İşte bu noktada, bilimsel temellere dayanan **Holland Kodu (RIASEC) Teorisi** devreye giriyor.
 
-## Trend 1: Yapay Zeka (AI) İşe Alımın Merkezinde
+Amerikalı psikolog Dr. John L. Holland tarafından geliştirilen bu teori, insanların kişilik özellikleriyle mesleki ortamlar arasında bir uyum olduğunda daha başarılı ve mutlu olduklarını savunur. Holland'a göre, altı temel kişilik tipi vardır ve her meslek bu tiplerden bir veya birkaçını yansıtır.
 
-Yapay zeka, artık sadece bir yardımcı araç değil, işe alım süreçlerinin ana motoru haline geliyor. WEF raporuna göre, şirketlerin **%86'sı** AI ve büyük veri teknolojilerinin işlerini dönüştürmesini bekliyor [1]. Bu dönüşüm, işe alımda şu alanlarda kendini gösteriyor:
+## Holland'ın 6 Kişilik Tipi (RIASEC)
 
-- **Akıllı Aday Eşleştirme**: AI algoritmaları, adayların yeteneklerini ve potansiyellerini analiz ederek, açık pozisyonlarla en uygun eşleşmeleri saniyeler içinde yapabiliyor.
-- **Otomatik Süreç Yönetimi**: Özgeçmiş taramasından mülakat planlamasına, aday iletişiminden değerlendirme raporlarının oluşturulmasına kadar birçok süreç otomatize ediliyor.
-- **Tahminsel Analizler**: AI, geçmiş verileri analiz ederek hangi adayın başarılı olma olasılığının daha yüksek olduğunu tahmin edebiliyor, böylece işe alım hatalarını minimize ediyor.
+RIASEC, altı kişilik tipinin baş harflerinden oluşan bir kısaltmadır: **R**ealistic (Gerçekçi), **I**nvestigative (Araştırmacı), **A**rtistic (Artistik), **S**ocial (Sosyal), **E**nterprising (Girişimci) ve **C**onventional (Geleneksel).
 
-> **İstatistik**: Araştırmalar, AI kullanan şirketlerin işe alım süresini **%40**'a kadar kısalttığını ve aday kalitesini **%35** artırdığını gösteriyor [2].
+| Kişilik Tipi | Özellikleri | Hoşlandığı Aktiviteler | Uygun Meslekler |
+| :--- | :--- | :--- | :--- |
+| **Gerçekçi (R)** | Pratik, materyalist, mekanik | Aletlerle çalışma, tamir, inşa etme, doğa | Mühendis, teknisyen, pilot, çiftçi, itfaiyeci |
+| **Araştırmacı (I)** | Analitik, meraklı, rasyonel | Gözlem yapma, araştırma, problem çözme | Bilim insanı, doktor, yazılım geliştirici, analist |
+| **Artistik (A)** | Yaratıcı, sezgisel, bağımsız | Sanatsal faaliyetler, tasarım, yazma | Mimar, grafiker, müzisyen, yazar, aktör |
+| **Sosyal (S)** | Yardımsever, işbirlikçi, empatik | Öğretme, yardım etme, danışmanlık yapma | Öğretmen, psikolog, hemşire, sosyal hizmet uzmanı |
+| **Girişimci (E)** | İkna edici, hırslı, dışa dönük | Liderlik etme, satış yapma, yönetme | Avukat, pazarlamacı, yönetici, girişimci, emlakçı |
+| **Geleneksel (C)** | Düzenli, dikkatli, pratik | Veri düzenleme, organize etme, planlama | Muhasebeci, bankacı, kütüphaneci, veri analisti |
 
-## Trend 2: Beceri Bazlı İşe Alım (Skills-First Hiring)
+Genellikle insanlar tek bir tipe tam olarak uymazlar. Bunun yerine, iki veya üç tipin bir kombinasyonuna sahiptirler. Örneğin, bir kişi hem Araştırmacı (I) hem de Artistik (A) özellikler taşıyorsa, bu kişinin Holland Kodu \"IA\" veya \"IA S\" olabilir. Bu kod, kişinin mesleki ilgi ve yeteneklerinin bir haritasını çıkarır.
 
-WEF raporu, 2025-2030 döneminde mevcut yetenek setlerinin **%39'unun** güncelliğini yitireceğini öngörüyor [1]. Bu durum, geleneksel diploma ve deneyim odaklı işe alım anlayışını yıkıyor. Artık şirketler, bir adayın hangi okuldan mezun olduğundan çok, hangi becerilere sahip olduğuna odaklanıyor. 
+## Holland Kodunuzu Nasıl Öğrenebilirsiniz?
 
-**Beceri bazlı işe alımın avantajları:**
+HHolland kodunuzu belirlemenin en güvenilir yolu, **geçerliliği ve güvenilirliği kanıtlanmış bir kariyer envanteri** uygulamaktır. Bu envanterler, size çeşitli aktiviteler, meslekler ve durumlar hakkında sorular sorarak hangi kişilik tiplerine daha yatkın olduğunuzu analiz eder.
 
-| Avantaj | Açıklama |
-|---|---|
-| **Geniş Yetenek Havuzu** | Geleneksel olmayan geçmişe sahip yetenekli adaylara kapı açar. |
-| **Artan Çeşitlilik** | Önyargıları azaltarak daha çeşitli ve kapsayıcı bir iş gücü oluşturur. |
-| **Yüksek Performans** | Pozisyon için gerekli becerilere sahip adaylar daha hızlı adapte olur ve daha yüksek performans gösterir. |
+> **Reflektif'in AI Destekli Kariyer Değerlendirmesi**, geleneksel Holland testlerini yapay zeka algoritmaları ile birleştirerek size sadece Holland kodunuzu vermekle kalmaz, aynı zamanda bu koda en uygun güncel meslekleri, bu meslekler için gereken yetkinlikleri ve kişisel gelişim yol haritanızı da sunar.
 
-## Trend 3: Yeşil Dönüşüm ve Yeşil Yakalı İşler
+## Kişilik Tipinize Uygun Mesleği Seçmek Neden Önemli?
 
-İklim değişikliği ile mücadele, yeni bir iş kategorisi yaratıyor: **yeşil yakalı işler**. WEF'e göre, yenilenebilir enerji mühendisleri, çevre mühendisleri ve otonom araç uzmanları en hızlı büyüyen meslekler arasında yer alıyor [1]. Bu trend, sadece mühendislik alanında değil, aynı zamanda sürdürülebilirlik danışmanlığı, yeşil pazarlama ve çevre hukuku gibi alanlarda da yeni kariyer fırsatları doğuruyor.
+Araştırmalar, kişilik tipleriyle uyumlu mesleklerde çalışan kişilerin aşağıdaki avantajlara sahip olduğunu göstermektedir [1]:
 
-## Trend 4: Aday Deneyimi ve Şeffaflık
+- **Daha Yüksek İş Tatmini**: Yaptığınız iş, doğal yetenekleriniz ve ilgi alanlarınızla örtüştüğünde, işinizden daha fazla keyif alırsınız.
+- **Daha Yüksek Performans**: Kendi doğanıza uygun görevleri yaparken daha motive ve üretken olursunuz.
+- **Daha Az Stres ve Tükenmişlik**: Kişiliğinize ters düşen bir işte çalışmak, sürekli bir içsel çatışmaya ve strese neden olabilir.
+- **Daha Uzun Kariyer Süresi**: Sevdiğiniz ve başarılı olduğunuz bir alanda daha uzun süre kalma ve uzmanlaşma olasılığınız artar.
 
-Yetenek kıtlığının arttığı bir dönemde, adaylar artık sadece bir iş aramıyor, aynı zamanda bir deneyim arıyor. Şirketler, adayları birer "müşteri" olarak görmeye başlıyor. Bu yaklaşım, şu unsurları ön plana çıkarıyor:
+## Sonuç: Kariyeriniz Bir Tesadüf Olmasın
 
-- **Hızlı ve Şeffaf İletişim**: Adaylara sürecin her aşamasında düzenli ve net bilgi vermek.
-- **Kişiselleştirilmiş Yaklaşım**: Adayın ilgi alanlarına ve kariyer hedeflerine uygun bir iletişim kurmak.
-- **Esneklik**: Uzaktan veya hibrit çalışma modelleri sunmak.
+\"Hangi meslek bana uygun?\" sorusu, kariyer yolculuğunuzun başlangıç noktasıdır. Bu soruyu yanıtlarken içgüdülerinize güvenmek önemlidir, ancak bilimsel metodolojilerden yararlanmak, daha bilinçli ve isabetli kararlar vermenizi sağlar. Holland Kodu (RIASEC) teorisi, kendinizi daha iyi tanımanız ve potansiyelinizi en üst düzeye çıkarabileceğiniz kariyer alanlarını keşfetmeniz için güçlü bir araçtır.
 
-## Sonuç: Geleceğe Hazır Olmak
+Kariyerinizi şansa bırakmayın. **Reflektif'in ücretsiz temel değerlendirmesi** ile Holland kodunuzu keşfedin ve size en uygun kariyer yolculuğuna bugün ilk adımı atın!
 
-2025 ve sonrası, işe alımda proaktif, teknoloji odaklı ve insanı merkeze alan bir yaklaşım gerektiriyor. Şirketlerin başarılı olmak için yapay zekayı etkin bir şekilde kullanması, beceri odaklı bir işe alım kültürü benimsemesi ve aday deneyimine yatırım yapması kaçınılmaz. Adaylar için ise sürekli öğrenme ve yeni beceriler kazanma, kariyerlerini geleceğe taşımanın anahtarı olacak.
+---
 
 ### Referanslar
-[1] World Economic Forum. (2025). *The Future of Jobs Report 2025*. [https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/](https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/)
-[2] Demand Sage. (2026). *AI Recruitment Statistics 2026*. [https://www.demandsage.com/ai-recruitment-statistics/](https://www.demandsage.com/ai-recruitment-statistics/)
-    `,
-    category: blogCategories[0],
+
+[1] Nauta, M. M. (2010). The development, evolution, and status of Holland's theory of vocational choice: A review and summary. *Journal of Vocational Behavior*, 76(2), 135-143-2-1451-141.
+`,
+    category: blogCategories[3],
     author: {
       name: "Dr. Elif Yılmaz",
-      role: "İK Araştırma Direktörü",
+      role: "Kariyer Danışmanı",
     },
-    publishedAt: "2025-01-10",
-    readTime: "8 dk",
+    publishedAt: "2026-01-28",
+    readTime: "7 dk",
     featured: true,
-    tags: ["işe alım", "yapay zeka", "2025 trendleri", "HR tech"],
+    tags: ["meslek seçimi", "kariyer testi", "holland kodu", "kişilik tipi"],
   },
   {
     id: "2",
-    slug: "kisilik-testleri-rehberi",
-    title: "İşe Alımda Kişilik Testleri: Kapsamlı Rehber",
-    excerpt:
-      "Kişilik testlerinin işe alımda nasıl kullanıldığını, farklı test türlerini ve doğru test seçiminin önemini anlatan kapsamlı rehber.",
+    slug: "kisilik-testleri-guvenilir-mi",
+    title: "Kişilik Testleri Ne Kadar Güvenilir? Bilimsel Açıdan Bir Bakış",
+    excerpt: "Kişilik testleri gerçekten işe yarıyor mu? Big Five (Beş Faktör) Modeli gibi bilimsel temellere dayanan envanterlerin geçerlilik ve güvenilirlik oranlarını öğrenin. Reflektif ile bilimin gücünü keşfedin.",
     content: `
-## Kişilik Testleri Nedir?
+# Kişilik Testleri Ne Kadar Güvenilir? Bilimsel Açıdan Bir Bakış
 
-Kişilik testleri, bireylerin davranış kalıplarını, değerlerini ve tercihlerini ölçen standardize araçlardır. İşe alımda doğru aday-pozisyon eşleşmesi için kritik öneme sahiptir.
+İnternette sıkça karşımıza çıkan \"Hangi Disney prensesisin?\" veya \"Ruh hayvanın ne?\" gibi eğlenceli testlerden, işe alım süreçlerinin vazgeçilmezi haline gelen ciddi değerlendirmelere kadar, kişilik testleri hayatımızın bir parçası. Peki, bu testler gerçekten ne kadar bilimsel ve sonuçlarına ne kadar güvenebiliriz? Bu yazıda, kişilik testlerinin ardındaki bilimi ve güvenilirliklerini mercek altına alacağız.
 
-## Popüler Kişilik Test Türleri
+## Popüler Kültür Testleri vs. Psikometrik Envanterler
 
-### 1. Big Five (Beş Faktör Modeli)
-- Açıklık
-- Sorumluluk
-- Dışadönüklük
-- Uyumluluk
-- Duygusal Denge
+Öncelikle önemli bir ayrım yapmak gerekir. Sosyal medyada paylaşılan eğlence amaçlı testler, bilimsel bir temele dayanmaz ve sadece eğlence amaçlıdır. Sonuçları genellikle genel ve belirsiz ifadelerden oluşur (Barnum Etkisi).
 
-### 2. MBTI
-16 farklı kişilik tipini belirleyen yaygın kullanılan bir araç.
+Diğer yanda ise **psikometrik envanterler** bulunur. Bu envanterler, psikoloji ve istatistik bilim dallarından yararlanılarak geliştirilir ve bireylerin kişilik özelliklerini, yeteneklerini veya ilgi alanlarını ölçmek için tasarlanmıştır. Bu envanterlerin bilimsel olarak kabul görmesi için iki temel kriteri karşılaması gerekir: **geçerlilik** ve **güvenilirlik**.
 
-### 3. DISC
-Davranış tarzlarını dört ana kategoride inceler.
+- **Geçerlilik**: Bir testin, ölçmeyi vaat ettiği şeyi gerçekten ölçme derecesidir. Örneğin, bir matematik yeteneği testinin, kişinin dil becerilerini değil, matematiksel yeteneklerini ölçmesi gerekir.
+- **Güvenilirlik**: Bir testin, farklı zamanlarda veya farklı koşullarda uygulandığında tutarlı sonuçlar verme derecesidir. Güvenilir bir test, bugün ve bir ay sonra uygulandığında benzer sonuçlar vermelidir.
 
-## Doğru Test Seçimi
+## Altın Standart: Big Five (Beş Faktör) Kişilik Modeli
 
-Test seçerken dikkat edilmesi gerekenler:
-- Bilimsel geçerlilik
-- Güvenilirlik
-- Pozisyona uygunluk
-- Hukuki uyumluluk
+Modern psikolojide en yaygın kabul gören ve bilimsel olarak en güçlü temellere dayanan kişilik modeli, **Big Five** veya **Beş Faktör Kişilik Modeli**'dir [1]. Bu model, kişiliğin beş ana boyuttan oluştuğunu öne sürer:
 
-## Sonuç
+| Faktör | Yüksek Puan Alanlar | Düşük Puan Alanlar |
+| :--- | :--- | :--- |
+| **Dışadönüklük (Extraversion)** | Sosyal, enerjik, konuşkan, iddialı | İçe dönük, sessiz, yalnız kalmayı tercih eden |
+| **Uyumluluk (Agreeableness)** | İşbirlikçi, empatik, güvenilir, yardımsever | Rekabetçi, şüpheci, eleştirel |
+| **Sorumluluk (Conscientiousness)** | Düzenli, planlı, disiplinli, başarı odaklı | Spontane, dağınık, dikkatsiz |
+| **Duygusal Denge (Neuroticism)** | Kaygılı, stresli, karamsar, duygusal | Sakin, kendine güvenen, duygusal olarak stabil |
+| **Deneyime Açıklık (Openness)** | Yaratıcı, meraklı, sanata ve yeni fikirlere açık | Geleneksel, pratik, değişime dirençli |
 
-Kişilik testleri, doğru kullanıldığında işe alım süreçlerinin kalitesini önemli ölçüde artırır.
-    `,
-    category: blogCategories[1],
+Big Five temelli envanterler (örneğin NEO-PI-R), onlarca yıldır binlerce bilimsel araştırmada kullanılmış ve farklı kültürlerde, yaş gruplarında ve dillerde yüksek geçerlilik ve güvenilirlik oranları göstermiştir.
+
+## Reflektif'in Bilimsel Yaklaşımı
+
+Reflektif olarak, değerlendirme araçlarımızın merkezine bilimselliği ve güvenilirliği koyuyoruz. Platformumuzda kullandığımız kişilik envanterleri, Big Five Modeli ve Holland (RIASEC) Teorisi gibi uluslararası geçerliliği kanıtlanmış psikometrik yöntemlere dayanmaktadır.
+
+> **Peki, Reflektif farkı nerede?** Biz, bu sağlam bilimsel temeli, **yapay zeka (AI) ve makine öğrenmesi** teknolojileri ile birleştiriyoruz. AI algoritmalarımız, on binlerce kullanıcıdan elde edilen anonimleştirilmiş verilerle sürekli olarak eğitilir. Bu sayede:
+
+- **Daha Derinlemesine Analiz**: Geleneksel testlerin ötesine geçerek, farklı kişilik özelliklerinizin birbiriyle nasıl etkileşime girdiğini ve bunun kariyer potansiyelinizi nasıl etkilediğini analiz ederiz.
+- **Kişiselleştirilmiş Geri Bildirim**: Standart raporlar yerine, size özel, eyleme geçirilebilir ve anlaşılır geri bildirimler sunarız.
+- **Tahmine Dayalı İçgörüler**: Kişilik profilinize dayanarak, gelecekte hangi alanlarda başarılı olabileceğiniz, hangi yetkinlikleri geliştirmeniz gerektiği ve hangi çalışma ortamlarının size daha uygun olduğu konusunda tahmine dayalı önerilerde bulunuruz.
+
+## Sonuç: Bilime Güvenin, Potansiyelinizi Keşfedin
+
+Evet, kişilik testleri doğru metodoloji ile geliştirildiğinde ve doğru şekilde yorumlandığında son derece güvenilir ve faydalıdır. Eğlence amaçlı testlerden uzak durup, Big Five gibi bilimsel modellere dayanan psikometrik envanterleri tercih etmek, kendinizi tanımanız ve kariyeriniz hakkında bilinçli kararlar vermeniz için en doğru yaklaşımdır.
+
+Reflektif, bilimin gücünü yapay zekanın esnekliği ile birleştirerek size en güvenilir ve kapsamlı kişilik analizini sunar. Kendinizi daha iyi tanımak ve potansiyelinizi en üst düzeye çıkarmak için **Reflektif'in bilimsel değerlendirmeleriyle tanışın**.
+
+---
+
+### Referanslar
+
+[1] McCrae, R. R., & Costa, P. T. (1997). Personality trait structure as a human universal. *American Psychologist*, 52(5), 509–516.
+`,
+    category: blogCategories[5],
     author: {
       name: "Prof. Dr. Ahmet Kaya",
       role: "Endüstriyel Psikolog",
     },
-    publishedAt: "2025-01-08",
-    readTime: "10 dk",
+    publishedAt: "2026-01-25",
+    readTime: "6 dk",
     featured: true,
-    tags: ["kişilik testi", "işe alım", "Big Five", "değerlendirme"],
+    tags: ["kişilik testi", "big five", "psikometri", "geçerlilik", "güvenilirlik"],
   },
   {
     id: "3",
-    slug: "video-mulakat-ipuclari",
-    title: "Video Mülakat: İK Profesyonelleri için İpuçları",
-    excerpt:
-      "Asenkron video mülakatların etkin kullanımı, soru hazırlama teknikleri ve değerlendirme kriterleri hakkında pratik bilgiler.",
+    slug: "dogru-ise-alim-nasil-yapilir-yetkinlik-bazli-mulakat",
+    title: "Doğru İşe Alım Nasıl Yapılır? Yetkinlik Bazlı Mülakat Teknikleri",
+    excerpt: "İşe alım süreçlerinizi bir üst seviyeye taşıyın. Yetkinlik bazlı mülakat nedir, STAR tekniği nasıl kullanılır ve Reflektif AI ile mülakatlarınızı nasıl daha verimli hale getirebilirsiniz? İK profesyonelleri için rehber.",
     content: `
-## Video Mülakatın Yükselişi
+# Doğru İşe Alım Nasıl Yapılır? Yetkinlik Bazlı Mülakat Teknikleri
 
-Pandemi sonrası video mülakatlar, işe alımın vazgeçilmez bir parçası haline geldi. Asenkron formatı sayesinde zaman ve maliyet tasarrufu sağlanıyor.
+İş dünyasında en sık tekrarlanan klişelerden biri \"En değerli varlığımız çalışanlarımızdır.\" cümlesidir. Klişe olmasına rağmen, bu ifadenin doğruluğu tartışılmaz. Bir şirketin başarısı, büyük ölçüde doğru yetenekleri doğru pozisyonlara yerleştirme becerisine bağlıdır. Peki, **doğru işe alım nasıl yapılır?** Cevap, geleneksel mülakat yöntemlerinin ötesine geçerek, **yetkinlik bazlı mülakat** tekniklerini benimsemekte yatıyor.
 
-## Etkili Soru Hazırlama
+## Geleneksel Mülakat vs. Yetkinlik Bazlı Mülakat
 
-### Davranışsal Sorular
-- "Bize zor bir müşteriyle nasıl başa çıktığınızı anlatır mısınız?"
-- "Ekibinizle bir anlaşmazlık yaşadığınız bir durumu paylaşır mısınız?"
+Geleneksel mülakatlarda genellikle adayın özgeçmişi üzerinden gidilir ve \"Bize kendinizden bahsedin\" veya \"En büyük zayıflığınız nedir?\" gibi genel sorular sorulur. Bu sorular, adayın kendini nasıl pazarladığı hakkında fikir verse de, iş performansını öngörmede genellikle yetersiz kalır.
 
-### Durumsal Sorular
-- "Bu senaryoda nasıl hareket ederdiniz?"
-- "X durumunda öncelikleriniz ne olurdu?"
+**Yetkinlik bazlı mülakat (Competency-Based Interviewing)** ise, bir pozisyon için gereken temel yetkinlikleri (örneğin, problem çözme, liderlik, takım çalışması) belirlemeye ve adayın geçmiş deneyimlerinde bu yetkinlikleri nasıl sergilediğini somut örneklerle ortaya çıkarmaya odaklanır. Temel prensip şudur: **Geçmiş performans, gelecekteki performansın en iyi göstergesidir.**
 
-## Değerlendirme Kriterleri
+## STAR Tekniği: Mülakatlarınızı Yapılandırın
 
-1. İletişim becerileri
-2. Problem çözme yaklaşımı
-3. Kültürel uyum
-4. Teknik yetkinlik
+Yetkinlik bazlı mülakatların en etkili araçlarından biri **STAR tekniği**dir. Bu teknik, adaylardan geçmiş deneyimlerini yapılandırılmış bir şekilde anlatmalarını isteyerek, somut ve ölçülebilir kanıtlar elde etmenizi sağlar. STAR, dört adımdan oluşur:
 
-## En İyi Uygulamalar
+- **S (Situation - Durum)**: Adaydan, belirli bir yetkinliği kullandığı spesifik bir durumu anlatmasını isteyin. (Örn: \"Bana, bir projede zaman baskısı altında çalıştığınız bir durumu anlatır mısınız?\")
+- **T (Task - Görev)**: O durumdaki görevinin veya hedefinin ne olduğunu sorun. (Örn: \"O projedeki sizin spesifik sorumluluğunuz neydi?\")
+- **A (Action - Eylem)**: Hedefe ulaşmak için hangi adımları attığını, hangi eylemleri gerçekleştirdiğini detaylandırmasını isteyin. (Örn: \"Bu zorluğun üstesinden gelmek için tam olarak ne yaptınız?\")
+- **R (Result - Sonuç)**: Eylemlerinin sonucunda ne elde edildiğini, projenin veya durumun nasıl sonuçlandığını sorun. Mümkünse sayısal veriler isteyin. (Örn: \"Bu çabalarınızın sonucu ne oldu? Projeyi zamanında teslim edebildiniz mi?\")
 
-- Net talimatlar verin
-- Pratik yapma imkanı sunun
-- Makul süre tanıyın
-- Hızlı geri bildirim verin
+| Yetkinlik | STAR Tekniği ile Mülakat Sorusu |
+| :--- | :--- |
+| **Problem Çözme** | \"Bana, beklenmedik bir sorunla karşılaştığınız ve analitik becerilerinizi kullanarak çözdüğünüz bir durumu STAR tekniği ile anlatır mısınız?\" |
+| **Takım Çalışması** | \"Fikir ayrılığı yaşadığınız bir ekip üyesiyle nasıl uzlaşma sağladığınızı bir örnekle (STAR) açıklar mısınız?\" |
+| **Liderlik** | \"Bir ekibi motive ederek zor bir hedefe ulaştırdığınız bir projeyi STAR metoduyla anlatır mısınız?\" |
 
-## Sonuç
+## Reflektif AI ile İşe Alım Süreçlerinizi Güçlendirin
 
-Video mülakatlar, doğru kurgulandığında işe alım kalitesini artırır ve adaylar için olumlu deneyim sunar.
-    `,
+Yetkinlik bazlı mülakatlar son derece etkili olsa da, doğru uygulanmadığında zaman alıcı ve subjektif olabilir. İşte bu noktada, Reflektif gibi modern İK teknolojileri devreye giriyor.
+
+> **Reflektif**, işe alım sürecinizi baştan sona optimize etmek için yapay zeka destekli araçlar sunar:
+
+1.  **Yetkinlik Belirleme**: Platformumuz, pozisyonun gerekliliklerine göre en kritik yetkinlikleri belirlemenize yardımcı olur. Sektör verileri ve AI analizleri ile pozisyon için ideal yetkinlik setini oluşturabilirsiniz.
+
+2.  **Otomatik Değerlendirme**: Adaylar, mülakat öncesinde Reflektif'in bilimsel temelli kişilik, yetenek ve durumsal yargı envanterlerini tamamlarlar. Bu, size adayın potansiyel yetkinlikleri hakkında objektif bir ön bilgi sunar ve mülakatta odaklanmanız gereken alanları belirler.
+
+3.  **Mülakat İpuçları Raporu**: Reflektif, her aday için özel bir **\"Mülakat İpuçları Raporu\"** oluşturur. Bu rapor, adayın envanter sonuçlarına dayanarak, hangi yetkinliklerin derinlemesine sorgulanması gerektiğini ve hangi STAR bazlı soruları sorabileceğinizi önerir.
+
+4.  **Video Mülakat Analizi**: Adayların kaydettiği video mülakatları, yapay zeka tarafından analiz edilir. Sadece ne söyledikleri değil, aynı zamanda nasıl söyledikleri (ses tonu, beden dili, ifade zenginliği) de değerlendirilir. Bu, iletişim ve sunum becerileri gibi yetkinlikleri objektif olarak ölçmenizi sağlar.
+
+## Sonuç: Veriye Dayalı, Objektif ve Verimli İşe Alım
+
+Doğru işe alım yapmak, bir sanat olduğu kadar bir bilimdir. Yetkinlik bazlı mülakat ve STAR tekniği gibi yapılandırılmış yöntemler, bu süreci daha bilimsel ve objektif hale getirir. Reflektif gibi AI destekli platformlar ise, bu süreci otomatikleştirerek, veriye dayalı hale getirerek ve hızlandırarak İK profesyonellerine stratejik düşünmek için daha fazla zaman kazandırır.
+
+İşe alım kararlarınızda varsayımları bir kenara bırakın. **Reflektif'in kurumsal çözümleriyle tanışın**, daha isabetli kararlar verin, işe alım sürenizi kısaltın ve şirketinizin en değerli varlığı olan insan kaynağını en doğru şekilde yönetin.
+`,
     category: blogCategories[0],
     author: {
       name: "Zeynep Arslan",
       role: "İşe Alım Uzmanı",
     },
-    publishedAt: "2025-01-05",
-    readTime: "6 dk",
+    publishedAt: "2026-01-20",
+    readTime: "8 dk",
     featured: false,
-    tags: ["video mülakat", "işe alım", "mülakat teknikleri"],
-  },
-  {
-    id: "4",
-    slug: "yetenek-testleri-karsilastirma",
-    title: "Yetenek Testleri Karşılaştırması: Hangisini Seçmeli?",
-    excerpt:
-      "Sayısal, sözel ve analitik yetenek testlerinin karşılaştırmalı analizi ve pozisyona göre test seçim rehberi.",
-    content: `
-## Yetenek Testleri Nedir?
-
-Yetenek testleri, bireylerin bilişsel kapasitelerini ve öğrenme potansiyellerini ölçer. İşe alımda gelecek performansın önemli bir göstergesidir.
-
-## Test Türleri
-
-### 1. Sayısal Yetenek
-- Matematiksel muhakeme
-- Veri yorumlama
-- Grafik okuma
-
-### 2. Sözel Yetenek
-- Okuduğunu anlama
-- Sözel muhakeme
-- Eleştirel düşünme
-
-### 3. Soyut Yetenek
-- Örüntü tanıma
-- Mantıksal çıkarsama
-- Mekansal zeka
-
-## Pozisyona Göre Test Seçimi
-
-| Pozisyon | Önerilen Testler |
-|----------|-----------------|
-| Finans | Sayısal, Analitik |
-| Pazarlama | Sözel, Yaratıcılık |
-| Mühendislik | Sayısal, Soyut |
-| Yönetici | Tüm alanlar |
-
-## Sonuç
-
-Doğru test kombinasyonu, pozisyonun gereksinimlerine göre belirlenmelidir.
-    `,
-    category: blogCategories[1],
-    author: {
-      name: "Dr. Can Öztürk",
-      role: "Test Geliştirme Uzmanı",
-    },
-    publishedAt: "2025-01-02",
-    readTime: "7 dk",
-    featured: false,
-    tags: ["yetenek testi", "IQ testi", "değerlendirme", "işe alım"],
-  },
-  {
-    id: "5",
-    slug: "ats-sistemleri-karsilastirma",
-    title: "ATS Sistemleri: 2025 Karşılaştırma Rehberi",
-    excerpt:
-      "Başvuru takip sistemlerinin (ATS) karşılaştırması, özellik analizi ve şirketiniz için doğru ATS seçim kriterleri.",
-    content: `
-## ATS Nedir?
-
-Applicant Tracking System (ATS), işe alım sürecinin başından sonuna kadar yönetilmesini sağlayan yazılım sistemleridir.
-
-## Temel Özellikler
-
-### Olmazsa Olmaz Özellikler
-- İlan yönetimi
-- Aday veritabanı
-- İş akışı otomasyonu
-- Raporlama
-
-### Gelişmiş Özellikler
-- AI destekli eşleştirme
-- Video mülakat entegrasyonu
-- Kariyer sitesi entegrasyonu
-- Mobil uygulama
-
-## Seçim Kriterleri
-
-1. **Ölçeklenebilirlik**: Şirketinizin büyümesiyle birlikte sistem de büyüyebilmeli
-2. **Entegrasyon**: Mevcut sistemlerinizle uyumlu çalışmalı
-3. **Kullanıcı Deneyimi**: Hem İK hem adaylar için kolay kullanılmalı
-4. **Destek**: Türkçe destek ve yerel uzmanlık
-
-## Sonuç
-
-ATS seçimi, şirketinizin büyüklüğüne, ihtiyaçlarına ve bütçesine göre yapılmalıdır.
-    `,
-    category: blogCategories[2],
-    author: {
-      name: "Murat Demir",
-      role: "HR Tech Danışmanı",
-    },
-    publishedAt: "2024-12-28",
-    readTime: "9 dk",
-    featured: false,
-    tags: ["ATS", "HR tech", "işe alım yazılımı", "otomasyon"],
-  },
-  {
-    id: "6",
-    slug: "z-kusagi-ise-alim",
-    title: "Z Kuşağı İşe Alımı: Ne Bekliyorlar?",
-    excerpt:
-      "Z kuşağı çalışanların işe alım sürecinden beklentileri, motivasyon faktörleri ve onlara nasıl ulaşılacağına dair ipuçları.",
-    content: `
-## Z Kuşağı Kimdir?
-
-1997-2012 yılları arasında doğan Z kuşağı, dijital çağın yerlileridir. İş hayatındaki beklentileri ve değerleri önceki kuşaklardan farklılık gösterir.
-
-## İşe Alım Beklentileri
-
-### 1. Hızlı ve Dijital Süreç
-- Mobil başvuru
-- Anlık geri bildirim
-- Gamification elementleri
-
-### 2. Şeffaflık
-- Net maaş bilgisi
-- Kariyer yolu
-- Şirket kültürü hakkında içgörü
-
-### 3. Değerler Uyumu
-- Sürdürülebilirlik
-- Çeşitlilik ve kapsayıcılık
-- Sosyal sorumluluk
-
-## Etkili Stratejiler
-
-1. Sosyal medyada aktif olun
-2. Employer branding'e yatırım yapın
-3. Esnek çalışma sunun
-4. Gelişim fırsatları vurgulayın
-
-## Sonuç
-
-Z kuşağını çekmek için işe alım süreçlerini modernize etmek ve değerleri ön plana çıkarmak gerekiyor.
-    `,
-    category: blogCategories[0],
-    author: {
-      name: "Selin Yıldız",
-      role: "Employer Branding Uzmanı",
-    },
-    publishedAt: "2024-12-25",
-    readTime: "6 dk",
-    featured: true,
-    tags: ["Z kuşağı", "işe alım", "employer branding", "çalışan deneyimi"],
-  },
-  {
-    id: "7",
-    slug: "dogru-kariyer-secimi-rehberi",
-    title: "Doğru Kariyer Seçimi: Kişilik, Yetenek ve Değerler Üçgeni",
-    excerpt: "Kariyer yolculuğunuzda doğru kararları nasıl alırsınız? Kişilik tipiniz, yetenekleriniz ve kişisel değerleriniz arasındaki dengeyi bularak tatmin edici bir kariyere ulaşmanın yolları.",
-    content: `
-## Kariyer Seçimi: Bir Hayat Kararı
-
-Kariyer seçimi, hayatımızdaki en önemli kararlardan biridir. Sadece maddi kazanç değil, aynı zamanda kişisel tatmin, mutluluk ve yaşam kalitemizi de doğrudan etkiler. Peki, bu kadar önemli bir kararı alırken nelere dikkat etmeliyiz? Cevap, üç temel unsurun kesişiminde yatıyor: **kişilik, yetenek ve değerler**.
-
-## 1. Kişiliğinizi Tanıyın: Kimsiniz?
-
-Kişilik, davranışlarımızı, düşüncelerimizi ve duygularımızı şekillendiren temel yapıdır. İçe dönük müsünüz, yoksa dışa dönük mü? Detaycı ve analitik mi, yoksa yaratıcı ve büyük resmi gören mi? Bu soruların cevapları, hangi çalışma ortamında daha mutlu ve verimli olacağınızı belirler.
-
-### Popüler Kişilik Modelleri
-
-- **Big Five (Beş Faktör Modeli)**: Açıklık, Sorumluluk, Dışadönüklük, Uyumluluk ve Duygusal Denge olmak üzere beş temel kişilik özelliğini inceler.
-- **MBTI (Myers-Briggs Tip Göstergesi)**: 16 farklı kişilik tipi üzerinden bireylerin tercihlerini analiz eder.
-
-> **Reflektif Notu**: Reflektif platformu, bilimsel temelli kişilik envanterleri ile sizin için en uygun çalışma ortamını ve rollerini belirlemenize yardımcı olur.
-
-## 2. Yeteneklerinizi Keşfedin: Nelerde İyisiniz?
-
-Yetenekler, doğuştan gelen veya sonradan geliştirilen becerilerimizdir. Hangi konularda doğal bir eğiliminiz var? Hangi işleri yaparken zamanın nasıl geçtiğini anlamıyorsunuz? Yeteneklerinizi doğru bir şekilde belirlemek, kariyerinizde başarılı ve fark yaratan bir profesyonel olmanızı sağlar.
-
-| Yetenek Türü | Örnekler |
-|---|---|
-| **Analitik Yetenekler** | Problem çözme, eleştirel düşünme, veri analizi |
-| **Sosyal Yetenekler** | İletişim, empati, liderlik, ikna |
-| **Yaratıcı Yetenekler** | Tasarım, yazma, inovasyon, sanatsal ifade |
-| **Teknik Yetenekler** | Programlama, mühendislik, veri bilimi |
-
-## 3. Değerlerinizi Belirleyin: Sizin İçin Ne Önemli?
-
-Değerler, hayatımıza yön veren temel inançlarımız ve prensiplerimizdir. Kariyerinizde sizin için neyin önemli olduğunu belirlemek, uzun vadeli mutluluk ve tatmin için kritiktir.
-
-**Kendinize sormanız gereken sorular:**
-
-- Benim için maddi kazanç mı, yoksa iş-yaşam dengesi mi daha önemli?
-- Yaratıcılığımı kullanabileceğim bir iş mi, yoksa istikrarlı ve güvenli bir iş mi tercih ederim?
-- Topluma fayda sağlamak benim için bir motivasyon kaynağı mı?
-
-## Kesişim Noktası: İdeal Kariyeriniz
-
-İdeal kariyer, bu üç unsurun kesiştiği noktada bulunur:
-
-- **Kişiliğinize uygun** bir çalışma ortamı
-- **Yeteneklerinizi kullanabildiğiniz** ve geliştirebildiğiniz bir rol
-- **Değerlerinizle örtüşen** bir iş anlamı
-
-## Sonuç: Bilinçli Bir Seçim Yapın
-
-Doğru kariyer seçimi, bir gecede verilecek bir karar değildir. Kendinizi tanımak, araştırma yapmak ve farklı seçenekleri değerlendirmek için zaman ayırmanız gerekir. Reflektif gibi platformlar, bu yolculukta size bilimsel verilerle rehberlik ederek, kişiliğiniz, yetenekleriniz ve değerlerinizle uyumlu, tatmin edici bir kariyere ulaşmanıza yardımcı olabilir.
-
-Unutmayın, en iyi kariyer, sadece iyi para kazandığınız değil, aynı zamanda her sabah sizi heyecanla yataktan kaldıran iştir.
-    `,
-    category: blogCategories[4],
-    author: {
-      name: "Manus AI",
-      role: "Yapay Zeka Kariyer Danışmanı",
-    },
-    publishedAt: "2025-01-18",
-    readTime: "12 dk",
-    featured: true,
-    tags: ["kariyer seçimi", "kişilik", "yetenek", "değerler", "kişisel gelişim"],
+    tags: ["işe alım", "mülakat teknikleri", "star tekniği", "yetkinlik bazlı mülakat"],
   },
 ];
-
-export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
-  return blogPosts.find((post) => post.slug === slug);
-};
-
-export const getBlogPostsByCategory = (categorySlug: string): BlogPost[] => {
-  return blogPosts.filter((post) => post.category.slug === categorySlug);
-};
-
-export const getFeaturedPosts = (): BlogPost[] => {
-  return blogPosts.filter((post) => post.featured);
-};
