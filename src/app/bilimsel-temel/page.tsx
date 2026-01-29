@@ -102,7 +102,7 @@ const BilimselTemelPage = () => {
 
       {/* Hero Image */}
       <section className="container mx-auto px-6 md:px-8 py-12">
-        <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary-50 to-purple-50">
+        <div className="relative w-full h-80 md:h-96 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary-50 to-purple-50">
           <Image
             src="/images/pages/bilimsel-temel-hero.webp"
             alt="Bilimsel ve Metodolojik Yaklaşımımız"
