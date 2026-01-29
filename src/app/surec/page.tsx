@@ -7,7 +7,7 @@ const SurecPage = () => {
         title="Reflektif Kariyer Gelişim Süreci"
         description="Fransa'nın ünlü Bilan de Compétences modelinden ilham alan 3 aşamalı yapılandırılmış sürecimizle kariyerinize yön verin."
       />
-      <section className="container py-12">
+      <section className="container mx-auto px-6 md:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="p-6 border rounded-lg">
             <h3 className="text-2xl font-bold mb-2">1. Aşama: Hazırlık ve Keşif</h3>

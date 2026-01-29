@@ -7,7 +7,7 @@ const BilimselTemelPage = () => {
         title="Bilimsel ve Metodolojik Yaklaşımımız"
         description="Reflektif, sadece pratik değil, aynı zamanda bilimsel olarak da sağlam temellere dayanır. Değerlendirme sistemimiz, psikometri alanında dünyada en çok kabul gören teorileri temel alır."
       />
-      <section className="container py-12">
+      <section className="container mx-auto px-6 md:px-8 py-12">
         <div className="prose max-w-none">
           <h2>Temel Aldığımız Modeller</h2>
           <h3>1. Big Five (Beş Faktör) Kişilik Modeli</h3>

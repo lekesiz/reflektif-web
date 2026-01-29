@@ -8,7 +8,7 @@ const KarsilastirmaPage = () => {
         title="Reflektif vs. Diğerleri: Neden Farklıyız?"
         description="Türkiye'de ve dünyada birçok yetenek değerlendirme aracı bulunuyor. Reflektif'in, Bilan de Compétences'ın yapılandırılmış sürecini, PİT'in pratikliğini ve Big Five'ın bilimsel derinliğini nasıl birleştirdiğini keşfedin."
       />
-      <section className="container py-12">
+      <section className="container mx-auto px-6 md:px-8 py-12">
         <h2 className="text-3xl font-bold text-center mb-8">Sistem Karşılaştırması</h2>
         <div className="overflow-x-auto">
           <Table>

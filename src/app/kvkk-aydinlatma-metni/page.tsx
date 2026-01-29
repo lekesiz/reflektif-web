@@ -17,7 +17,7 @@ export default function KVKKAydinlatmaMetniPage() {
         description="Kişisel Verilerin Korunması Kanunu Kapsamında Aydınlatma Metni"
       />
 
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-6 md:px-8 py-12">
         <div className="mx-auto max-w-4xl">
           <div className="rounded-lg bg-white p-8 shadow-lg">
             <p className="mb-6 text-sm text-gray-600">
