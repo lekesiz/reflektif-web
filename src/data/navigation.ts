@@ -32,7 +32,7 @@ export const navigation: NavItem[] = [
     children: [
       { label: "Video Mülakat", href: "/ozellikler/video-mulakat" },
       { label: "Başvuru Takip (ATS)", href: "/ozellikler/basvuru-takip-sistemi" },
-      { label: "360 Derece Değerlendirme", href: "/ozellikler/360-degerlendirme" },
+      { label: "360 Derece Değerlendirme", href: "/ozellikler/360-derece-degerlendirme" },
       { label: "Yetkinlik Bazlı Değerlendirme", href: "/ozellikler/yetkinlik-bazli-degerlendirme" },
     ],
   },
@@ -63,7 +63,7 @@ export const footerNavigation = {
   ozellikler: [
     { label: "Video Mülakat", href: "/ozellikler/video-mulakat" },
     { label: "Başvuru Takip (ATS)", href: "/ozellikler/basvuru-takip-sistemi" },
-    { label: "360 Derece Değerlendirme", href: "/ozellikler/360-degerlendirme" },
+    { label: "360 Derece Değerlendirme", href: "/ozellikler/360-derece-degerlendirme" },
     { label: "Yetkinlik Bazlı", href: "/ozellikler/yetkinlik-bazli-degerlendirme" },
   ],
   sirket: [
