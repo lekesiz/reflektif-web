@@ -54,4 +54,39 @@ export const testimonials: Testimonial[] = [
       "500 öğrenciyi takip etmek artık çok kolay. Veli görüşmelerinde somut verilerle konuşabiliyorum.",
     rating: 5,
   },
+  {
+    id: "7",
+    name: "Fatma Çelik",
+    role: "Engelli Birey",
+    company: "Grafik Tasarımcı",
+    content:
+      "Görme engelli bir birey olarak iş bulmanın zorluklarını çok yaşadım. Reflektif Engelsiz platformunun tam erişilebilir olması ve yeteneklerime odaklanması sayesinde hayalimdeki işe kavuştum. Sesli testler harikaydı!",
+    rating: 5,
+  },
+  {
+    id: "8",
+    name: "Ali Vural",
+    role: "CEO",
+    company: "Vural Holding",
+    content:
+      "Reflektif Kurumsal ile tüm grubumuzun yetenek yönetimi süreçlerini tek bir platformda birleştirdik. Özellikle yedekleme planlama ve potansiyel belirleme modülleri stratejik kararlarımızda bize inanılmaz bir vizyon kattı.",
+    rating: 5,
+  },
+  {
+    id: "9",
+    name: "Selin Kılıç",
+    role: "Lise Öğrencisi",
+    content:
+      "Video oyunları oynamanın bir kariyer olabileceğini hiç düşünmemiştim. Hobi envanteri sayesinde oyun tasarımcılığına olan yeteneğimi keşfettim ve şimdi bu yolda ilerliyorum. Teşekkürler Reflektif!",
+    rating: 5,
+  },
+  {
+    id: "10",
+    name: "Mustafa Erdoğan",
+    role: "İK Direktörü",
+    company: "Global Lojistik",
+    content:
+      "AI destekli video mülakat özelliği sayesinde 1000 kişilik bir pozisyon için ön elemeyi 3 gün içinde tamamladık. Bu bizim için bir rekordu. Üstelik aday kalitesi de beklediğimizin çok üzerindeydi.",
+    rating: 5,
+  }
 ];

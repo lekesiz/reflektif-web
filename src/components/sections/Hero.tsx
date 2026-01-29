@@ -30,16 +30,14 @@ export function Hero() {
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-6 leading-tight">
-              Kendini Keşfet,{" "}
+              Kariyerinin{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500">
-                Geleceğini Seç
+                Yapay Zekası
               </span>
             </h1>
 
             <p className="text-lg md:text-xl text-neutral-600 mb-8 leading-relaxed max-w-xl">
-              AI destekli yetkinlik değerlendirme ve meslek eşleştirme platformu
-              ile doğru kariyer kararlarını al. Kişiliğini, yeteneklerini ve
-              tutkularını keşfet.
+              Potansiyelini keşfet, tutkunu kariyere dönüştür. Kişilik, yetenek ve hatta hobilerini analiz eden AI motorumuzla geleceğin mesleklerine bugünden hazırlan.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">

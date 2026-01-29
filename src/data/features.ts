@@ -10,6 +10,7 @@ export interface Feature {
   benefits: Benefit[];
   useCases: string[];
   integrations?: string[];
+  seoKeywords: string[];
 }
 
 export interface Benefit {
@@ -22,214 +23,208 @@ export const features: Feature[] = [
   {
     id: "video-mulakat",
     slug: "video-mulakat",
-    name: "Video Mülakat",
+    name: "AI Destekli Video Mülakat",
     shortDescription:
-      "Asenkron video mülakatlar ile zaman ve mekandan bağımsız aday değerlendirme",
+      "Asenkron video mülakatlar ile zaman ve mekandan bağımsız, önyargısız ve verimli aday değerlendirmesi.",
     longDescription:
-      "Reflektif Video Mülakat, adayların önceden belirlenen sorulara video ile yanıt verdikleri asenkron mülakat sistemidir. Coğrafi engelleri ortadan kaldırır, işe alım süresini %70 kısaltır ve tüm adayları aynı sorularla değerlendirerek objektif karşılaştırma imkanı sunar.",
+      "Reflektif Video Mülakat, adayların önceden belirlenen sorulara video ile yanıt verdikleri asenkron bir mülakat sistemidir. Geleneksel mülakatların aksine, AI motorumuz adayların sadece ne söylediğini değil, nasıl söylediğini de analiz eder. Kelime seçimi, konuşma akıcılığı, duygu durumu ve iletişim becerileri gibi 50’den fazla parametreyi objektif olarak değerlendirerek size adayın yetkinlikleri ve potansiyeli hakkında derinlemesine bir içgörü sunar. Bu sayede işe alım sürenizi %70 kısaltır, daha adil bir süreç yürütür ve en doğru adayı bulma şansınızı artırırsınız.",
     icon: "Video",
     color: "primary",
     highlights: [
       "Asenkron mülakat - 7/24 erişim",
-      "AI destekli video analizi",
-      "Tek ve çok kişili değerlendirme",
-      "Otomatik transkript oluşturma",
-      "Mobil uyumlu kayıt",
+      "AI destekli duygu ve yetkinlik analizi",
+      "Otomatik transkript ve anahtar kelime tespiti",
+      "Önyargıyı azaltan objektif değerlendirme",
+      "Mobil uyumlu ve kolay kullanım",
     ],
     benefits: [
       {
-        title: "Zaman Tasarrufu",
+        title: "Verimlilik Artışı",
         description:
-          "İK ekibiniz için mülakat süresini %70 azaltın. Adaylar uygun oldukları zaman kayıt yapabilir.",
-        icon: "Clock",
-      },
-      {
-        title: "Coğrafi Özgürlük",
-        description:
-          "Dünyanın her yerinden adayları değerlendirin. Seyahat masrafları ve koordinasyon zorlukları ortadan kalkar.",
-        icon: "Globe",
-      },
-      {
-        title: "Objektif Değerlendirme",
-        description:
-          "Tüm adaylara aynı sorular sorulur. Panel değerlendirme ile çoklu görüş alınabilir.",
-        icon: "Scale",
-      },
-      {
-        title: "AI Destekli Analiz",
-        description:
-          "Konuşma hızı, göz teması, beden dili ve içerik analizi ile detaylı değerlendirme raporu.",
-        icon: "Brain",
-      },
-    ],
-    useCases: [
-      "Yüksek hacimli işe alım kampanyaları",
-      "Uzak lokasyonlardan aday değerlendirme",
-      "Uluslararası işe alımlar",
-      "Stajyer ve yeni mezun programları",
-      "Yönetici pozisyonları ön eleme",
-    ],
-    integrations: ["ATS sistemleri", "Microsoft Teams", "Google Meet", "Zoom"],
-  },
-  {
-    id: "ats",
-    slug: "basvuru-takip-sistemi",
-    name: "Başvuru Takip Sistemi (ATS)",
-    shortDescription:
-      "Tüm işe alım sürecinizi tek platformdan yönetin",
-    longDescription:
-      "Reflektif ATS, iş ilanı yayınlamadan işe alıma kadar tüm süreci dijitalleştiren kapsamlı bir başvuru takip sistemidir. Aday havuzu yönetimi, otomatik değerlendirme, iş akışları ve entegre iletişim araçları ile işe alım süreçlerinizi hızlandırın.",
-    icon: "Users",
-    color: "secondary",
-    highlights: [
-      "İş ilanı yönetimi",
-      "Aday havuzu ve CRM",
-      "Otomatik değerlendirme",
-      "Kanban tahta görünümü",
-      "Entegre iletişim",
-    ],
-    benefits: [
-      {
-        title: "Merkezi Yönetim",
-        description:
-          "Tüm adaylar, ilanlar ve süreçler tek platformda. Karmaşık Excel tablolarına son.",
-        icon: "LayoutDashboard",
-      },
-      {
-        title: "Otomasyon",
-        description:
-          "Otomatik e-postalar, hatırlatmalar ve durum güncellemeleri. Manuel işleri minimize edin.",
+          "İK ekibinizin mülakat süresini %70 azaltın. Adaylar uygun oldukları zaman kayıt yapabilir, siz de toplu olarak izleyebilirsiniz.",
         icon: "Zap",
       },
       {
-        title: "İşbirliği",
+        title: "Objektif ve Adil Değerlendirme",
         description:
-          "Ekip üyeleri adayları değerlendirebilir, not ekleyebilir ve oylamalara katılabilir.",
-        icon: "Users",
+          "AI analizimiz, tüm adayları aynı bilimsel kriterlere göre değerlendirerek bilinçsiz önyargıları (cinsiyet, yaş, etnik köken) ortadan kaldırır.",
+        icon: "Scale",
       },
       {
-        title: "Raporlama",
+        title: "Derinlemesine Aday Analizi",
         description:
-          "İşe alım metrikleri, kaynak analizi ve süreç performans raporları ile veriye dayalı kararlar.",
-        icon: "BarChart3",
+          "Adayın sadece cevaplarını değil, iletişim becerilerini, özgüvenini ve motivasyonunu da anlayın. CV’nin ötesine geçin.",
+        icon: "BrainCircuit",
+      },
+      {
+        title: "Gelişmiş Aday Deneyimi",
+        description:
+          "Adaylara esneklik sunan modern ve teknolojik bir işe alım deneyimi yaşatarak işveren markanızı güçlendirin.",
+        icon: "Award",
       },
     ],
     useCases: [
-      "Kurumsal işe alım departmanları",
-      "İK danışmanlık firmaları",
-      "Toplu işe alım süreçleri",
-      "Çok lokasyonlu şirketler",
-      "Hızlı büyüyen startup'lar",
+      "Yüksek hacimli işe alım kampanyaları (Yeni mezun, stajyer)",
+      "Uzak lokasyonlardan ve yurtdışından aday değerlendirme",
+      "Satış, müşteri hizmetleri gibi iletişim yoğun roller",
+      "Yönetici pozisyonları için ön eleme süreci",
     ],
-    integrations: [
-      "Kariyer siteleri",
-      "LinkedIn",
-      "Indeed",
-      "E-posta sistemleri",
-      "Takvim uygulamaları",
+    integrations: ["Tüm ATS sistemleri", "Microsoft Teams", "Google Meet", "Zoom"],
+    seoKeywords: ["video mülakat", "ai işe alım", "asenkron mülakat", "dijital mülakat", "yapay zeka ik"],
+  },
+  {
+    id: "raporlama",
+    slug: "raporlama-ve-analitik",
+    name: "Kişiselleştirilmiş Raporlama ve Analitik",
+    shortDescription:
+      "Veriyi anlama, anlamlandırma ve aksiyona dönüştürme. Size özel, anlaşılır ve derinlemesine raporlar.",
+    longDescription:
+      "Reflektif platformu, sadece veri toplayan bir araç değildir; o veriyi sizin için anlamlı ve eyleme geçirilebilir içgörülere dönüştüren bir analiz motorudur. Her test ve değerlendirme sonucunda, adayın veya çalışanın güçlü yönlerini, gelişim alanlarını, potansiyelini ve risklerini ortaya koyan 15’ten fazla farklı rapor türü sunuyoruz. Yönetici özetinden koçluk rehberine, mülakat sorularından kişisel gelişim planına kadar her ihtiyaca yönelik, görsel olarak zengin ve anlaşılır raporlarla karar verme sürecinizi kolaylaştırıyoruz.",
+    icon: "BarChart3",
+    color: "secondary",
+    highlights: [
+      "15+ farklı rapor türü (Yönetici, Aday, Koçluk vb.)",
+      "Kişiselleştirilebilir ve markalanabilir raporlar",
+      "Grafiksel ve görsel veri sunumu",
+      "Karşılaştırmalı analiz (benchmark)",
+      "Gelişim önerileri ve aksiyon planları",
     ],
+    benefits: [
+      {
+        title: "Hızlı ve Doğru Kararlar",
+        description:
+          "Karmaşık verileri anlaşılır görsellerle sunarak yöneticilerin hızlı ve isabetli kararlar almasını sağlar.",
+        icon: "Target",
+      },
+      {
+        title: "Etkili Geri Bildirim",
+        description:
+          "Adaylara ve çalışanlara, gelişimlerini destekleyecek yapıcı ve somut geri bildirimler sunun.",
+        icon: "MessageSquarePlus",
+      },
+      {
+        title: "Stratejik İK Yönetimi",
+        description:
+          "Organizasyonun yetenek haritasını çıkarın, yetenek boşluklarını belirleyin ve geleceğe yönelik stratejik iş gücü planlaması yapın.",
+        icon: "Map",
+      },
+      {
+        title: "ROI Ölçümü",
+        description:
+          "İşe alım, eğitim ve gelişim programlarınızın yatırım getirisini (ROI) somut metriklerle ölçün ve yönetime sunun.",
+        icon: "Percent",
+      },
+    ],
+    useCases: [
+      "İşe alım kararları ve aday karşılaştırma",
+      "Performans değerlendirme ve geri bildirim seansları",
+      "Liderlik ve yetenek gelişim programları",
+      "Yedekleme planlaması ve kariyer yolu tasarımı",
+    ],
+    seoKeywords: ["ik analitiği", "yetenek raporlama", "performans raporu", "kişilik raporu", "insan kaynakları analitiği"],
   },
   {
     id: "360-degerlendirme",
-    slug: "360-degerlendirme",
-    name: "360 Derece Değerlendirme",
+    slug: "360-derece-degerlendirme",
+    name: "360 Derece Geri Bildirim ve Performans",
     shortDescription:
-      "Çok yönlü geri bildirim ile kapsamlı performans analizi",
+      "Sürekli geri bildirim kültürü ile performansı ve gelişimi zirveye taşıyın.",
     longDescription:
-      "360 Derece Değerlendirme, çalışanların yöneticiler, eş düzey çalışanlar, astlar ve müşteriler dahil olmak üzere farklı kaynaklardan geri bildirim aldığı kapsamlı bir değerlendirme yöntemidir. Kör noktaları ortaya çıkarır ve gelişim alanlarını netleştirir.",
+      "360 Derece Değerlendirme, çalışanların sadece yöneticilerinden değil, aynı zamanda ekip arkadaşlarından, astlarından ve hatta müşterilerden geri bildirim aldığı bütünsel bir performans ve gelişim aracıdır. Platformumuz, bu süreci kolaylaştırarak, çalışanların ‘kör noktalarını’ keşfetmelerine, güçlü yönlerini pekiştirmelerine ve sürekli bir gelişim kültürü oluşturmanıza yardımcı olur. Yıllık performans değerlendirmelerinin ötesine geçerek, anlık ve yapıcı geri bildirimi kurum kültürünüzün bir parçası haline getirin.",
     icon: "RefreshCcw",
     color: "accent",
     highlights: [
-      "Çok kaynaklı geri bildirim",
-      "Anonim değerlendirme seçeneği",
-      "Yetkinlik bazlı sorular",
-      "Karşılaştırmalı raporlar",
-      "Gelişim planı önerileri",
+      "Çok kaynaklı (yönetici, akran, ast) geri bildirim",
+      "Anonim ve isme açık geri bildirim seçenekleri",
+      "Yetkinlik bazlı ve davranış odaklı sorular",
+      "Kişisel ve organizasyonel gelişim raporları",
+      "Gelişim planı entegrasyonu",
     ],
     benefits: [
       {
-        title: "Bütünsel Görünüm",
+        title: "Objektif ve Kapsamlı Performans Görünümü",
         description:
-          "Sadece yönetici değil, tüm paydaşlardan geri bildirim alarak tam resmi görün.",
-        icon: "Eye",
+          "Performansı tek bir kişinin bakış açısından değil, çalışanın etkileşimde olduğu herkesin gözünden değerlendirin.",
+        icon: "Users",
       },
       {
-        title: "Kör Nokta Keşfi",
+        title: "Gelişim Kültürü Oluşturma",
         description:
-          "Çalışanların farkında olmadığı güçlü ve zayıf yönlerini ortaya çıkarın.",
-        icon: "Search",
-      },
-      {
-        title: "Gelişim Odaklı",
-        description:
-          "Somut gelişim alanları belirlenerek kişiselleştirilmiş eğitim planları oluşturun.",
+          "Geri bildirimi bir denetim aracı olmaktan çıkarıp, bir gelişim ve öğrenme fırsatına dönüştürün.",
         icon: "TrendingUp",
       },
       {
-        title: "Organizasyonel İçgörü",
+        title: "Liderlik Potansiyelini Ortaya Çıkarma",
         description:
-          "Departman ve takım bazında yetkinlik haritaları ile stratejik kararlar alın.",
-        icon: "PieChart",
+          "Geleceğin liderlerinin iletişim, işbirliği ve etki yaratma gibi yetkinliklerini erken aşamada tespit edin.",
+        icon: "Star",
+      },
+      {
+        title: "Çalışan Bağlılığını Artırma",
+        description:
+          "Çalışanların sesini duyurun ve gelişimlerine yatırım yaptığınızı göstererek bağlılıklarını ve motivasyonlarını artırın.",
+        icon: "HeartHandshake",
       },
     ],
     useCases: [
-      "Liderlik gelişim programları",
-      "Yıllık performans değerlendirmeleri",
-      "Yedekleme planlaması",
-      "Organizasyonel gelişim projeleri",
-      "Koçluk ve mentorluk programları",
+      "Liderlik ve yönetici gelişim programları",
+      "Performans yönetimi ve değerlendirme süreçleri",
+      "Takım içi işbirliğini ve iletişimi güçlendirme",
+      "Organizasyonel değişim ve kültür dönüşümü projeleri",
     ],
+    seoKeywords: ["360 derece değerlendirme", "performans yönetimi", "geri bildirim", "yetkinlik yönetimi", "liderlik gelişimi"],
   },
   {
-    id: "yetkinlik-bazli",
-    slug: "yetkinlik-bazli-degerlendirme",
-    name: "Yetkinlik Bazlı Değerlendirme",
+    id: "entegrasyon",
+    slug: "entegrasyon-ve-api",
+    name: "Entegrasyon ve API",
     shortDescription:
-      "Pozisyon yetkinliklerine göre aday-iş uyumu analizi",
+      "Mevcut İK sistemlerinizle sorunsuz entegrasyon ve esnek API ile kendi çözümlerinizi geliştirin.",
     longDescription:
-      "Yetkinlik Bazlı Değerlendirme, her pozisyon için belirlenen kritik yetkinliklere göre adayları değerlendirir. Davranışsal göstergeler, seviye tanımları ve benchmark karşılaştırması ile en uygun adayı belirlemenize yardımcı olur.",
-    icon: "Target",
+      "Reflektif, mevcut teknoloji yatırımınızı korumanızı ve iş akışlarınızı bozmamanızı hedefler. Bu nedenle, SAP, Workday, Oracle gibi önde gelen HRIS ve ATS sistemleriyle hazır entegrasyonlar sunuyoruz. Ayrıca, esnek ve güçlü API’miz sayesinde, Reflektif’in değerlendirme motorunu kendi iç sistemlerinize, web sitenize veya mobil uygulamanıza kolayca entegre edebilir, size özel çözümler yaratabilirsiniz.",
+    icon: "Puzzle",
     color: "primary",
     highlights: [
-      "Pozisyon bazlı yetkinlik seti",
-      "Davranışsal göstergeler",
-      "Seviye bazlı değerlendirme",
-      "Gap analizi",
-      "Gelişim önerileri",
+      "Hazır HRIS ve ATS entegrasyonları",
+      "RESTful API ile tam erişim",
+      "Webhooks ile anlık bildirimler",
+      "Kapsamlı API dokümantasyonu ve geliştirici desteği",
+      "Güvenli ve ölçeklenebilir altyapı",
     ],
     benefits: [
       {
-        title: "Doğru Eşleşme",
+        title: "Sorunsuz İş Akışı",
         description:
-          "Aday yetkinlikleri ile pozisyon gereksinimleri arasındaki uyumu netleştirin.",
-        icon: "Puzzle",
+          "Veri girişini ortadan kaldırın ve tüm İK süreçlerinizi tek bir akışta birleştirin. Aday ve çalışan verileri otomatik olarak senkronize olur.",
+        icon: "Link",
       },
       {
-        title: "Objektif Kriter",
+        title: "Esneklik ve Özelleştirme",
         description:
-          "Kişisel yargılar yerine tanımlanmış yetkinlik kriterlerine göre değerlendirme.",
-        icon: "CheckSquare",
+          "API’mizi kullanarak kendi değerlendirme süreçlerinizi tasarlayın, raporlarınızı özelleştirin ve benzersiz işe alım hunileri oluşturun.",
+        icon: "Settings2",
       },
       {
-        title: "Karşılaştırma",
+        title: "Gelişmiş Aday Deneyimi",
         description:
-          "Adayları aynı yetkinlik setine göre değerlendirerek kolay karşılaştırma.",
-        icon: "GitCompare",
+          "Değerlendirme sürecini kendi kariyer sayfanıza veya uygulamanıza gömerek adayların marka deneyimini kesintisiz hale getirin.",
+        icon: "Smile",
       },
       {
-        title: "Gelişim Yol Haritası",
+        title: "Veri Güvenliği ve Bütünlüğü",
         description:
-          "Eksik yetkinlikler için somut gelişim planları ve eğitim önerileri.",
-        icon: "Map",
+          "Tüm veri akışını güvenli protokoller üzerinden sağlayarak veri bütünlüğünü ve güvenliğini en üst düzeyde tutun.",
+        icon: "ShieldCheck",
       },
     ],
     useCases: [
-      "Yönetici işe alımları",
-      "İç terfi kararları",
-      "Yetenek havuzu oluşturma",
-      "Kariyer planlama",
-      "Eğitim ihtiyaç analizi",
+      "Mevcut bir ATS veya HRIS sistemine sahip büyük kurumlar",
+      "Kendi kariyer portalını veya İK yazılımını geliştiren şirketler",
+      "Değerlendirme sürecini kendi markası altında sunmak isteyen danışmanlık firmaları",
+      "Online eğitim (LMS) platformları ile entegrasyon",
     ],
+    integrations: ["SAP SuccessFactors", "Workday", "Oracle HCM", "Greenhouse", "Lever", "Tüm REST/JSON uyumlu sistemler"],
+    seoKeywords: ["ik yazılım entegrasyonu", "ats entegrasyonu", "hris entegrasyonu", "ik api", "yetenek yönetimi api"],
   },
 ];
 
