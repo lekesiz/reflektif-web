@@ -7,14 +7,16 @@ interface PageHeaderProps {
 
 export function PageHeader({ title, description }: PageHeaderProps) {
   return (
-    <div className="bg-gradient-to-r from-primary-600 to-primary-700 py-16">
+    <div className="pt-32 pb-16">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          {title}
-        </h1>
-        <p className="text-xl text-primary-100 max-w-3xl">
-          {description}
-        </p>
+        <div className="max-w-4xl">
+          <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+            {title}
+          </h1>
+          <p className="text-xl text-neutral-600 leading-relaxed">
+            {description}
+          </p>
+        </div>
       </div>
     </div>
   );
