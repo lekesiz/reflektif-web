@@ -215,7 +215,7 @@ export function LeadPopup({
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
                     }
-                    placeholder="ornek@sirket.com"
+                    placeholder="ornek@şirket.com"
                     required
                   />
                   <Input

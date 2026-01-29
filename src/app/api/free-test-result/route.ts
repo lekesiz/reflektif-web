@@ -23,11 +23,11 @@ function getTestResultEmailTemplate(data: TestResultData): string {
 
   const resultDescriptions: Record<string, string> = {
     "risk-taker":
-      "Yuksek risk toleransina sahip. Firsatlari degerlendirmekte hizli ve degisimden korkmuyor. Girisimcilik ruhu tasiyor.",
+      "Yüksek risk toleransına sahip. Fırsatları değerlendirmekte hızlı ve değişimden korkmuyor. Girişimcilik ruhu taşıyor.",
     balanced:
-      "Risk ve guvenlik arasinda saglikli bir denge kurabiliyor. Kararlarini verirken hem firsatlari hem de riskleri degerlendiriyor.",
+      "Risk ve güvenlik arasında sağlıklı bir denge kurabiliyor. Kararlarını verirken hem fırsatları hem de riskleri değerlendiriyor.",
     cautious:
-      "Guvenlik ve istikrar oncelikli. Kararlarini dikkatlice aliyor, riskleri minimize etmeye calisiyor.",
+      "Güvenlik ve istikrar öncelikli. Kararlarını dikkatlice alıyor, riskleri minimize etmeye çalışıyor.",
   };
 
   return `
@@ -64,7 +64,7 @@ function getTestResultEmailTemplate(data: TestResultData): string {
               <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 30px;">
                 <tr>
                   <td style="padding: 15px; background-color: #f8fafc; border-radius: 12px; border-left: 4px solid #6366f1;">
-                    <h2 style="margin: 0 0 15px 0; color: #1f2937; font-size: 18px;">Kullanici Bilgileri</h2>
+                    <h2 style="margin: 0 0 15px 0; color: #1f2937; font-size: 18px;">Kullanıcı Bilgileri</h2>
                     <table width="100%" cellpadding="0" cellspacing="0">
                       <tr>
                         <td style="padding: 8px 0; color: #6b7280; font-size: 14px; width: 120px;">Ad Soyad:</td>
@@ -147,7 +147,7 @@ function getTestResultEmailTemplate(data: TestResultData): string {
           <tr>
             <td style="background-color: #f8fafc; padding: 20px 40px; text-align: center; border-top: 1px solid #e5e7eb;">
               <p style="margin: 0; color: #6b7280; font-size: 12px;">
-                Bu e-posta <a href="https://reflektif.net/testler/kariyer-risk-analizi/ucretsiz-test" style="color: #6366f1; text-decoration: none;">Kariyer Risk Analizi Ucretsiz Test</a> sayfasindan gonderilmistir.
+                Bu e-posta <a href="https://reflektif.net/testler/kariyer-risk-analizi/ucretsiz-test" style="color: #6366f1; text-decoration: none;">Kariyer Risk Analizi Ücretsiz Test</a> sayfasından gönderilmiştir.
               </p>
               <p style="margin: 8px 0 0 0; color: #9ca3af; font-size: 11px;">
                 ${new Date().toLocaleString("tr-TR", { dateStyle: "full", timeStyle: "short" })}
