@@ -60,9 +60,11 @@ export function Header() {
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 via-secondary-500 to-accent-500 flex items-center justify-center">
-              <span className="text-white font-bold text-xl">R</span>
-            </div>
+            <img 
+              src="/images/logo/reflektif-logo-icon.png" 
+              alt="Reflektif Logo" 
+              className="w-10 h-10"
+            />
             <span
               className={cn(
                 "font-bold text-xl transition-colors",

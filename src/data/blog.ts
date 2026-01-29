@@ -10,6 +10,7 @@ export interface BlogPost {
   readTime: string;
   featured: boolean;
   tags: string[];
+  image: string;
 }
 
 export interface BlogCategory {
@@ -70,6 +71,7 @@ export const blogPosts: BlogPost[] = [
     slug: "hangi-meslek-bana-uygun-holland-kodu",
     title: "Hangi Meslek Bana Uygun? Holland Koduna Göre Meslek Seçimi",
     excerpt: "Kariyer yolculuğunuzda doğru adımı atın! Holland Kodu (RIASEC) teorisi ile kişilik tipinize en uygun meslekleri keşfedin. Reflektif'in AI destekli analizi ile potansiyelinizi ortaya çıkarın.",
+    image: "/images/blog/career-development.png",
     content: `
 # Hangi Meslek Bana Uygun? Holland Koduna Göre Meslek Seçimi
 
@@ -134,6 +136,7 @@ Kariyerinizi şansa bırakmayın. **Reflektif'in ücretsiz temel değerlendirmes
     slug: "kisilik-testleri-guvenilir-mi",
     title: "Kişilik Testleri Ne Kadar Güvenilir? Bilimsel Açıdan Bir Bakış",
     excerpt: "Kişilik testleri gerçekten işe yarıyor mu? Big Five (Beş Faktör) Modeli gibi bilimsel temellere dayanan envanterlerin geçerlilik ve güvenilirlik oranlarını öğrenin. Reflektif ile bilimin gücünü keşfedin.",
+    image: "/images/blog/ai-in-hr.png",
     content: `
 # Kişilik Testleri Ne Kadar Güvenilir? Bilimsel Açıdan Bir Bakış
 
@@ -199,6 +202,7 @@ Reflektif, bilimin gücünü yapay zekanın esnekliği ile birleştirerek size e
     slug: "dogru-ise-alim-nasil-yapilir-yetkinlik-bazli-mulakat",
     title: "Doğru İşe Alım Nasıl Yapılır? Yetkinlik Bazlı Mülakat Teknikleri",
     excerpt: "İşe alım süreçlerinizi bir üst seviyeye taşıyın. Yetkinlik bazlı mülakat nedir, STAR tekniği nasıl kullanılır ve Reflektif AI ile mülakatlarınızı nasıl daha verimli hale getirebilirsiniz? İK profesyonelleri için rehber.",
+    image: "/images/blog/future-of-work.png",
     content: `
 # Doğru İşe Alım Nasıl Yapılır? Yetkinlik Bazlı Mülakat Teknikleri
 
