@@ -271,3 +271,8 @@ export function getRelatedPosts(currentSlug: string, limit: number = 3): BlogPos
     .filter((post) => post.slug !== currentSlug && post.category.id === currentPost.category.id)
     .slice(0, limit);
 }
+
+// Helper function to get featured posts
+export function getFeaturedPosts(limit: number = 3): BlogPost[] {
+  return blogPosts.filter((post) => post.featured).slice(0, limit);
+}

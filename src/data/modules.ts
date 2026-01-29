@@ -400,3 +400,8 @@ export const modules: Module[] = [
     certifications: ["ISO 27001 Bilgi Güvenliği", "KVKK ve GDPR Uyumlu"],
   },
 ];
+
+// Helper function to get module by slug
+export function getModuleBySlug(slug: string): Module | undefined {
+  return modules.find((module) => module.slug === slug);
+}
