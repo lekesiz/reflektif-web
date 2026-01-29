@@ -40,6 +40,11 @@ const colorClasses: Record<string, { bg: string; badge: string; button: string }
     badge: "accent",
     button: "accent",
   },
+  success: {
+    bg: "bg-green-50",
+    badge: "primary",
+    button: "primary",
+  },
 };
 
 export function Modules() {
