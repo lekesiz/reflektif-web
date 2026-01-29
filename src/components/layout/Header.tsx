@@ -64,7 +64,7 @@ export function Header() {
               <img 
                 src="/images/logo/reflektif-logo-horizontal.webp" 
                 alt="Reflektif Logo" 
-                className="h-12 w-auto transition-transform duration-300 group-hover:scale-105"
+                className="h-14 w-auto transition-transform duration-300 group-hover:scale-105"
               />
             </div>
           </Link>
