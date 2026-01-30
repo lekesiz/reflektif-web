@@ -84,11 +84,11 @@ export default function KaynaklarPage() {
                     <div className="p-6">
                       <div className="flex items-center gap-2 mb-3">
                         <Badge variant="primary" size="sm">
-                          {featuredPosts[0].category.name}
+                          {featuredPosts[0].category}
                         </Badge>
                         <span className="text-sm text-neutral-500 flex items-center gap-1">
                           <Clock className="w-4 h-4" />
-                          {featuredPosts[0].readTime}
+                          {featuredPosts[0].readingTime} dk
                         </span>
                       </div>
                       <h3 className="text-2xl font-semibold text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors">
@@ -124,13 +124,13 @@ export default function KaynaklarPage() {
                       <div className="w-20 h-20 bg-gradient-to-br from-secondary-400 to-accent-400 rounded-lg shrink-0" />
                       <div className="flex-1 min-w-0">
                         <Badge variant="outline" size="sm" className="mb-2">
-                          {post.category.name}
+                          {post.category}
                         </Badge>
                         <h4 className="font-medium text-neutral-900 line-clamp-2 group-hover:text-primary-600 transition-colors">
                           {post.title}
                         </h4>
                         <p className="text-sm text-neutral-500 mt-1">
-                          {post.readTime}
+                          {post.readingTime} dk
                         </p>
                       </div>
                     </div>
@@ -173,9 +173,9 @@ export default function KaynaklarPage() {
                   <div className="p-5">
                     <div className="flex items-center gap-2 mb-3">
                       <Badge variant="outline" size="sm">
-                        {post.category.name}
+                        {post.category}
                       </Badge>
-                      <span className="text-xs text-neutral-500">{post.readTime}</span>
+                      <span className="text-xs text-neutral-500">{post.readingTime} dk</span>
                     </div>
                     <h3 className="font-semibold text-neutral-900 mb-2 line-clamp-2 group-hover:text-primary-600 transition-colors">
                       {post.title}

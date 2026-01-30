@@ -70,7 +70,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   // Get related posts from same category
   const relatedPosts = blogPosts
-    .filter((p) => p.category.id === post.category.id && p.id !== post.id)
+    .filter((p) => p.category === post.category && p.id !== post.id)
     .slice(0, 3);
 
   return (
@@ -86,10 +86,10 @@ export default async function BlogPostPage({ params }: PageProps) {
             Tüm Yazılar
           </Link>
           <div className="flex items-center gap-3 mb-4">
-            <Badge variant="primary">{post.category.name}</Badge>
+            <Badge variant="primary">{post.category}</Badge>
             <span className="text-neutral-500 flex items-center gap-1 text-sm">
               <Clock className="w-4 h-4" />
-              {post.readTime}
+              {post.readingTime} dk okuma
             </span>
             <span className="text-neutral-500 flex items-center gap-1 text-sm">
               <Calendar className="w-4 h-4" />
@@ -212,7 +212,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                     <div className="aspect-video bg-gradient-to-br from-neutral-200 to-neutral-300 rounded-t-xl" />
                     <div className="p-5">
                       <Badge variant="outline" size="sm" className="mb-3">
-                        {relatedPost.category.name}
+                        {relatedPost.category}
                       </Badge>
                       <h3 className="font-semibold text-neutral-900 mb-2 line-clamp-2 group-hover:text-primary-600 transition-colors">
                         {relatedPost.title}
