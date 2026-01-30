@@ -32,7 +32,7 @@ export const blogPosts: BlogPost[] = [
     tags: ["meslek seçimi", "kariyer testi", "holland kodu", "kişilik tipi"],
     publishedAt: "2026-01-28",
     readingTime: 7,
-    image: "/images/blog/holland-code-career.jpg"
+    image: "/images/blog/hero-kariyer.jpg"
   },
   {
     id: "2",
@@ -49,7 +49,7 @@ export const blogPosts: BlogPost[] = [
     tags: ["kişilik testi", "big five", "psikometri", "geçerlilik", "güvenilirlik"],
     publishedAt: "2026-01-25",
     readingTime: 6,
-    image: "/images/blog/personality-tests-science.jpg"
+    image: "/images/blog/hero-psikoloji.jpg"
   },
   {
     id: "3",
@@ -66,7 +66,7 @@ export const blogPosts: BlogPost[] = [
     tags: ["işe alım", "mülakat teknikleri", "star tekniği", "yetkinlik bazlı", "ik"],
     publishedAt: "2026-01-20",
     readingTime: 8,
-    image: "/images/blog/competency-based-interview.jpg"
+    image: "/images/blog/hero-ise-alim.jpg"
   },
   {
     id: "4",
@@ -85,7 +85,7 @@ export const blogPosts: BlogPost[] = [
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 7,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ise-alim.jpg"
   },
   {
     id: "5",
@@ -104,7 +104,7 @@ export const blogPosts: BlogPost[] = [
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 5,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ik-teknoloji.jpg"
   },
   {
     id: "6",
@@ -123,7 +123,7 @@ export const blogPosts: BlogPost[] = [
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 5,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ik-teknoloji.jpg"
   },
   {
     id: "7",
@@ -142,7 +142,7 @@ Kariyer Planlama: Geleceğinizi...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 5,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-kariyer.jpg"
   },
   {
     id: "8",
@@ -161,7 +161,7 @@ Kariyer Planlama: Geleceğinizi...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 5,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-degerlendirme.jpg"
   },
   {
     id: "9",
@@ -180,7 +180,7 @@ MBTI ve Kariyer: Kişilik Tipini...`,  // İçerik markdown dosyasından okunaca
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 6,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-kariyer.jpg"
   },
   {
     id: "10",
@@ -199,7 +199,7 @@ meta_description: İşe alım...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 13,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ise-alim.jpg"
   },
   {
     id: "11",
@@ -218,7 +218,7 @@ Big Five (Beş Faktör) Kişil...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 5,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-psikoloji.jpg"
   },
   {
     id: "12",
@@ -237,7 +237,7 @@ meta_description: "Duygusal zeka tes...`,  // İçerik markdown dosyasından oku
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 12,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-degerlendirme.jpg"
   },
   {
     id: "13",
@@ -256,7 +256,7 @@ meta_description: Kişilik testlerinin i...`,  // İçerik markdown dosyasından
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-degerlendirme.jpg"
   },
   {
     id: "14",
@@ -275,7 +275,7 @@ Duygusal Zeka (EQ): Tan...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 5,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-psikoloji.jpg"
   },
   {
     id: "15",
@@ -293,7 +293,7 @@ meta_description: Değerlendirme Merkezi (Assessment Center) nedir, nasıl çal�
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-degerlendirme.jpg"
   },
   {
     id: "16",
@@ -312,7 +312,7 @@ meta_description: İK Analitiği (P...`,  // İçerik markdown dosyasından okun
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-arastirma.jpg"
   },
   {
     id: "17",
@@ -331,7 +331,7 @@ meta_description: İK süreçl...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 11,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ise-alim.jpg"
   },
   {
     id: "18",
@@ -350,7 +350,7 @@ meta_description: Uzaktan çalışma teknoloji...`,  // İçerik markdown dosyas
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 9,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ik-teknoloji.jpg"
   },
   {
     id: "19",
@@ -369,7 +369,7 @@ meta_description: Uzaktan çalışma teknoloji...`,  // İçerik markdown dosyas
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 12,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ik-teknoloji.jpg"
   },
   {
     id: "20",
@@ -388,7 +388,7 @@ me...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 12,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ik-teknoloji.jpg"
   },
   {
     id: "21",
@@ -407,7 +407,7 @@ meta_description: İK'da dijital dönüşümün stratej...`,  // İçerik markdo
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 11,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ik-teknoloji.jpg"
   },
   {
     id: "22",
@@ -426,7 +426,7 @@ meta_description: İK'da dijital dönüşümün stratej...`,  // İçerik markdo
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ik-teknoloji.jpg"
   },
   {
     id: "23",
@@ -444,7 +444,7 @@ title: Referans Kontrolü: İşe Alımda Başarıyı Artıran Doğru Sorular ve 
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ise-alim.jpg"
   },
   {
     id: "24",
@@ -463,7 +463,7 @@ title: Referans Kontrolü: İşe Alımda Başarıyı Artıran Doğru Sorular ve 
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-kariyer.jpg"
   },
   {
     id: "25",
@@ -482,7 +482,7 @@ title: Referans Kontrolü: İşe Alımda Başarıyı Artıran Doğru Sorular ve 
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 12,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-kariyer.jpg"
   },
   {
     id: "26",
@@ -501,7 +501,7 @@ title: Referans Kontrolü: İşe Alımda Başarıyı Artıran Doğru Sorular ve 
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 11,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ise-alim.jpg"
   },
   {
     id: "27",
@@ -520,7 +520,7 @@ meta_des...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 13,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-kariyer.jpg"
   },
   {
     id: "28",
@@ -539,7 +539,7 @@ meta_description: Kariyer ...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 11,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-kariyer.jpg"
   },
   {
     id: "29",
@@ -558,7 +558,7 @@ meta_description: Kariyer engellerini aşmanın psikolojik yollarını keşfedin
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 11,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-kariyer.jpg"
   },
   {
     id: "30",
@@ -577,7 +577,7 @@ meta_description: Kadınların kariyerlerinde karşı...`,  // İçerik markdown
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 11,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-kariyer.jpg"
   },
   {
     id: "31",
@@ -596,7 +596,7 @@ meta_description: Kadınların kariyerlerinde karşı...`,  // İçerik markdown
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 7,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-arastirma.jpg"
   },
   {
     id: "32",
@@ -615,7 +615,7 @@ meta_description: Kadınların kariyerlerinde karşı...`,  // İçerik markdown
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-arastirma.jpg"
   },
   {
     id: "33",
@@ -634,7 +634,7 @@ meta_description: Kadınların kariyerlerinde karşı...`,  // İçerik markdown
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 12,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-arastirma.jpg"
   },
   {
     id: "34",
@@ -653,7 +653,7 @@ meta_descri...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 16,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ise-alim.jpg"
   },
   {
     id: "35",
@@ -672,7 +672,7 @@ meta_description: İşe alım süresi (Time-to-...`,  // İçerik markdown dosya
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-arastirma.jpg"
   },
   {
     id: "36",
@@ -691,7 +691,7 @@ meta_description: Türkiye'de tükenmişlik sendromun...`,  // İçerik markdown
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 11,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-arastirma.jpg"
   },
   {
     id: "37",
@@ -712,7 +712,7 @@ Günü...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 11,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ik-teknoloji.jpg"
   },
   {
     id: "38",
@@ -731,7 +731,7 @@ meta_description: 2026 ve sonrası için yetene...`,  // İçerik markdown dosya
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 8,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-arastirma.jpg"
   },
   {
     id: "39",
@@ -750,7 +750,7 @@ meta_description: 2026 ve sonrası için yetene...`,  // İçerik markdown dosya
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-psikoloji.jpg"
   },
   {
     id: "40",
@@ -769,7 +769,7 @@ meta_description: 2026 ve sonrası için yetene...`,  // İçerik markdown dosya
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 11,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-psikoloji.jpg"
   },
   {
     id: "41",
@@ -790,7 +790,7 @@ meta_description: 2026 ve sonrası için yetene...`,  // İçerik markdown dosya
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 11,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ise-alim.jpg"
   },
   {
     id: "42",
@@ -809,7 +809,7 @@ meta_description: Etkili liderlerin ...`,  // İçerik markdown dosyasından oku
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-psikoloji.jpg"
   },
   {
     id: "43",
@@ -828,7 +828,7 @@ meta_description: Google'ın Pro...`,  // İçerik markdown dosyasından okunaca
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-degerlendirme.jpg"
   },
   {
     id: "44",
@@ -847,7 +847,7 @@ meta_description:...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-arastirma.jpg"
   },
   {
     id: "45",
@@ -866,7 +866,7 @@ meta_description: Z Kuşağı adayları iş...`,  // İçerik markdown dosyasın
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ise-alim.jpg"
   },
   {
     id: "46",
@@ -885,7 +885,7 @@ meta_description: Z Kuşağı adayları iş...`,  // İçerik markdown dosyasın
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 12,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ise-alim.jpg"
   },
   {
     id: "47",
@@ -904,7 +904,7 @@ meta_description: Z Kuşağı adayları iş...`,  // İçerik markdown dosyasın
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-ise-alim.jpg"
   },
   {
     id: "48",
@@ -923,7 +923,7 @@ meta_description: Performans d...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 10,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-degerlendirme.jpg"
   },
   {
     id: "49",
@@ -942,7 +942,7 @@ meta_description: Performans d...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 11,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-degerlendirme.jpg"
   },
   {
     id: "50",
@@ -961,7 +961,7 @@ Meta Description: Oyun Taban...`,  // İçerik markdown dosyasından okunacak
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 11,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-degerlendirme.jpg"
   },
   {
     id: "51",
@@ -979,7 +979,7 @@ title: Bilişsel Yetenek Testleri ve İş Performansı İlişkisi: Bilimsel Kan�
     tags: [],
     publishedAt: "2026-01-30",
     readingTime: 11,
-    image: "/images/blog/default-hero.jpg"
+    image: "/images/blog/hero-degerlendirme.jpg"
   }
 ];
 
