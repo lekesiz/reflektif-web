@@ -1,4 +1,4 @@
-import { PageHeader } from "@/components/PageHeader";
+import { Container } from "@/components/ui";
 import { CheckCircle, Brain, Target, TrendingUp, Users, FileText } from "lucide-react";
 import Image from "next/image";
 
@@ -73,86 +73,100 @@ const SurecPage = () => {
 
   return (
     <>
-      <PageHeader
-        title="Reflektif Kariyer Gelişim Süreci"
-        description="Fransa'nın ünlü Bilan de Compétences modelinden ilham alan 3 aşamalı yapılandırılmış sürecimizle kariyerinize yön verin."
-      />
+      {/* Hero Section - 2 Kolonlu Layout */}
+      <section className="pt-32 pb-16">
+        <Container>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Sol Kolon - İçerik */}
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+                Reflektif Kariyer Gelişim Süreci
+              </h1>
+              <p className="text-lg text-neutral-600 leading-relaxed">
+                Fransa'nın ünlü Bilan de Compétences modelinden ilham alan 3 aşamalı yapılandırılmış sürecimizle kariyerinize yön verin.
+              </p>
+            </div>
 
-      {/* Hero Image */}
-      <section className="container mx-auto px-6 md:px-8 py-12">
-        <div className="relative w-full h-80 md:h-96 rounded-2xl overflow-hidden shadow-xl">
-          <Image
-            src="/images/pages/surec-hero.webp"
-            alt="Reflektif Kariyer Gelişim Süreci"
-            fill
-            className="object-contain"
-            priority
-          />
-        </div>
+            {/* Sağ Kolon - Hero Image */}
+            <div className="relative">
+              <div className="relative w-full h-[360px] rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/images/pages/surec-hero.webp"
+                  alt="Reflektif Kariyer Gelişim Süreci"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </Container>
       </section>
 
       {/* Process Stages */}
-      <section className="container mx-auto px-6 md:px-8 py-12">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">3 Aşamalı Süreç</h2>
-          <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-            Her aşama, kariyerinizde bilinçli kararlar almanız için gerekli içgörüleri sağlar.
-          </p>
-        </div>
+      <section className="py-16 bg-neutral-50">
+        <Container>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">3 Aşamalı Süreç</h2>
+            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              Her aşama, kariyerinizde bilinçli kararlar almanız için gerekli içgörüleri sağlar.
+            </p>
+          </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {stages.map((stage, index) => {
-            const Icon = stage.icon;
-            return (
-              <div key={index} className="relative">
-                {/* Connector Line */}
-                {index < stages.length - 1 && (
-                  <div className="hidden md:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-primary-200 to-primary-100 -z-10" />
-                )}
-                
-                <div className="bg-white border-2 border-neutral-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 h-full">
-                  {/* Stage Number */}
-                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br ${stage.color} text-white text-2xl font-bold mb-6 shadow-lg`}>
-                    {stage.number}
-                  </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {stages.map((stage, index) => {
+              const Icon = stage.icon;
+              return (
+                <div key={index} className="relative">
+                  {/* Connector Line */}
+                  {index < stages.length - 1 && (
+                    <div className="hidden md:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-primary-200 to-primary-100 -z-10" />
+                  )}
+                  
+                  <div className="bg-white border-2 border-neutral-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 h-full">
+                    {/* Stage Number */}
+                    <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br ${stage.color} text-white text-2xl font-bold mb-6 shadow-lg`}>
+                      {stage.number}
+                    </div>
 
-                  {/* Icon */}
-                  <div className="mb-4">
-                    <Icon className="w-8 h-8 text-primary-600" />
-                  </div>
+                    {/* Icon */}
+                    <div className="mb-4">
+                      <Icon className="w-8 h-8 text-primary-600" />
+                    </div>
 
-                  {/* Title */}
-                  <h3 className="text-2xl font-bold mb-3">{stage.title}</h3>
+                    {/* Title */}
+                    <h3 className="text-2xl font-bold mb-3">{stage.title}</h3>
 
-                  {/* Description */}
-                  <p className="text-neutral-600 mb-6">{stage.description}</p>
+                    {/* Description */}
+                    <p className="text-neutral-600 mb-6">{stage.description}</p>
 
-                  {/* Features */}
-                  <div className="space-y-2 mb-6">
-                    {stage.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-start gap-2">
-                        <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-neutral-700">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
+                    {/* Features */}
+                    <div className="space-y-2 mb-6">
+                      {stage.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-neutral-700">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
 
-                  {/* Duration */}
-                  <div className="pt-4 border-t border-neutral-100">
-                    <span className="text-sm font-medium text-primary-600">
-                      Süre: {stage.duration}
-                    </span>
+                    {/* Duration */}
+                    <div className="pt-4 border-t border-neutral-100">
+                      <span className="text-sm font-medium text-primary-600">
+                        Süre: {stage.duration}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        </Container>
       </section>
 
       {/* Benefits */}
-      <section className="bg-gradient-to-br from-primary-50 to-purple-50 py-16">
-        <div className="container mx-auto px-6 md:px-8">
+      <section className="py-16">
+        <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Sürecin Avantajları</h2>
             <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
@@ -164,7 +178,7 @@ const SurecPage = () => {
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon;
               return (
-                <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-neutral-100">
                   <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-primary-600" />
                   </div>
@@ -174,25 +188,27 @@ const SurecPage = () => {
               );
             })}
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* CTA */}
-      <section className="container mx-auto px-6 md:px-8 py-16">
-        <div className="bg-gradient-to-br from-primary-600 to-purple-600 rounded-2xl p-12 text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Kariyerinize Yön Vermeye Hazır Mısınız?
-          </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Ücretsiz temel testi yaparak sürece başlayın
-          </p>
-          <a
-            href="/kayit"
-            className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-neutral-100 transition-colors"
-          >
-            Ücretsiz Başla
-          </a>
-        </div>
+      <section className="py-16 bg-neutral-50">
+        <Container>
+          <div className="bg-gradient-to-br from-primary-600 to-purple-600 rounded-2xl p-12 text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Kariyerinize Yön Vermeye Hazır Mısınız?
+            </h2>
+            <p className="text-xl mb-8 opacity-90">
+              Ücretsiz temel testi yaparak sürece başlayın
+            </p>
+            <a
+              href="/kayit"
+              className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-neutral-100 transition-colors"
+            >
+              Ücretsiz Başla
+            </a>
+          </div>
+        </Container>
       </section>
     </>
   );

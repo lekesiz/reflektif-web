@@ -1,4 +1,4 @@
-import { PageHeader } from "@/components/PageHeader";
+import { Container } from "@/components/ui";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/Table";
 import { CheckCircle, X, Zap, Target, Users, TrendingUp } from "lucide-react";
 import Image from "next/image";
@@ -72,52 +72,66 @@ const KarsilastirmaPage = () => {
 
   return (
     <>
-      <PageHeader
-        title="Reflektif vs. Diğerleri: Neden Farklıyız?"
-        description="Türkiye'de ve dünyada birçok yetenek değerlendirme aracı bulunuyor. Reflektif'in, Bilan de Compétences'ın yapılandırılmış sürecini, PİT'in pratikliğini ve Big Five'ın bilimsel derinliğini nasıl birleştirdiğini keşfedin."
-      />
+      {/* Hero Section - 2 Kolonlu Layout */}
+      <section className="pt-32 pb-16">
+        <Container>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Sol Kolon - İçerik */}
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+                Reflektif vs. Diğerleri: Neden Farklıyız?
+              </h1>
+              <p className="text-lg text-neutral-600 leading-relaxed">
+                Türkiye'de ve dünyada birçok yetenek değerlendirme aracı bulunuyor. Reflektif'in, Bilan de Compétences'ın yapılandırılmış sürecini, PİT'in pratikliğini ve Big Five'ın bilimsel derinliğini nasıl birleştirdiğini keşfedin.
+              </p>
+            </div>
 
-      {/* Hero Image */}
-      <section className="container mx-auto px-6 md:px-8 py-12">
-        <div className="relative w-full h-80 md:h-96 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary-50 to-purple-50">
-          <Image
-            src="/images/pages/karsilastirma-hero.webp"
-            alt="Reflektif vs Diğerleri"
-            fill
-            className="object-contain p-4"
-            priority
-          />
-        </div>
+            {/* Sağ Kolon - Hero Image */}
+            <div className="relative">
+              <div className="relative w-full h-[360px] rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/images/pages/karsilastirma-hero.webp"
+                  alt="Reflektif vs Diğerleri"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </Container>
       </section>
 
       {/* Advantages */}
-      <section className="container mx-auto px-6 md:px-8 py-12">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Reflektif'in Avantajları</h2>
-          <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-            Reflektif, farklı sistemlerin en iyi özelliklerini birleştirerek benzersiz bir değer sunar.
-          </p>
-        </div>
+      <section className="py-16 bg-neutral-50">
+        <Container>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Reflektif'in Avantajları</h2>
+            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+              Reflektif, farklı sistemlerin en iyi özelliklerini birleştirerek benzersiz bir değer sunar.
+            </p>
+          </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {advantages.map((advantage, index) => {
-            const Icon = advantage.icon;
-            return (
-              <div key={index} className="bg-white border-2 border-neutral-100 rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
-                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${advantage.color} flex items-center justify-center mb-4 shadow-lg`}>
-                  <Icon className="w-7 h-7 text-white" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {advantages.map((advantage, index) => {
+              const Icon = advantage.icon;
+              return (
+                <div key={index} className="bg-white border-2 border-neutral-100 rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+                  <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${advantage.color} flex items-center justify-center mb-4 shadow-lg`}>
+                    <Icon className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">{advantage.title}</h3>
+                  <p className="text-neutral-600">{advantage.description}</p>
                 </div>
-                <h3 className="text-xl font-bold mb-2">{advantage.title}</h3>
-                <p className="text-neutral-600">{advantage.description}</p>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        </Container>
       </section>
 
       {/* Quick Comparison */}
-      <section className="bg-gradient-to-br from-primary-50 to-purple-50 py-16">
-        <div className="container mx-auto px-6 md:px-8">
+      <section className="py-16">
+        <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Hızlı Karşılaştırma</h2>
             <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
@@ -127,7 +141,7 @@ const KarsilastirmaPage = () => {
 
           <div className="max-w-4xl mx-auto space-y-4">
             {comparisonFeatures.map((item, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-neutral-100">
                 <div className="grid md:grid-cols-3 gap-4 items-center">
                   <div className="font-semibold text-neutral-900">{item.feature}</div>
                   <div className="flex items-center gap-2">
@@ -143,87 +157,91 @@ const KarsilastirmaPage = () => {
               </div>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Detailed Comparison Table */}
-      <section className="container mx-auto px-6 md:px-8 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Detaylı Sistem Karşılaştırması</h2>
-        <div className="overflow-x-auto shadow-xl rounded-2xl">
-          <Table>
-            <TableHeader>
-              <TableRow className="bg-gradient-to-r from-primary-600 to-purple-600">
-                <TableHead className="text-white font-bold">Kriter</TableHead>
-                <TableHead className="text-white font-bold">Reflektif (Hibrit Model)</TableHead>
-                <TableHead className="text-white font-bold">Bilan de Compétences (Fransa)</TableHead>
-                <TableHead className="text-white font-bold">PİT (Türkiye)</TableHead>
-                <TableHead className="text-white font-bold">Global Modeller (Big Five, DISC)</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow className="hover:bg-primary-50 transition-colors">
-                <TableCell className="font-medium">Temel Amaç</TableCell>
-                <TableCell className="text-primary-600 font-semibold">Bütünsel Kariyer Gelişimi ve Yetenek Yönetimi</TableCell>
-                <TableCell>Kariyer yolu planlama, mesleki proje oluşturma</TableCell>
-                <TableCell>İşe alım, yetenek yönetimi, pozisyon uyumu</TableCell>
-                <TableCell>Bireysel farkındalık, takım dinamikleri</TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-primary-50 transition-colors">
-                <TableCell className="font-medium">Metodoloji</TableCell>
-                <TableCell className="text-primary-600 font-semibold">3 Aşamalı Hibrit Süreç (Online Testler + Danışmanlık)</TableCell>
-                <TableCell>Danışman liderliğinde 3 aşamalı süreç (24 saate kadar)</TableCell>
-                <TableCell>Standartlaştırılmış online test (10-15 dk)</TableCell>
-                <TableCell>Genellikle online testler</TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-primary-50 transition-colors">
-                <TableCell className="font-medium">Teorik Temel</TableCell>
-                <TableCell className="text-primary-600 font-semibold">Big Five + Holland (RIASEC) + Yetkinlik Modelleri</TableCell>
-                <TableCell>Fransa İş Kanunu ile düzenlenmiş yasal çerçeve</TableCell>
-                <TableCell>Şirkete özgü model (Kişilik + Değerler)</TableCell>
-                <TableCell>Bilimsel modeller (Big Five) veya davranışsal teoriler (DISC)</TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-primary-50 transition-colors">
-                <TableCell className="font-medium">Çıktılar</TableCell>
-                <TableCell className="text-primary-600 font-semibold">15+ Rapor, Kişisel Eylem Planı, Gelişim Yol Haritası</TableCell>
-                <TableCell>Sentez raporu ve kişisel eylem planı</TableCell>
-                <TableCell>11 farklı rapor türü</TableCell>
-                <TableCell>Kişilik profili, gelişim önerileri</TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-primary-50 transition-colors">
-                <TableCell className="font-medium">Güçlü Yönleri</TableCell>
-                <TableCell className="text-primary-600 font-semibold">Kapsamlı, Bilimsel, Pratik, Yerel ve Global</TableCell>
-                <TableCell>Yapılandırılmış, yasal güvence, kişiye özel</TableCell>
-                <TableCell>Hızlı, pratik, yerelleştirilmiş</TableCell>
-                <TableCell>Bilimsel geçerlilik (Big Five), pratiklik (DISC)</TableCell>
-              </TableRow>
-              <TableRow className="hover:bg-primary-50 transition-colors">
-                <TableCell className="font-medium">Zayıf Yönleri</TableCell>
-                <TableCell className="text-primary-600 font-semibold">Temel paket danışmanlık içermez</TableCell>
-                <TableCell>Zaman alıcı, maliyetli</TableCell>
-                <TableCell>Bilimsel temelinin derinliği daha az şeffaf</TableCell>
-                <TableCell>Tek başına kullanıldığında eksik kalabilir</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-        </div>
+      <section className="py-16 bg-neutral-50">
+        <Container>
+          <h2 className="text-3xl font-bold text-center mb-12">Detaylı Sistem Karşılaştırması</h2>
+          <div className="overflow-x-auto shadow-xl rounded-2xl">
+            <Table>
+              <TableHeader>
+                <TableRow className="bg-gradient-to-r from-primary-600 to-purple-600">
+                  <TableHead className="text-white font-bold">Kriter</TableHead>
+                  <TableHead className="text-white font-bold">Reflektif (Hibrit Model)</TableHead>
+                  <TableHead className="text-white font-bold">Bilan de Compétences (Fransa)</TableHead>
+                  <TableHead className="text-white font-bold">PİT (Türkiye)</TableHead>
+                  <TableHead className="text-white font-bold">Global Modeller (Big Five, DISC)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow className="hover:bg-primary-50 transition-colors">
+                  <TableCell className="font-medium">Temel Amaç</TableCell>
+                  <TableCell className="text-primary-600 font-semibold">Bütünsel Kariyer Gelişimi ve Yetenek Yönetimi</TableCell>
+                  <TableCell>Kariyer yolu planlama, mesleki proje oluşturma</TableCell>
+                  <TableCell>İşe alım, yetenek yönetimi, pozisyon uyumu</TableCell>
+                  <TableCell>Bireysel farkındalık, takım dinamikleri</TableCell>
+                </TableRow>
+                <TableRow className="hover:bg-primary-50 transition-colors">
+                  <TableCell className="font-medium">Metodoloji</TableCell>
+                  <TableCell className="text-primary-600 font-semibold">3 Aşamalı Hibrit Süreç (Online Testler + Danışmanlık)</TableCell>
+                  <TableCell>Danışman liderliğinde 3 aşamalı süreç (24 saate kadar)</TableCell>
+                  <TableCell>Standartlaştırılmış online test (10-15 dk)</TableCell>
+                  <TableCell>Genellikle online testler</TableCell>
+                </TableRow>
+                <TableRow className="hover:bg-primary-50 transition-colors">
+                  <TableCell className="font-medium">Teorik Temel</TableCell>
+                  <TableCell className="text-primary-600 font-semibold">Big Five + Holland (RIASEC) + Yetkinlik Modelleri</TableCell>
+                  <TableCell>Fransa İş Kanunu ile düzenlenmiş yasal çerçeve</TableCell>
+                  <TableCell>Şirkete özgü model (Kişilik + Değerler)</TableCell>
+                  <TableCell>Bilimsel modeller (Big Five) veya davranışsal teoriler (DISC)</TableCell>
+                </TableRow>
+                <TableRow className="hover:bg-primary-50 transition-colors">
+                  <TableCell className="font-medium">Çıktılar</TableCell>
+                  <TableCell className="text-primary-600 font-semibold">15+ Rapor, Kişisel Eylem Planı, Gelişim Yol Haritası</TableCell>
+                  <TableCell>Sentez raporu ve kişisel eylem planı</TableCell>
+                  <TableCell>11 farklı rapor türü</TableCell>
+                  <TableCell>Kişilik profili, gelişim önerileri</TableCell>
+                </TableRow>
+                <TableRow className="hover:bg-primary-50 transition-colors">
+                  <TableCell className="font-medium">Güçlü Yönleri</TableCell>
+                  <TableCell className="text-primary-600 font-semibold">Kapsamlı, Bilimsel, Pratik, Yerel ve Global</TableCell>
+                  <TableCell>Yapılandırılmış, yasal güvence, kişiye özel</TableCell>
+                  <TableCell>Hızlı, pratik, yerelleştirilmiş</TableCell>
+                  <TableCell>Bilimsel geçerlilik (Big Five), pratiklik (DISC)</TableCell>
+                </TableRow>
+                <TableRow className="hover:bg-primary-50 transition-colors">
+                  <TableCell className="font-medium">Zayıf Yönleri</TableCell>
+                  <TableCell className="text-primary-600 font-semibold">Temel paket danışmanlık içermez</TableCell>
+                  <TableCell>Zaman alıcı, maliyetli</TableCell>
+                  <TableCell>Bilimsel temelinin derinliği daha az şeffaf</TableCell>
+                  <TableCell>Tek başına kullanıldığında eksik kalabilir</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </div>
+        </Container>
       </section>
 
       {/* CTA */}
-      <section className="container mx-auto px-6 md:px-8 py-16">
-        <div className="bg-gradient-to-br from-primary-600 to-purple-600 rounded-2xl p-12 text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Reflektif Farkını Deneyimleyin
-          </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Ücretsiz temel testi yaparak başlayın
-          </p>
-          <a
-            href="/kayit"
-            className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-neutral-100 transition-colors"
-          >
-            Ücretsiz Başla
-          </a>
-        </div>
+      <section className="py-16">
+        <Container>
+          <div className="bg-gradient-to-br from-primary-600 to-purple-600 rounded-2xl p-12 text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Reflektif Farkını Deneyimleyin
+            </h2>
+            <p className="text-xl mb-8 opacity-90">
+              Ücretsiz temel testi yaparak başlayın
+            </p>
+            <a
+              href="/kayit"
+              className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-neutral-100 transition-colors"
+            >
+              Ücretsiz Başla
+            </a>
+          </div>
+        </Container>
       </section>
     </>
   );

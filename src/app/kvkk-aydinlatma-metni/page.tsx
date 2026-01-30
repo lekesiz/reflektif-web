@@ -16,20 +16,8 @@ export default function KVKKAydinlatmaMetniPage() {
       <PageHeader
         title="KVKK Aydınlatma Metni"
         description="Kişisel Verilerin Korunması Kanunu Kapsamında Aydınlatma Metni"
+        heroImage="/images/pages/kvkk-hero.webp"
       />
-
-      {/* Hero Image */}
-      <div className="container mx-auto px-6 md:px-8 py-8">
-        <div className="relative w-full h-80 md:h-96 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary-50 to-purple-50 mb-8">
-          <Image
-            src="/images/pages/kvkk-hero.webp"
-            alt="KVKK Aydınlatma Metni"
-            fill
-            className="object-contain p-8"
-            priority
-          />
-        </div>
-      </div>
 
       <div className="container mx-auto px-6 md:px-8 pb-12">
         <div className="mx-auto max-w-4xl">
