@@ -114,7 +114,7 @@ export function HeroEnhanced() {
               {/* Main Dashboard Mockup */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
                 <Image
-                  src="/images/hero/homepage-hero.jpg"
+                  src="/images/homepage-hero.jpg"
                   alt="Reflektif - Kariyerinin Yapay Zekası"
                   width={1920}
                   height={1080}
