@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import {
   Brain,
@@ -76,6 +77,18 @@ const colorClasses: Record<string, { bg: string; text: string; gradient: string 
   },
 };
 
+// Slug to image mapping
+const heroImageMap: Record<string, string> = {
+  "kisilik-envanteri": "/images/tests/personality-test.jpg",
+  "genel-yetenek": "/images/tests/cognitive-ability.jpg",
+  "dil-yeterlilik": "/images/tests/language-proficiency.jpg",
+  "teknik-yetenek": "/images/tests/technical-skills.jpg",
+  "oyunlastirilmis-degerlendirme": "/images/tests/gamified-assessment.jpg",
+  "kariyer-risk-analizi": "/images/tests/career-risk.jpg",
+  "hobi-envanteri": "/images/tests/hobby-interest.jpg",
+  "durumsal-yargi": "/images/tests/situational-judgment.jpg",
+};
+
 export default async function TestDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const category = getTestCategoryBySlug(slug);
@@ -85,6 +98,7 @@ export default async function TestDetailPage({ params }: PageProps) {
   }
 
   const colors = colorClasses[category.color] || colorClasses.primary;
+  const heroImage = heroImageMap[slug] || "/images/tests/personality-test.jpg";
 
   return (
     <div className="py-20">
@@ -125,46 +139,15 @@ export default async function TestDetailPage({ params }: PageProps) {
                 </Link>
               </div>
             </div>
-            <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h3 className="text-lg font-semibold text-neutral-900 mb-6">
-                Test Özeti
-              </h3>
-              <div className="space-y-4">
-                <div className="flex items-center justify-between py-3 border-b border-neutral-100">
-                  <span className="flex items-center gap-2 text-neutral-600">
-                    <Clock className="w-5 h-5" />
-                    Toplam Süre
-                  </span>
-                  <span className="font-semibold text-neutral-900">
-                    {category.duration}
-                  </span>
-                </div>
-                <div className="flex items-center justify-between py-3 border-b border-neutral-100">
-                  <span className="flex items-center gap-2 text-neutral-600">
-                    <FileQuestion className="w-5 h-5" />
-                    Soru/Egzersiz
-                  </span>
-                  <span className="font-semibold text-neutral-900">
-                    {category.questionCount}
-                  </span>
-                </div>
-                <div className="flex items-center justify-between py-3 border-b border-neutral-100">
-                  <span className="flex items-center gap-2 text-neutral-600">
-                    <Target className="w-5 h-5" />
-                    Alt Test Sayısı
-                  </span>
-                  <span className="font-semibold text-neutral-900">
-                    {category.tests.length} Adet
-                  </span>
-                </div>
-                <div className="flex items-center justify-between py-3">
-                  <span className="flex items-center gap-2 text-neutral-600">
-                    <Users className="w-5 h-5" />
-                    Tamamlayan
-                  </span>
-                  <span className="font-semibold text-neutral-900">50.000+</span>
-                </div>
-              </div>
+            <div className="relative">
+              <Image
+                src={heroImage}
+                alt={category.name}
+                width={600}
+                height={400}
+                className="rounded-2xl shadow-xl w-full h-auto"
+                priority
+              />
             </div>
           </div>
         </Container>
