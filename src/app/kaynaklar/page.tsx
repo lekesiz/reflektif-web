@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function KaynaklarPage() {
   const featuredPosts = getFeaturedPosts();
-  const recentPosts = blogPosts.slice(0, 6);
+  const recentPosts = blogPosts;
 
   return (
     <div className="py-20">
