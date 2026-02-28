@@ -26,12 +26,12 @@ export const modules: Module[] = [
       },
       {
         title: "Hobi-Meslek Eşleştirme",
-        description: "Oyun oynamaktan resim yapmaya, 100+ farklı hobi ve ilgi alanını analiz ederek bu tutkularının hangi profesyonel kariyerlere dönüşebileceğini gösterelim.",
+        description: "Oyun oynamaktan resim yapmaya, 100+ farklı hobi ve ilgi alanını analiz ederek bu tutkularının hangi profesyonel kariyerlere dönüşebileceğini gösterelim. 1200+ meslek eşleştirmesi ile en uygun kariyer yollarını keşfet.",
         icon: "Heart",
       },
       {
-        title: "AI-Proof Kariyer Önerileri",
-        description: "Yapay zekanın otomatikleştiremeyeceği, gelecekte de geçerli olacak meslekleri ve bu meslekler için gereken yetkinlikleri sana özel olarak önerelim.",
+        title: "1200+ Meslek Eşleştirmesi",
+        description: "Yapay zekanın otomatikleştiremeyeceği, gelecekte de geçerli olacak meslekleri ve bu meslekler için gereken yetkinlikleri sana özel olarak önerelim. Kişiliğin, yeteneklerin ve ilgi alanlarına göre 1200+ meslek arasından en uygun olanları bul.",
         icon: "BrainCircuit",
       },
       {

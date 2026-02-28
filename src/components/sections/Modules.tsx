@@ -48,7 +48,7 @@ const colorClasses: Record<string, { bg: string; badge: string; button: string }
 };
 
 export function Modules() {
-  const displayedModules = modules.filter(m => m.id !== 'universite');
+  const displayedModules = modules;
 
   return (
     <section className="py-24 bg-neutral-50">
