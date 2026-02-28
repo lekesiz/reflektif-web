@@ -22,7 +22,7 @@ export function LeadPopup({
   exitIntent = true,
   scrollTrigger = 50,
   cookieName = "reflektif_lead_popup",
-  dismissDays = 7,
+  dismissDays = 30,
 }: LeadPopupProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -54,16 +54,16 @@ export function LeadPopup({
     localStorage.setItem(cookieName, new Date().toISOString());
   };
 
-  // Time-based trigger
-  useEffect(() => {
-    if (!shouldShowPopup()) return;
-
-    const timer = setTimeout(() => {
-      setIsOpen(true);
-    }, delay);
-
-    return () => clearTimeout(timer);
-  }, [delay]);
+  // Time-based trigger - DISABLED to reduce popup frequency
+  // useEffect(() => {
+  //   if (!shouldShowPopup()) return;
+  //
+  //   const timer = setTimeout(() => {
+  //     setIsOpen(true);
+  //   }, delay);
+  //
+  //   return () => clearTimeout(timer);
+  // }, [delay]);
 
   // Exit intent trigger
   useEffect(() => {
@@ -79,24 +79,24 @@ export function LeadPopup({
     return () => document.removeEventListener("mouseleave", handleMouseLeave);
   }, [exitIntent]);
 
-  // Scroll trigger
-  useEffect(() => {
-    if (!scrollTrigger || !shouldShowPopup()) return;
-
-    const handleScroll = () => {
-      const scrollPercent =
-        (window.scrollY /
-          (document.documentElement.scrollHeight - window.innerHeight)) *
-        100;
-      if (scrollPercent >= scrollTrigger) {
-        setIsOpen(true);
-        window.removeEventListener("scroll", handleScroll);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [scrollTrigger]);
+  // Scroll trigger - DISABLED to reduce popup frequency
+  // useEffect(() => {
+  //   if (!scrollTrigger || !shouldShowPopup()) return;
+  //
+  //   const handleScroll = () => {
+  //     const scrollPercent =
+  //       (window.scrollY /
+  //         (document.documentElement.scrollHeight - window.innerHeight)) *
+  //       100;
+  //     if (scrollPercent >= scrollTrigger) {
+  //       setIsOpen(true);
+  //       window.removeEventListener("scroll", handleScroll);
+  //     }
+  //   };
+  //
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, [scrollTrigger]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

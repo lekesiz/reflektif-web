@@ -131,9 +131,9 @@ export default function RootLayout({
 
         {/* Lead Capture Components */}
         <LeadPopup
-          delay={8000}
+          delay={999999}
           exitIntent={true}
-          scrollTrigger={60}
+          scrollTrigger={0}
         />
         <FloatingCTA />
         <StickyBar position="bottom" delay={5000} />
