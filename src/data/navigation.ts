@@ -5,7 +5,6 @@ export const navigation: NavItem[] = [
     label: "Modüller",
     href: "/moduller",
     children: [
-      { label: "Reflektif Öğrenci", href: "https://ogrenci.reflektif.net" },
       { label: "Reflektif Öğrenci", href: "/moduller/ogrenci" },
       { label: "Reflektif Üniversite", href: "/moduller/universite" },
       { label: "Reflektif Kariyer", href: "/moduller/kariyer" },

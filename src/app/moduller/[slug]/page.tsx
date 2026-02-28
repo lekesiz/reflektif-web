@@ -506,6 +506,58 @@ export default async function ModulePage({
         </Container>
       </section>
 
+      {/* Student Platform Redirect Section - Only for ogrenci module */}
+      {slug === "ogrenci" && (
+        <section className="py-16 bg-gradient-to-r from-accent-50 to-primary-50 border-t-4 border-accent-500">
+          <Container>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <Badge variant="accent" size="lg" className="mb-4">
+                  Öğrenci Platformu
+                </Badge>
+                <h2 className="text-3xl font-bold text-neutral-900 mb-4">
+                  Reflektif Öğrenci Platformuna Erişim
+                </h2>
+                <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
+                  Reflektif Öğrenci, öğrencilerin kariyer yolculuğunu başlatmak için tasarlanmış özel bir platformdur. Kişilik testleri, yetenek değerlendirmeleri ve AI-destekli meslek önerilerine doğrudan erişim sağlar. Ayrıca, üniversite seçimi, bölüm değişikliği ve gelecek planlaması konularında kapsamlı rehberlik sunar.
+                </p>
+                <div className="space-y-3 mb-8">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-accent-500 flex-shrink-0 mt-1" />
+                    <span className="text-neutral-700">Anında kişilik ve yetenek analizi</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-accent-500 flex-shrink-0 mt-1" />
+                    <span className="text-neutral-700">250+ meslek önerisi ve uyum analizi</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-accent-500 flex-shrink-0 mt-1" />
+                    <span className="text-neutral-700">Üniversite ve bölüm simülatörü</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-accent-500 flex-shrink-0 mt-1" />
+                    <span className="text-neutral-700">Detaylı kariyer raporu ve danışmanlık</span>
+                  </div>
+                </div>
+                <a href="https://ogrenci.reflektif.net" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" rightIcon={<ArrowRight className="w-5 h-5" />}>
+                    Öğrenci Platformuna Git
+                  </Button>
+                </a>
+              </div>
+              <div className="relative">
+                <div className="relative w-full h-[360px] rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-accent-100 to-primary-100 flex items-center justify-center">
+                  <div className="text-center">
+                    <GraduationCap className="w-24 h-24 text-accent-500 mx-auto mb-4" />
+                    <p className="text-neutral-700 font-semibold">Öğrenci Platformu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </section>
+      )}
+
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-primary-600 to-secondary-600">
         <Container>
