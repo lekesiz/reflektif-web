@@ -194,7 +194,7 @@ export function SampleResult() {
                 <div className="mt-6 pt-4 border-t border-white/20">
                   <div className="flex items-center text-white/80 text-sm">
                     <CheckCircle className="w-4 h-4 mr-2 text-green-400" />
-                    250+ meslek analiz edildi
+                    1200+ meslek analiz edildi
                   </div>
                 </div>
               </CardContent>

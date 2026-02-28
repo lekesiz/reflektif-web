@@ -87,7 +87,7 @@ export function LogoBand() {
             <p className="text-neutral-600">İsabet Oranı</p>
           </div>
           <div className="text-center">
-            <p className="text-4xl font-bold text-accent-600 mb-2">250+</p>
+            <p className="text-4xl font-bold text-accent-600 mb-2">1200+</p>
             <p className="text-neutral-600">Meslek Önerisi</p>
           </div>
           <div className="text-center">

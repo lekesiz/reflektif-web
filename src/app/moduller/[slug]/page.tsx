@@ -528,7 +528,7 @@ export default async function ModulePage({
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-accent-500 flex-shrink-0 mt-1" />
-                    <span className="text-neutral-700">250+ meslek önerisi ve uyum analizi</span>
+                    <span className="text-neutral-700">1200+ meslek önerisi ve uyum analizi</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-accent-500 flex-shrink-0 mt-1" />

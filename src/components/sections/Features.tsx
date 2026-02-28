@@ -24,7 +24,7 @@ const features = [
     icon: Target,
     title: "Hassas Eşleştirme",
     description:
-      "250+ meslek ve binlerce veri noktasıyla size en uygun kariyer yollarını keşfetmenizi sağlarız.",
+      "1200+ meslek ve binlerce veri noktasıyla size en uygun kariyer yollarını keşfetmenizi sağlarız.",
     color: "secondary",
   },
   {

@@ -33,7 +33,7 @@ const steps = [
     icon: Brain,
     title: "AI Analiz Etsin",
     description:
-      "Gelişmiş yapay zeka algoritmamız cevaplarınızı analiz eder, 250+ meslek ve binlerce veri noktasıyla karşılaştırır.",
+      "Gelişmiş yapay zeka algoritmamız cevaplarınızı analiz eder, 1200+ meslek ve binlerce veri noktasıyla karşılaştırır.",
     duration: "Anlık sonuç",
     features: [
       "Derin öğrenme modelleri",
