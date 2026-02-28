@@ -506,8 +506,8 @@ export default async function ModulePage({
         </Container>
       </section>
 
-      {/* Student Platform Redirect Section - Only for ogrenci module */}
-      {slug === "ogrenci" && (
+      {/* Student Platform Redirect Section - For ogrenci and universite modules */}
+      {(slug === "ogrenci" || slug === "universite") && (
         <section className="py-16 bg-gradient-to-r from-accent-50 to-primary-50 border-t-4 border-accent-500">
           <Container>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
