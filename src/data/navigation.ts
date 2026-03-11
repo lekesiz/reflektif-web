@@ -5,7 +5,7 @@ export const navigation: NavItem[] = [
     label: "Modüller",
     href: "/moduller",
     children: [
-      { label: "Reflektif Öğrenci", href: "/moduller/ogrenci" },
+      { label: "Reflektif Öğrenci", href: "https://ogrenci.reflektif.net" },
       { label: "Reflektif Üniversite", href: "/moduller/universite" },
       { label: "Reflektif Kariyer", href: "/moduller/kariyer" },
       { label: "Reflektif İK", href: "/moduller/ik" },
@@ -45,7 +45,7 @@ export const navigation: NavItem[] = [
 
 export const footerNavigation = {
   moduller: [
-    { label: "Reflektif Öğrenci", href: "/moduller/ogrenci" },
+    { label: "Reflektif Öğrenci", href: "https://ogrenci.reflektif.net" },
     { label: "Reflektif Üniversite", href: "/moduller/universite" },
     { label: "Reflektif Kariyer", href: "/moduller/kariyer" },
     { label: "Reflektif İK", href: "/moduller/ik" },
