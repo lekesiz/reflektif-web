@@ -257,22 +257,12 @@ export default function HakkimizdaPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid gap-8 max-w-xl mx-auto">
             {[
               {
                 name: "Mikail Lekesiz",
-                role: "Kurucu & CEO",
-                bio: "Teknoloji ve eğitim sektörlerinde 10+ yıl deneyim. Kariyer geliştirme ve dijital dönüşüm konularında uzman.",
-              },
-              {
-                name: "Dr. Ayşe Yılmaz",
-                role: "Bilimsel Danışman",
-                bio: "Endüstriyel psikoloji uzmanı, kariyer değerlendirme araştırmacısı ve psikometrik test geliştirme danışmanı.",
-              },
-              {
-                name: "Mehmet Demir",
-                role: "CTO",
-                bio: "AI/ML uzmanı, 8+ yıl yazılım geliştirme deneyimi. Ölçeklenebilir sistemler ve veri analizi konularında uzman.",
+                role: "Yönetim Kurulu Başkanı & Teknik Sorumlu",
+                bio: "Görev tanımı, Reflektif’in kamuya açık hukukî bildirimindeki ifadeye göre sunulmaktadır. Yapay zekâ destekli kariyer yönlendirme ve yetkinlik değerlendirme platformunun teknik yönetimine katkı sağlar.",
               },
             ].map((member) => (
               <Card key={member.name} variant="elevated" hover>
